@@ -5,7 +5,7 @@ website:
   title: "GIS Group 6: Pavement vs Peat"
   navbar:
     left:
-      - href: Overview.qmd
+      - href: Home.qmd
         text: Abstract
       - href: scope.qmd
         text: Project Scope
