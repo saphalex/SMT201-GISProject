@@ -7,15 +7,23 @@ website:
     left:
       - href: Overview.qmd
         text: Abstract
-      - href: ""
+      - href: scope.qmd
+        text: Project Scope
+      - href: data.qmd
+        text: Data Preparation
+      - href: index.qmd
         text: Methodology
       - href: ""
-        text: Results and Discussion
-    right: 
-      - href: index.qmd
-        text: Home
+        text: Results & Discussion
+      - href: ""
+        text: Web Maps
+      - href: ""
+        text: Lesson Learnt
+      - href: ""
+        text: Poster
       - href: about.qmd
         text: Team
+
       
 
 format:

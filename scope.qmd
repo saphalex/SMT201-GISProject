@@ -1,0 +1,37 @@
+---
+title: "Pavement vs Peat"
+authors: "Anne Saphrin Alex Sathyan, Harshitha Balaji, Lau Liang Jun"
+date: "April 6, 2025"
+date-modified: "last-modified"
+---
+
+# Project Scope
+
+## Background
+
+The team employs remote sensing data, particularly from **satellite sources** and **OpenStreetMap**, to perform spatial classification and visualise transformations over time. Due to data accessibility challenges, various public and open-source platforms were evaluated, including data.gov.my and OpenStreetMap, while custom vector layers are considered as an alternative.
+
+## Problem Statement
+
+The project also explores different classification and accuracy assessment techniques to enhance analysis reliability. A Gantt chart was used to plan and manage the project timeline, and consultation with instructors was scheduled to clarify technical and reporting expectations.
+
+## Project Objectives
+
+### Objective 1
+
+The ultimate goal is to derive meaningful insights into urbanization patterns and land cover dynamics in Kuala Lumpur through structured geospatial analysis.
+
+### Objective 2
+
+The ultimate goal is to derive meaningful insights into urbanization patterns and land cover dynamics in Kuala Lumpur through structured geospatial analysis.
+
+## Data
+
+## Scope of Work
+
+## Project Schedule
+
+### Gantt Chart
+
+### Work Distribution
+

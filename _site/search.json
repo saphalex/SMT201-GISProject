@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Pavement vs Peat",
     "section": "",
-    "text": "Testing 123"
+    "text": "Online\n\n\nCopernicus"
   },
   {
     "objectID": "about.html",
@@ -96,5 +96,68 @@
     "title": "Pavement vs Peat",
     "section": "The Study Period",
     "text": "The Study Period\nhello"
+  },
+  {
+    "objectID": "index.html#data-preparation",
+    "href": "index.html#data-preparation",
+    "title": "Pavement vs Peat",
+    "section": "Data Preparation",
+    "text": "Data Preparation\n\nBasic Visualisation"
+  },
+  {
+    "objectID": "scope.html",
+    "href": "scope.html",
+    "title": "Pavement vs Peat",
+    "section": "",
+    "text": "The team employs remote sensing data, particularly from satellite sources and OpenStreetMap, to perform spatial classification and visualise transformations over time. Due to data accessibility challenges, various public and open-source platforms were evaluated, including data.gov.my and OpenStreetMap, while custom vector layers are considered as an alternative.\n\n\n\nThe project also explores different classification and accuracy assessment techniques to enhance analysis reliability. A Gantt chart was used to plan and manage the project timeline, and consultation with instructors was scheduled to clarify technical and reporting expectations.\n\n\n\n\n\nThe ultimate goal is to derive meaningful insights into urbanization patterns and land cover dynamics in Kuala Lumpur through structured geospatial analysis.\n\n\n\nThe ultimate goal is to derive meaningful insights into urbanization patterns and land cover dynamics in Kuala Lumpur through structured geospatial analysis."
+  },
+  {
+    "objectID": "scope.html#background",
+    "href": "scope.html#background",
+    "title": "Pavement vs Peat",
+    "section": "",
+    "text": "The team employs remote sensing data, particularly from satellite sources and OpenStreetMap, to perform spatial classification and visualise transformations over time. Due to data accessibility challenges, various public and open-source platforms were evaluated, including data.gov.my and OpenStreetMap, while custom vector layers are considered as an alternative."
+  },
+  {
+    "objectID": "scope.html#problem-statement",
+    "href": "scope.html#problem-statement",
+    "title": "Pavement vs Peat",
+    "section": "",
+    "text": "The project also explores different classification and accuracy assessment techniques to enhance analysis reliability. A Gantt chart was used to plan and manage the project timeline, and consultation with instructors was scheduled to clarify technical and reporting expectations."
+  },
+  {
+    "objectID": "scope.html#objective-1",
+    "href": "scope.html#objective-1",
+    "title": "Pavement vs Peat",
+    "section": "",
+    "text": "The ultimate goal is to derive meaningful insights into urbanization patterns and land cover dynamics in Kuala Lumpur through structured geospatial analysis."
+  },
+  {
+    "objectID": "scope.html#objective-2",
+    "href": "scope.html#objective-2",
+    "title": "Pavement vs Peat",
+    "section": "",
+    "text": "The ultimate goal is to derive meaningful insights into urbanization patterns and land cover dynamics in Kuala Lumpur through structured geospatial analysis."
+  },
+  {
+    "objectID": "scope.html#project-schedule",
+    "href": "scope.html#project-schedule",
+    "title": "Pavement vs Peat",
+    "section": "",
+    "text": "###Gantt Chart\n###Work Distribution"
+  },
+  {
+    "objectID": "scope.html#project-objectives",
+    "href": "scope.html#project-objectives",
+    "title": "Pavement vs Peat",
+    "section": "",
+    "text": "The ultimate goal is to derive meaningful insights into urbanization patterns and land cover dynamics in Kuala Lumpur through structured geospatial analysis.\n\n\n\nThe ultimate goal is to derive meaningful insights into urbanization patterns and land cover dynamics in Kuala Lumpur through structured geospatial analysis."
+  },
+  {
+    "objectID": "index.html#land-cover-change-classification-training-testing-and-selection",
+    "href": "index.html#land-cover-change-classification-training-testing-and-selection",
+    "title": "Pavement vs Peat",
+    "section": "",
+    "text": "Online\n\n\nCopernicus"
   }
 ]

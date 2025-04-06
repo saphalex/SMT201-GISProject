@@ -1,0 +1,27 @@
+---
+title: "Pavement vs Peat"
+authors: "Anne Saphrin Alex Sathyan, Harshitha Balaji, Lau Liang Jun"
+date: "April 6, 2025"
+date-modified: "last-modified"
+---
+# Data Work
+
+How we collected and prepared our data.
+
+### Data Collection
+
+Online
+
+#### Kuala Lumpur: Sentinel-2
+
+Copernicus
+
+#### Kuala Lumpur: OSM
+
+### Data Preparation
+
+#### Basic Visualisation
+
+
+
+

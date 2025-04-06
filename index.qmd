@@ -4,17 +4,46 @@ authors: "Anne Saphrin Alex Sathyan, Harshitha Balaji, Lau Liang Jun"
 date: "April 6, 2025"
 date-modified: "last-modified"
 ---
+# Methodology
 
-## Abstract
-Testing 123
+## Land Cover Change Classification (Training, Testing and Selection)
 
-## The Study Area
+Online
 
-### Sub-heading 1
+### Training
 
-### Sub-heading 2
+Copernicus
 
-## The Study Period
+#### 1. Land Cover Types
 
-hello
+#### 2. Fine Tuning with Standard Deviation
+
+#### 3. Evaluation of Algorithms Using Spectral Distance
+
+#### 4. Run SCP Classification on 2 Algorithm: Minimum Distance and Maximum Likelihood
+
+### Training
+
+#### 1. Add testing samples for each land cover type
+
+#### 2. Calculate accuracy for both algorithm using the same test samples in previous step
+
+#### 3. Selection of algorithm
+
+#### 4. Retraining for PA less than 75%
+
+### Final evaluation of classification model
+
+### Output of Classification
+
+#### 2020:
+#### 2021:
+#### 2022:
+#### 2023:
+#### 2024:
+#### 2025:
+
+### Data Analysis (Land Cover Change)
+
+### Data Analysis (Land Surface Temperature)
 
