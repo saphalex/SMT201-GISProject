@@ -1,9 +1,12 @@
----
-title: "About"
----
+## The Team
 
-About this site
+### Anne Saphrin Alex Sathyan
+Year 3, SCIS
 
-```{r}
-1 + 1
-```
+### Harshitha Balaji
+Year 3, SCIS
+
+### Lau Liang Jun
+Year 3, SCIS
+
+

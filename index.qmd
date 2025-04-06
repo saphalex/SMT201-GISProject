@@ -1,9 +1,20 @@
 ---
-title: "SMT201-GISProject"
+title: "Pavement vs Peat"
+authors: "Anne Saphrin Alex Sathyan, Harshitha Balaji, Lau Liang Jun"
+date: "April 6, 2025"
+date-modified: "last-modified"
 ---
 
-Welcome <https://quarto.org/docs/websites>.
+## Abstract
+Testing 123
 
-```{r}
-1 + 1
-```
+## The Study Area
+
+### Sub-heading 1
+
+### Sub-heading 2
+
+## The Study Period
+
+hello
+
