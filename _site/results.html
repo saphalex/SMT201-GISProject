@@ -102,11 +102,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Data Preparation</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Methodology</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./results.html"> 
+    <a class="nav-link active" href="./results.html" aria-current="page"> 
 <span class="menu-text">Results &amp; Discussion</span></a>
   </li>  
   <li class="nav-item">
@@ -114,8 +114,9 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Web Maps</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./lessons.html"> 
-<span class="menu-text">Lesson Learnt</span></a>
+    <span class="nav-link">
+<span class="menu-text">Lesson Learnt</span>
+    </span>
   </li>  
   <li class="nav-item">
     <span class="nav-link">
@@ -142,16 +143,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#methodology" id="toc-methodology" class="nav-link active" data-scroll-target="#methodology">Methodology</a>
+  <li><a href="#results-and-discussion" id="toc-results-and-discussion" class="nav-link active" data-scroll-target="#results-and-discussion">Results and Discussion</a>
   <ul class="collapse">
-  <li><a href="#land-cover-change-classification-training-testing-and-selection" id="toc-land-cover-change-classification-training-testing-and-selection" class="nav-link" data-scroll-target="#land-cover-change-classification-training-testing-and-selection">Land Cover Change Classification (Training, Testing and Selection)</a>
+  <li><a href="#land-cover-change-detection" id="toc-land-cover-change-detection" class="nav-link" data-scroll-target="#land-cover-change-detection">Land Cover Change Detection</a></li>
+  <li><a href="#change-in-land-surface-temperature-lst" id="toc-change-in-land-surface-temperature-lst" class="nav-link" data-scroll-target="#change-in-land-surface-temperature-lst">Change in Land Surface Temperature (LST)</a></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a>
   <ul class="collapse">
-  <li><a href="#training" id="toc-training" class="nav-link" data-scroll-target="#training">Training</a></li>
-  <li><a href="#training-1" id="toc-training-1" class="nav-link" data-scroll-target="#training-1">Training</a></li>
-  <li><a href="#final-evaluation-of-classification-model" id="toc-final-evaluation-of-classification-model" class="nav-link" data-scroll-target="#final-evaluation-of-classification-model">Final evaluation of classification model</a></li>
-  <li><a href="#output-of-classification" id="toc-output-of-classification" class="nav-link" data-scroll-target="#output-of-classification">Output of Classification</a></li>
-  <li><a href="#data-analysis-land-cover-change" id="toc-data-analysis-land-cover-change" class="nav-link" data-scroll-target="#data-analysis-land-cover-change">Data Analysis (Land Cover Change)</a></li>
-  <li><a href="#data-analysis-land-surface-temperature" id="toc-data-analysis-land-surface-temperature" class="nav-link" data-scroll-target="#data-analysis-land-surface-temperature">Data Analysis (Land Surface Temperature)</a></li>
+  <li><a href="#change-in-land-cover-and-lst" id="toc-change-in-land-cover-and-lst" class="nav-link" data-scroll-target="#change-in-land-cover-and-lst">Change in Land Cover and LST</a></li>
+  <li><a href="#challenges" id="toc-challenges" class="nav-link" data-scroll-target="#challenges">Challenges</a></li>
+  <li><a href="#future-work" id="toc-future-work" class="nav-link" data-scroll-target="#future-work">Future Work</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -197,71 +198,29 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="methodology" class="level1">
-<h1>Methodology</h1>
-<section id="land-cover-change-classification-training-testing-and-selection" class="level2">
-<h2 class="anchored" data-anchor-id="land-cover-change-classification-training-testing-and-selection">Land Cover Change Classification (Training, Testing and Selection)</h2>
+<section id="results-and-discussion" class="level1">
+<h1>Results and Discussion</h1>
+<section id="land-cover-change-detection" class="level2">
+<h2 class="anchored" data-anchor-id="land-cover-change-detection">Land Cover Change Detection</h2>
 <p>Online</p>
-<section id="training" class="level3">
-<h3 class="anchored" data-anchor-id="training">Training</h3>
+</section>
+<section id="change-in-land-surface-temperature-lst" class="level2">
+<h2 class="anchored" data-anchor-id="change-in-land-surface-temperature-lst">Change in Land Surface Temperature (LST)</h2>
 <p>Copernicus</p>
-<section id="land-cover-types" class="level4">
-<h4 class="anchored" data-anchor-id="land-cover-types">1. Land Cover Types</h4>
 </section>
-<section id="fine-tuning-with-standard-deviation" class="level4">
-<h4 class="anchored" data-anchor-id="fine-tuning-with-standard-deviation">2. Fine Tuning with Standard Deviation</h4>
+<section id="discussion" class="level2">
+<h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
+<section id="change-in-land-cover-and-lst" class="level3">
+<h3 class="anchored" data-anchor-id="change-in-land-cover-and-lst">Change in Land Cover and LST</h3>
 </section>
-<section id="evaluation-of-algorithms-using-spectral-distance" class="level4">
-<h4 class="anchored" data-anchor-id="evaluation-of-algorithms-using-spectral-distance">3. Evaluation of Algorithms Using Spectral Distance</h4>
+<section id="challenges" class="level3">
+<h3 class="anchored" data-anchor-id="challenges">Challenges</h3>
 </section>
-<section id="run-scp-classification-on-2-algorithm-minimum-distance-and-maximum-likelihood" class="level4">
-<h4 class="anchored" data-anchor-id="run-scp-classification-on-2-algorithm-minimum-distance-and-maximum-likelihood">4. Run SCP Classification on 2 Algorithm: Minimum Distance and Maximum Likelihood</h4>
+<section id="future-work" class="level3">
+<h3 class="anchored" data-anchor-id="future-work">Future Work</h3>
 </section>
-</section>
-<section id="training-1" class="level3">
-<h3 class="anchored" data-anchor-id="training-1">Training</h3>
-<section id="add-testing-samples-for-each-land-cover-type" class="level4">
-<h4 class="anchored" data-anchor-id="add-testing-samples-for-each-land-cover-type">1. Add testing samples for each land cover type</h4>
-</section>
-<section id="calculate-accuracy-for-both-algorithm-using-the-same-test-samples-in-previous-step" class="level4">
-<h4 class="anchored" data-anchor-id="calculate-accuracy-for-both-algorithm-using-the-same-test-samples-in-previous-step">2. Calculate accuracy for both algorithm using the same test samples in previous step</h4>
-</section>
-<section id="selection-of-algorithm" class="level4">
-<h4 class="anchored" data-anchor-id="selection-of-algorithm">3. Selection of algorithm</h4>
-</section>
-<section id="retraining-for-pa-less-than-75" class="level4">
-<h4 class="anchored" data-anchor-id="retraining-for-pa-less-than-75">4. Retraining for PA less than 75%</h4>
-</section>
-</section>
-<section id="final-evaluation-of-classification-model" class="level3">
-<h3 class="anchored" data-anchor-id="final-evaluation-of-classification-model">Final evaluation of classification model</h3>
-</section>
-<section id="output-of-classification" class="level3">
-<h3 class="anchored" data-anchor-id="output-of-classification">Output of Classification</h3>
-<section id="section" class="level4">
-<h4 class="anchored" data-anchor-id="section">2020:</h4>
-</section>
-<section id="section-1" class="level4">
-<h4 class="anchored" data-anchor-id="section-1">2021:</h4>
-</section>
-<section id="section-2" class="level4">
-<h4 class="anchored" data-anchor-id="section-2">2022:</h4>
-</section>
-<section id="section-3" class="level4">
-<h4 class="anchored" data-anchor-id="section-3">2023:</h4>
-</section>
-<section id="section-4" class="level4">
-<h4 class="anchored" data-anchor-id="section-4">2024:</h4>
-</section>
-<section id="section-5" class="level4">
-<h4 class="anchored" data-anchor-id="section-5">2025:</h4>
-</section>
-</section>
-<section id="data-analysis-land-cover-change" class="level3">
-<h3 class="anchored" data-anchor-id="data-analysis-land-cover-change">Data Analysis (Land Cover Change)</h3>
-</section>
-<section id="data-analysis-land-surface-temperature" class="level3">
-<h3 class="anchored" data-anchor-id="data-analysis-land-surface-temperature">Data Analysis (Land Surface Temperature)</h3>
+<section id="conclusion" class="level3">
+<h3 class="anchored" data-anchor-id="conclusion">Conclusion</h3>
 
 
 </section>

@@ -5,7 +5,7 @@ date: "April 6, 2025"
 date-modified: "last-modified"
 ---
 
-## Abstract
+# Abstract
 
 This project investigates land cover change detection in **Kuala Lumpur, Malaysia**, using geospatial data analysis and satellite imagery. Motivated by rapid urban development and environmental concerns, the study aims to assess annual changes in land use and land cover patterns within a selected area of Kuala Lumpur.
 
