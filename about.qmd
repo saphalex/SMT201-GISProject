@@ -2,8 +2,6 @@
 title: "About"
 ---
 
-![me](images/14A72A7B-495F-45F6-8BEE-0FA476A4E54E.jpeg){width="191" height="643"}
-
 About this site
 
 ```{r}
