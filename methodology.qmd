@@ -4,6 +4,7 @@ authors: "Anne Saphrin Alex Sathyan, Harshitha Balaji, Lau Liang Jun"
 date: "April 6, 2025"
 date-modified: "last-modified"
 ---
+
 # Methodology
 
 ## Land Cover Change Classification (Training, Testing and Selection)
@@ -37,13 +38,17 @@ Copernicus
 ### Output of Classification
 
 #### 2020:
+
 #### 2021:
+
 #### 2022:
+
 #### 2023:
+
 #### 2024:
+
 #### 2025:
 
 ### Data Analysis (Land Cover Change)
 
 ### Data Analysis (Land Surface Temperature)
-
