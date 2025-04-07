@@ -1,17 +1,18 @@
 project:
   type: website
+  output-dir: docs
 
 website:
   title: "GIS Group 6: Pavement vs Peat"
   navbar:
     left:
-      - href: Home.qmd
+      - href: index.qmd
         text: Abstract
       - href: scope.qmd
         text: Project Scope
       - href: data.qmd
         text: Data Preparation
-      - href: index.qmd
+      - href: methodology.qmd
         text: Methodology
       - href: results.qmd
         text: Results & Discussion

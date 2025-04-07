@@ -4,46 +4,13 @@ authors: "Anne Saphrin Alex Sathyan, Harshitha Balaji, Lau Liang Jun"
 date: "April 6, 2025"
 date-modified: "last-modified"
 ---
-# Methodology
 
-## Land Cover Change Classification (Training, Testing and Selection)
+# Abstract
 
-Online
+This project investigates land cover change detection in **Kuala Lumpur, Malaysia**, using geospatial data analysis and satellite imagery. Motivated by rapid urban development and environmental concerns, the study aims to assess annual changes in land use and land cover patterns within a selected area of Kuala Lumpur.
 
-### Training
+The team employs remote sensing data, particularly from **satellite sources** and **OpenStreetMap**, to perform spatial classification and visualise transformations over time. Due to data accessibility challenges, various public and open-source platforms were evaluated, including data.gov.my and OpenStreetMap, while custom vector layers are considered as an alternative.
 
-Copernicus
+The project also explores different classification and accuracy assessment techniques to enhance analysis reliability. A Gantt chart was used to plan and manage the project timeline, and consultation with instructors was scheduled to clarify technical and reporting expectations.
 
-#### 1. Land Cover Types
-
-#### 2. Fine Tuning with Standard Deviation
-
-#### 3. Evaluation of Algorithms Using Spectral Distance
-
-#### 4. Run SCP Classification on 2 Algorithm: Minimum Distance and Maximum Likelihood
-
-### Training
-
-#### 1. Add testing samples for each land cover type
-
-#### 2. Calculate accuracy for both algorithm using the same test samples in previous step
-
-#### 3. Selection of algorithm
-
-#### 4. Retraining for PA less than 75%
-
-### Final evaluation of classification model
-
-### Output of Classification
-
-#### 2020:
-#### 2021:
-#### 2022:
-#### 2023:
-#### 2024:
-#### 2025:
-
-### Data Analysis (Land Cover Change)
-
-### Data Analysis (Land Surface Temperature)
-
+The ultimate goal is to derive meaningful insights into urbanization patterns and land cover dynamics in Kuala Lumpur through structured geospatial analysis.
