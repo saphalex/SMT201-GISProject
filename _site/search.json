@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "data.html",
+    "href": "data.html",
     "title": "Pavement vs Peat",
     "section": "",
-    "text": "Online\n\n\nCopernicus"
+    "text": "Data Work\nHow we collected and prepared our data.\n\nData Collection\nOnline\n\nKuala Lumpur: Sentinel-2\nCopernicus\n\n\nKuala Lumpur: OSM\n\n\n\nData Preparation\n\nBasic Visualisation"
   },
   {
     "objectID": "about.html",
@@ -14,62 +14,6 @@
     "text": "Year 3, SCIS\n\n\n\nYear 3, SCIS\n\n\n\nYear 3, SCIS"
   },
   {
-    "objectID": "Overview.html#the-study-area",
-    "href": "Overview.html#the-study-area",
-    "title": "Pavement vs Peat",
-    "section": "The Study Area",
-    "text": "The Study Area\n\nSub-heading 1\n\n\nSub-heading 2"
-  },
-  {
-    "objectID": "Overview.html#the-study-period",
-    "href": "Overview.html#the-study-period",
-    "title": "Pavement vs Peat",
-    "section": "The Study Period",
-    "text": "The Study Period\nhello"
-  },
-  {
-    "objectID": "Overview.html",
-    "href": "Overview.html",
-    "title": "Pavement vs Peat",
-    "section": "",
-    "text": "Abstract\nThis project investigates land cover change detection in Kuala Lumpur, Malaysia, using geospatial data analysis and satellite imagery. Motivated by rapid urban development and environmental concerns, the study aims to assess annual changes in land use and land cover patterns within a selected area of Kuala Lumpur.\nThe team employs remote sensing data, particularly from satellite sources and OpenStreetMap, to perform spatial classification and visualise transformations over time. Due to data accessibility challenges, various public and open-source platforms were evaluated, including data.gov.my and OpenStreetMap, while custom vector layers are considered as an alternative.\nThe project also explores different classification and accuracy assessment techniques to enhance analysis reliability. A Gantt chart was used to plan and manage the project timeline, and consultation with instructors was scheduled to clarify technical and reporting expectations.\nThe ultimate goal is to derive meaningful insights into urbanization patterns and land cover dynamics in Kuala Lumpur through structured geospatial analysis."
-  },
-  {
-    "objectID": "Overview.html#introduction",
-    "href": "Overview.html#introduction",
-    "title": "Abstract",
-    "section": "",
-    "text": "Testing 123 ## The Study Area"
-  },
-  {
-    "objectID": "about.html#abstract",
-    "href": "about.html#abstract",
-    "title": "Pavement vs Peat",
-    "section": "",
-    "text": "Testing 123"
-  },
-  {
-    "objectID": "about.html#the-study-period",
-    "href": "about.html#the-study-period",
-    "title": "Pavement vs Peat",
-    "section": "The Study Period",
-    "text": "The Study Period\nhello"
-  },
-  {
-    "objectID": "about.html#the-study-area",
-    "href": "about.html#the-study-area",
-    "title": "Pavement vs Peat",
-    "section": "The Study Area",
-    "text": "The Study Area\n\nSub-heading 1\n\n\nSub-heading 2"
-  },
-  {
-    "objectID": "Overview.html#abstract",
-    "href": "Overview.html#abstract",
-    "title": "Pavement vs Peat",
-    "section": "",
-    "text": "This project investigates land cover change detection in Kuala Lumpur, Malaysia, using geospatial data analysis and satellite imagery. Motivated by rapid urban development and environmental concerns, the study aims to assess annual changes in land use and land cover patterns within a selected area of Kuala Lumpur.\nThe team employs remote sensing data, particularly from satellite sources and OpenStreetMap, to perform spatial classification and visualise transformations over time. Due to data accessibility challenges, various public and open-source platforms were evaluated, including data.gov.my and OpenStreetMap, while custom vector layers are considered as an alternative.\nThe project also explores different classification and accuracy assessment techniques to enhance analysis reliability. A Gantt chart was used to plan and manage the project timeline, and consultation with instructors was scheduled to clarify technical and reporting expectations.\nThe ultimate goal is to derive meaningful insights into urbanization patterns and land cover dynamics in Kuala Lumpur through structured geospatial analysis."
-  },
-  {
     "objectID": "about.html#the-team",
     "href": "about.html#the-team",
     "title": "GIS Group 6: Pavement vs Peat",
@@ -77,32 +21,18 @@
     "text": "Year 3, SCIS\n\n\n\nYear 3, SCIS\n\n\n\nYear 3, SCIS"
   },
   {
-    "objectID": "index.html#abstract",
-    "href": "index.html#abstract",
+    "objectID": "webmaps.html",
+    "href": "webmaps.html",
     "title": "Pavement vs Peat",
     "section": "",
-    "text": "Testing 123"
+    "text": "Web Maps"
   },
   {
-    "objectID": "index.html#the-study-area",
-    "href": "index.html#the-study-area",
+    "objectID": "Home.html",
+    "href": "Home.html",
     "title": "Pavement vs Peat",
-    "section": "The Study Area",
-    "text": "The Study Area\n\nSub-heading 1\n\n\nSub-heading 2"
-  },
-  {
-    "objectID": "index.html#the-study-period",
-    "href": "index.html#the-study-period",
-    "title": "Pavement vs Peat",
-    "section": "The Study Period",
-    "text": "The Study Period\nhello"
-  },
-  {
-    "objectID": "index.html#data-preparation",
-    "href": "index.html#data-preparation",
-    "title": "Pavement vs Peat",
-    "section": "Data Preparation",
-    "text": "Data Preparation\n\nBasic Visualisation"
+    "section": "",
+    "text": "Abstract\nThis project investigates land cover change detection in Kuala Lumpur, Malaysia, using geospatial data analysis and satellite imagery. Motivated by rapid urban development and environmental concerns, the study aims to assess annual changes in land use and land cover patterns within a selected area of Kuala Lumpur.\nThe team employs remote sensing data, particularly from satellite sources and OpenStreetMap, to perform spatial classification and visualise transformations over time. Due to data accessibility challenges, various public and open-source platforms were evaluated, including data.gov.my and OpenStreetMap, while custom vector layers are considered as an alternative.\nThe project also explores different classification and accuracy assessment techniques to enhance analysis reliability. A Gantt chart was used to plan and manage the project timeline, and consultation with instructors was scheduled to clarify technical and reporting expectations.\nThe ultimate goal is to derive meaningful insights into urbanization patterns and land cover dynamics in Kuala Lumpur through structured geospatial analysis."
   },
   {
     "objectID": "scope.html",
@@ -126,27 +56,6 @@
     "text": "The project also explores different classification and accuracy assessment techniques to enhance analysis reliability. A Gantt chart was used to plan and manage the project timeline, and consultation with instructors was scheduled to clarify technical and reporting expectations."
   },
   {
-    "objectID": "scope.html#objective-1",
-    "href": "scope.html#objective-1",
-    "title": "Pavement vs Peat",
-    "section": "",
-    "text": "The ultimate goal is to derive meaningful insights into urbanization patterns and land cover dynamics in Kuala Lumpur through structured geospatial analysis."
-  },
-  {
-    "objectID": "scope.html#objective-2",
-    "href": "scope.html#objective-2",
-    "title": "Pavement vs Peat",
-    "section": "",
-    "text": "The ultimate goal is to derive meaningful insights into urbanization patterns and land cover dynamics in Kuala Lumpur through structured geospatial analysis."
-  },
-  {
-    "objectID": "scope.html#project-schedule",
-    "href": "scope.html#project-schedule",
-    "title": "Pavement vs Peat",
-    "section": "",
-    "text": "###Gantt Chart\n###Work Distribution"
-  },
-  {
     "objectID": "scope.html#project-objectives",
     "href": "scope.html#project-objectives",
     "title": "Pavement vs Peat",
@@ -154,11 +63,11 @@
     "text": "The ultimate goal is to derive meaningful insights into urbanization patterns and land cover dynamics in Kuala Lumpur through structured geospatial analysis.\n\n\n\nThe ultimate goal is to derive meaningful insights into urbanization patterns and land cover dynamics in Kuala Lumpur through structured geospatial analysis."
   },
   {
-    "objectID": "index.html#land-cover-change-classification-training-testing-and-selection",
-    "href": "index.html#land-cover-change-classification-training-testing-and-selection",
+    "objectID": "poster.html",
+    "href": "poster.html",
     "title": "Pavement vs Peat",
     "section": "",
-    "text": "Online\n\n\nCopernicus"
+    "text": "Poster"
   },
   {
     "objectID": "results.html",
@@ -182,18 +91,18 @@
     "text": "Copernicus"
   },
   {
-    "objectID": "data.html",
-    "href": "data.html",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "Pavement vs Peat",
     "section": "",
-    "text": "Data Work\nHow we collected and prepared our data.\n\nData Collection\nOnline\n\nKuala Lumpur: Sentinel-2\nCopernicus\n\n\nKuala Lumpur: OSM\n\n\n\nData Preparation\n\nBasic Visualisation"
+    "text": "Online\n\n\nCopernicus"
   },
   {
-    "objectID": "webmaps.html",
-    "href": "webmaps.html",
+    "objectID": "index.html#land-cover-change-classification-training-testing-and-selection",
+    "href": "index.html#land-cover-change-classification-training-testing-and-selection",
     "title": "Pavement vs Peat",
     "section": "",
-    "text": "Web Maps"
+    "text": "Online\n\n\nCopernicus"
   },
   {
     "objectID": "lessons.html",
@@ -201,12 +110,5 @@
     "title": "Pavement vs Peat",
     "section": "",
     "text": "Lessons Learnt"
-  },
-  {
-    "objectID": "poster.html",
-    "href": "poster.html",
-    "title": "Pavement vs Peat",
-    "section": "",
-    "text": "Poster"
   }
 ]
