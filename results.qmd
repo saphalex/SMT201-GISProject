@@ -4,6 +4,7 @@ authors: "Anne Saphrin Alex Sathyan, Harshitha Balaji, Lau Liang Jun"
 date: "April 6, 2025"
 date-modified: "last-modified"
 ---
+
 # Results and Discussion
 
 ## Land Cover Change Detection
@@ -23,4 +24,3 @@ Copernicus
 ### Future Work
 
 ### Conclusion
-

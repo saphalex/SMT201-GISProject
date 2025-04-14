@@ -4,6 +4,7 @@ authors: "Anne Saphrin Alex Sathyan, Harshitha Balaji, Lau Liang Jun"
 date: "April 6, 2025"
 date-modified: "last-modified"
 ---
+
 # Data Work
 
 How we collected and prepared our data.
@@ -21,7 +22,3 @@ Copernicus
 ### Data Preparation
 
 #### Basic Visualisation
-
-
-
-
