@@ -17,23 +17,23 @@ After deciding that we would focus on KL for this project, we selected the relev
 
 ![Image files downloaded from Copernicus](images/Screenshot%202025-04-14%20at%2011.46.05%20AM.png){fig-align="center"}
 
-![The above image shows the 2 tiles selected for the analysis of the KL region in 2024](images/Screenshot 2025-04-14 at 6.42.29 PM.png){fig-align="center"}
+![The above image shows the 2 tiles selected for the analysis of the KL region in 2024](images/Screenshot%202025-04-14%20at%206.42.29%20PM.png){fig-align="center"}
 
-![The above image shows the 2 tiles selected for the analysis of the KL region in 2023](images/Screenshot 2025-04-14 at 6.45.54 PM.png)
+![The above image shows the 2 tiles selected for the analysis of the KL region in 2023](images/Screenshot%202025-04-14%20at%206.45.54%20PM.png)
 
-![The above image shows the 2 tiles selected for the analysis of the KL region in 2022](images/Screenshot 2025-04-14 at 6.49.00 PM.png){fig-align="center"}
+![The above image shows the 2 tiles selected for the analysis of the KL region in 2022](images/Screenshot%202025-04-14%20at%206.49.00%20PM.png){fig-align="center"}
 
-![The above image shows the 2 tiles selected for the analysis of the KL region in 2021](images/Screenshot 2025-04-14 at 8.49.38 PM.png){fig-align="center"}
+![The above image shows the 2 tiles selected for the analysis of the KL region in 2021](images/Screenshot%202025-04-14%20at%208.49.38%20PM.png){fig-align="center"}
 
-![The above image shows the 2 tiles selected for the analysis of the KL region in 2020](images/Screenshot 2025-04-14 at 11.16.11 PM.png){fig-align="center"}
+![The above image shows the 2 tiles selected for the analysis of the KL region in 2020](images/Screenshot%202025-04-14%20at%2011.16.11%20PM.png){fig-align="center"}
 
 To ensure temporal consistency, we tried our best to ensure that the images had a minimum of a 12-month gap between the years (e.g. if we selected images in February for the year 2024, we would ensure that the preceding year’s images would be in either February or January). If this was not possible due to poor imaging or excessive cloud cover, we selected the most suitable image(s) that had the furthest time gap between itself and the following year’s image(s). 
 
-![The above image shows the right tiles selected for 2024 and 2023. An image in March was selected for 2023 due to the lack of good imaging in January/February.](images/Screenshot 2025-04-14 at 11.17.55 PM.png){fig-align="center"}
+![The above image shows the right tiles selected for 2024 and 2023. An image in March was selected for 2023 due to the lack of good imaging in January/February.](images/Screenshot%202025-04-14%20at%2011.17.55%20PM.png){fig-align="center"}
 
 We also made sure that for the 2 images selected in each year, they were captured within 1 month of each other and that the quality of the middle tile was prioritised over that of the right tile for any given year’s sample to ensure consistency and quality. Additionally, for any and all images selected, we kept the cloud cover to a minimum. By balancing all these factors, we were able to select the most suitable images for our analysis.
 
-![The above image shows a side-by-side comparison of the middle tiles selected for 2023 and 2022 that have a time gap of 14 months. This is one of a few outliers from the criteria we had defined for selecting the images.](images/Screenshot 2025-04-14 at 11.19.13 PM.png){fig-align="center"}
+![The above image shows a side-by-side comparison of the middle tiles selected for 2023 and 2022 that have a time gap of 14 months. This is one of a few outliers from the criteria we had defined for selecting the images.](images/Screenshot%202025-04-14%20at%2011.19.13%20PM.png){fig-align="center"}
 
 #### 4.1.2 Vector & Raster Layer Selections
 
@@ -41,7 +41,55 @@ We also made sure that for the 2 images selected in each year, they were capture
 
 ## 4.3 Identification & Categorisation of Land Classes
 
-Using the false and true colour composites obtained as well as the OpenStreetMap trimmed to overlap with the KL subzone boundary, we identified the following land classes and subclasses: 
+Using the false and true colour composites obtained as well as the OpenStreetMap trimmed to overlap with the KL subzone boundary, we identified the following land classes and subclasses:
+
+1.  Natural Vegetation
+
+    -   Sub-class 1: Forests (represented on the following spectral plots by ![](images/Screenshot 2025-04-14 at 11.27.23 PM.png){width="38"})
+
+2.  Managed Vegetation
+
+    -   Sub-class 1: Golf Course grass (represented on the following spectral plots by ![](images/Screenshot 2025-04-15 at 12.27.45 AM.png){width="38"})
+
+    -   Sub-class 2: Sports Field (represented on the following spectral plots by ![](images/Screenshot 2025-04-15 at 12.29.03 AM.png){width="38"})
+
+3.  Water Body
+
+    -   Sub-class 1: Flood Reservoir (represented on the following spectral plots by ![](images/Screenshot 2025-04-15 at 12.30.47 AM.png){width="38"})
+
+    -   Sub-class 2: Lakes (represented on the following spectral plots by ![](images/Screenshot 2025-04-15 at 12.31.45 AM.png){width="38"})
+
+    -   Sub-class 3: Rivers (represented on the following spectral plots by ![](images/Screenshot 2025-04-15 at 12.32.39 AM.png){width="38" height="38"})
+
+4.  Impervious Surfaces
+
+    -   Sub-class 1: Roads (represented on the following spectral plots by ![](images/Screenshot 2025-04-15 at 12.34.41 AM.png){width="38"})
+
+5.  Built-up 1 (low-rise buildings)
+
+    -   Sub-class 1: Houses (represented on the following spectral plots by ![](images/Screenshot 2025-04-15 at 12.36.10 AM.png){width="38"})
+
+6.  Built-up 2 (high-rise buildings) 
+
+    -   Sub-class 1: Buildings (represented on the following spectral plots by ![](images/Screenshot 2025-04-15 at 12.37.35 AM.png){width="38"})
+
+7.  Barren Land
+
+    -   Sub-class 1: Empty Lot (Reflective Surfaces) (represented on the following spectral plots by ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcccAISICwkfksdu3FsAn0pyUpj3K-9lUvGupHro-d9IPL5MNgMj2FAmd4B0wdg0nZoJ7HqyWDzc-wEh6dsTpAnTvKcw38XNNQEB_2rXF-J8olCoxIfaL_909_soauxFmE-IyNBhg?key=Facb7bqNrQGD-VKy_9mbWdVa){width="38"})
+
+    -   Sub-class 2: Empty Lot (Reddish-Brown Surfaces) (represented on the following spectral plots by ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXc7vloIpQOf2JAnSqssvq7OdwlqbKanunKH4qUvzpbKvVFUIe35AD3-jiG1EdbNE1g9wtqklZOVA-ptQ1SR_GUeSzN_U6rQ9h4wBwdbIV8EHYNtSO41waOL78kvkxvKn2sVaGbS?key=Facb7bqNrQGD-VKy_9mbWdVa){width="38"})
+
+    -   Sub-class 3: Open Soil (Cemeteries/Parks) (represented on the following spectral plots by ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXc2hkDUFmKT8Dm7f0_IVOPKFzI9VzGK3Alxv6quggfuSvc3kK642rfRu74-NhzSQx7FIGL8xBlfKvAe2dgnYTSV9ksRj7W0MQViY4XlaWoGFZ9h7LfcoBcPuKepruJr9QIWNhbmDg?key=Facb7bqNrQGD-VKy_9mbWdVa){width="38"})
+
+8.  Shadow
+
+    -   Sub-class 1: Shadows of Buildings (represented on the following spectral plots by![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeRJwLjk4-6hps8L1Adk1KTLa6C8RN3xtSNsmanrZ1FDWjJBU-0_3pMYY3mHzrDlAG04KF-hFsRJG1-XdHCSJaywntejSvI0Ic3E282zKNbZbrqoej6DMopqc0gtXtoNJhGBQDYlw?key=Facb7bqNrQGD-VKy_9mbWdVa){width="38"})
+
+Therefore, there are a total of 13 sub-classes that we have identified which require training and test data to be selected for. To create the training and test data sets, we utilised the ROI polygon creation feature present in the SCP plug-in, with each polygon representing a data point. For each subclass, we created approximately 80 data points for the training data set and 35 data points for the test data set. Ultimately, the ratio of training data to test data roughly mimicked a 70%-30% split and they must be saved in the correct format (ESRI Shapefiles). This process must be repeated for each year within the selected timeframe. 
+
+\
+
+![Spectral plot of the 2020 training data set](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcsd2GOkFunVEWqUuJs6PurblH4EAK2gmJSp7LZn3RQ_LPpVQm1LWjq948e7mphYJcQlEH6uiHsssRousL7rf_6VojWTCvFprLG8FbSTJNQGnv5-aEqmjVrKOO1WqxFcSLYpmayow?key=Facb7bqNrQGD-VKy_9mbWdVa){width="300"} ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdZQo3SZrRl3VODASqqeL4_qi55Kwr3QnzqDJSDHi9lyd5GTK2DFXz75b8gtPWouVms8izPtwZyKPHkhJnNee7F2TGy6bxnxO0FY2-NUmeP0WLU51oviYqs_8LXsyxCPTUuFG5joA?key=Facb7bqNrQGD-VKy_9mbWdVa){width="300"}
 
 #### 3. Evaluation of Algorithms Using Spectral Distance
 
