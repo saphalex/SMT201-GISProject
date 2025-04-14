@@ -143,10 +143,10 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#methodology" id="toc-methodology" class="nav-link active" data-scroll-target="#methodology">Methodology</a>
   <ul class="collapse">
-  <li><a href="#land-cover-change-classification-training-testing-and-selection" id="toc-land-cover-change-classification-training-testing-and-selection" class="nav-link" data-scroll-target="#land-cover-change-classification-training-testing-and-selection">Land Cover Change Classification (Training, Testing and Selection)</a>
+  <li><a href="#data-collection" id="toc-data-collection" class="nav-link" data-scroll-target="#data-collection">Data Collection</a>
   <ul class="collapse">
+  <li><a href="#area-and-image-selection" id="toc-area-and-image-selection" class="nav-link" data-scroll-target="#area-and-image-selection">Area and Image Selection</a></li>
   <li><a href="#training" id="toc-training" class="nav-link" data-scroll-target="#training">Training</a></li>
-  <li><a href="#training-1" id="toc-training-1" class="nav-link" data-scroll-target="#training-1">Training</a></li>
   <li><a href="#final-evaluation-of-classification-model" id="toc-final-evaluation-of-classification-model" class="nav-link" data-scroll-target="#final-evaluation-of-classification-model">Final evaluation of classification model</a></li>
   <li><a href="#output-of-classification" id="toc-output-of-classification" class="nav-link" data-scroll-target="#output-of-classification">Output of Classification</a></li>
   <li><a href="#data-analysis-land-cover-change" id="toc-data-analysis-land-cover-change" class="nav-link" data-scroll-target="#data-analysis-land-cover-change">Data Analysis (Land Cover Change)</a></li>
@@ -185,7 +185,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">April 7, 2025</p>
+      <p class="date-modified">April 14, 2025</p>
     </div>
   </div>
     
@@ -198,12 +198,30 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="methodology" class="level1">
 <h1>Methodology</h1>
-<section id="land-cover-change-classification-training-testing-and-selection" class="level2">
-<h2 class="anchored" data-anchor-id="land-cover-change-classification-training-testing-and-selection">Land Cover Change Classification (Training, Testing and Selection)</h2>
-<p>Online</p>
-<section id="training" class="level3">
-<h3 class="anchored" data-anchor-id="training">Training</h3>
-<p>Copernicus</p>
+<p>The following diagram details the flow of the methodology adopted to perform land cover change analysis in KL for all years applicable:</p>
+<section id="data-collection" class="level2">
+<h2 class="anchored" data-anchor-id="data-collection">Data Collection</h2>
+<section id="area-and-image-selection" class="level3">
+<h3 class="anchored" data-anchor-id="area-and-image-selection">Area and Image Selection</h3>
+<p>After deciding that we would focus on KL for this project, we selected the relevant satellite imagery of the area from Copernicus. Importantly, we did not rely on a single image to scope out the area of interest for each year – instead, we ensured that the area was covered by 2 images: right coverage (“right tile”) and middle coverage (“middle tile”). The following table comprises of the image files downloaded from Copernicus for the sake of this project:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-04-14 at 11.46.05 AM.png" class="img-fluid figure-img"></p>
+<figcaption>Image files downloaded from Copernicus</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-04-14 at 6.42.29 PM.png" class="img-fluid figure-img"></p>
+<figcaption>The above image shows the 2 tiles selected for the analysis of the KL region in 2024</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-04-14 at 6.45.54 PM.png" class="img-fluid figure-img"></p>
+<figcaption>The above image shows the 2 tiles selected for the analysis of the KL region in 2023</figcaption>
+</figure>
+</div>
 <section id="land-cover-types" class="level4">
 <h4 class="anchored" data-anchor-id="land-cover-types">1. Land Cover Types</h4>
 </section>
@@ -217,8 +235,8 @@ ul.task-list li input[type="checkbox"] {
 <h4 class="anchored" data-anchor-id="run-scp-classification-on-2-algorithm-minimum-distance-and-maximum-likelihood">4. Run SCP Classification on 2 Algorithm: Minimum Distance and Maximum Likelihood</h4>
 </section>
 </section>
-<section id="training-1" class="level3">
-<h3 class="anchored" data-anchor-id="training-1">Training</h3>
+<section id="training" class="level3">
+<h3 class="anchored" data-anchor-id="training">Training</h3>
 <section id="add-testing-samples-for-each-land-cover-type" class="level4">
 <h4 class="anchored" data-anchor-id="add-testing-samples-for-each-land-cover-type">1. Add testing samples for each land cover type</h4>
 </section>

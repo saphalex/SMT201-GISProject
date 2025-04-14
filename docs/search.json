@@ -102,7 +102,7 @@
     "href": "methodology.html",
     "title": "Pavement vs Peat",
     "section": "",
-    "text": "Online\n\n\nCopernicus"
+    "text": "The following diagram details the flow of the methodology adopted to perform land cover change analysis in KL for all years applicable:\n\n\n\n\nAfter deciding that we would focus on KL for this project, we selected the relevant satellite imagery of the area from Copernicus. Importantly, we did not rely on a single image to scope out the area of interest for each year – instead, we ensured that the area was covered by 2 images: right coverage (“right tile”) and middle coverage (“middle tile”). The following table comprises of the image files downloaded from Copernicus for the sake of this project:\n\n\n\nImage files downloaded from Copernicus\n\n\n\n\n\nThe above image shows the 2 tiles selected for the analysis of the KL region in 2024\n\n\n\n\n\nThe above image shows the 2 tiles selected for the analysis of the KL region in 2023"
   },
   {
     "objectID": "methodology.html#land-cover-change-classification-training-testing-and-selection",
@@ -110,5 +110,12 @@
     "title": "Pavement vs Peat",
     "section": "",
     "text": "Online\n\n\nCopernicus"
+  },
+  {
+    "objectID": "methodology.html#data-collection",
+    "href": "methodology.html#data-collection",
+    "title": "Pavement vs Peat",
+    "section": "",
+    "text": "After deciding that we would focus on KL for this project, we selected the relevant satellite imagery of the area from Copernicus. Importantly, we did not rely on a single image to scope out the area of interest for each year – instead, we ensured that the area was covered by 2 images: right coverage (“right tile”) and middle coverage (“middle tile”). The following table comprises of the image files downloaded from Copernicus for the sake of this project:\n\n\n\nImage files downloaded from Copernicus\n\n\n\n\n\nThe above image shows the 2 tiles selected for the analysis of the KL region in 2024\n\n\n\n\n\nThe above image shows the 2 tiles selected for the analysis of the KL region in 2023"
   }
 ]
