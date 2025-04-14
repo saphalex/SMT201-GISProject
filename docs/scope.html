@@ -90,11 +90,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Abstract</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./scope.html"> 
+    <a class="nav-link active" href="./scope.html" aria-current="page"> 
 <span class="menu-text">Project Scope</span></a>
   </li>  
   <li class="nav-item">
@@ -141,7 +141,23 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#project-scope" id="toc-project-scope" class="nav-link active" data-scroll-target="#project-scope">Project Scope</a>
+  <ul class="collapse">
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background</a></li>
+  <li><a href="#problem-statement" id="toc-problem-statement" class="nav-link" data-scroll-target="#problem-statement">Problem Statement</a></li>
+  <li><a href="#project-objectives" id="toc-project-objectives" class="nav-link" data-scroll-target="#project-objectives">Project Objectives</a>
+  <ul class="collapse">
+  <li><a href="#objective-1" id="toc-objective-1" class="nav-link" data-scroll-target="#objective-1">Objective 1</a></li>
+  <li><a href="#objective-2" id="toc-objective-2" class="nav-link" data-scroll-target="#objective-2">Objective 2</a></li>
+  </ul></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
+  <li><a href="#scope-of-work" id="toc-scope-of-work" class="nav-link" data-scroll-target="#scope-of-work">Scope of Work</a></li>
+  <li><a href="#project-schedule" id="toc-project-schedule" class="nav-link" data-scroll-target="#project-schedule">Project Schedule</a>
+  <ul class="collapse">
+  <li><a href="#gantt-chart" id="toc-gantt-chart" class="nav-link" data-scroll-target="#gantt-chart">Gantt Chart</a></li>
+  <li><a href="#work-distribution" id="toc-work-distribution" class="nav-link" data-scroll-target="#work-distribution">Work Distribution</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -174,7 +190,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">April 14, 2025</p>
+      <p class="date-modified">April 6, 2025</p>
     </div>
   </div>
     
@@ -185,23 +201,44 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="abstract" class="level1">
-<h1>Abstract</h1>
-<p>Beyond Singapore, other south-east asian countries have been undergoing rapid urbanisation and development in order to propel economic growth. Namely, Malaysia’s <strong>Kuala Lumpur (“KL”)</strong> has been on the rise in terms of urbanisation and consequently, this has led to a greater proclivity to natural disasters such as landslides and flash floods due to environmental degradation. Studies show that Malaysia has been extremely prone to landslide occurrences and is the 10th country with the highest frequency of landslides. Currently, KL has been the greatest contributor to this figure in Malaysia given its rapid urbanisation.&nbsp;</p>
-<p>Therefore, we are interested in analysing the effects of landslides and any accompanying phenomena such as flash floods on the changes in land cover that have occurred in KL over the span of 5 years (2020 to 2024).&nbsp;</p>
-<p>In this project, we have utilised Sentinel-2 satellite imagery data obtained from Copernicus to perform remote sensing by means of image processing and classification techniques. Additionally, we sourced our vector layers and baseline land cover information from OpenStreetMap (OSM) and delineated sub-regions within KL using Mukim boundary layers for further specific analysis.&nbsp;</p>
-<p>After creating any and all layers, we defined 8 different land classes (Natural Vegetation, Managed Vegetation, Water Body, Impervious Surfaces, Built-Up (low-rise buildings), Built-Up (high-rise buildings), Barren Land, Shadow). We then obtained the necessary training and testing samples from these land classes to perform classification using the Semi-Classification Plugin (SCP) and observe changes in specific land classes (Natural Vegetation, Managed Vegetation, Water Body, Impervious Surfaces, Built-Up (low-rise buildings), Barren Land).&nbsp;</p>
-<p>From our classification and subsequent observations, we were able to find the following:&nbsp;</p>
-<ol type="1">
-<li><p>There was an overall increasing trend in Managed Vegetation composition.</p></li>
-<li><p>There was an overall decreasing trend in Natural Vegetation as well as Impervious Surfaces composition.</p></li>
-<li><p>There was considerable variation in Barren Land and Water Bodies composition.</p></li>
-</ol>
-<p>Notably, we observed sharp increases and decreases in the different land classes from 2023 to 2024, which we believe can be attributed to a major landslide that occurred in Bukit Tunku, KL in April 2023. The overall results also allowed us to observe the varying levels of accuracies across the years, with 2024 having the greatest classification accuracy (Overall Accuracy = 81.3%, Kappa Hat = 0.759) and 2022 having the lowest classification accuracy (Overall Accuracy = 40.4%, Kappa Hat = 0.286). We will dive deeper into our observations and takeaways in the following sections of the report.&nbsp;</p>
-<p><br>
-</p>
+<section id="project-scope" class="level1">
+<h1>Project Scope</h1>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>The team employs remote sensing data, particularly from <strong>satellite sources</strong> and <strong>OpenStreetMap</strong>, to perform spatial classification and visualise transformations over time. Due to data accessibility challenges, various public and open-source platforms were evaluated, including data.gov.my and OpenStreetMap, while custom vector layers are considered as an alternative.</p>
+</section>
+<section id="problem-statement" class="level2">
+<h2 class="anchored" data-anchor-id="problem-statement">Problem Statement</h2>
+<p>The project also explores different classification and accuracy assessment techniques to enhance analysis reliability. A Gantt chart was used to plan and manage the project timeline, and consultation with instructors was scheduled to clarify technical and reporting expectations.</p>
+</section>
+<section id="project-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="project-objectives">Project Objectives</h2>
+<section id="objective-1" class="level3">
+<h3 class="anchored" data-anchor-id="objective-1">Objective 1</h3>
+<p>The ultimate goal is to derive meaningful insights into urbanization patterns and land cover dynamics in Kuala Lumpur through structured geospatial analysis.</p>
+</section>
+<section id="objective-2" class="level3">
+<h3 class="anchored" data-anchor-id="objective-2">Objective 2</h3>
+<p>The ultimate goal is to derive meaningful insights into urbanization patterns and land cover dynamics in Kuala Lumpur through structured geospatial analysis.</p>
+</section>
+</section>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
+</section>
+<section id="scope-of-work" class="level2">
+<h2 class="anchored" data-anchor-id="scope-of-work">Scope of Work</h2>
+</section>
+<section id="project-schedule" class="level2">
+<h2 class="anchored" data-anchor-id="project-schedule">Project Schedule</h2>
+<section id="gantt-chart" class="level3">
+<h3 class="anchored" data-anchor-id="gantt-chart">Gantt Chart</h3>
+</section>
+<section id="work-distribution" class="level3">
+<h3 class="anchored" data-anchor-id="work-distribution">Work Distribution</h3>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->

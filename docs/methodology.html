@@ -90,7 +90,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Abstract</span></a>
   </li>  
   <li class="nav-item">
@@ -102,7 +102,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Data Preparation</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./methodology.html"> 
+    <a class="nav-link active" href="./methodology.html" aria-current="page"> 
 <span class="menu-text">Methodology</span></a>
   </li>  
   <li class="nav-item">
@@ -141,7 +141,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link active" data-scroll-target="#methodology">Methodology</a>
+  <ul class="collapse">
+  <li><a href="#land-cover-change-classification-training-testing-and-selection" id="toc-land-cover-change-classification-training-testing-and-selection" class="nav-link" data-scroll-target="#land-cover-change-classification-training-testing-and-selection">Land Cover Change Classification (Training, Testing and Selection)</a>
+  <ul class="collapse">
+  <li><a href="#training" id="toc-training" class="nav-link" data-scroll-target="#training">Training</a></li>
+  <li><a href="#training-1" id="toc-training-1" class="nav-link" data-scroll-target="#training-1">Training</a></li>
+  <li><a href="#final-evaluation-of-classification-model" id="toc-final-evaluation-of-classification-model" class="nav-link" data-scroll-target="#final-evaluation-of-classification-model">Final evaluation of classification model</a></li>
+  <li><a href="#output-of-classification" id="toc-output-of-classification" class="nav-link" data-scroll-target="#output-of-classification">Output of Classification</a></li>
+  <li><a href="#data-analysis-land-cover-change" id="toc-data-analysis-land-cover-change" class="nav-link" data-scroll-target="#data-analysis-land-cover-change">Data Analysis (Land Cover Change)</a></li>
+  <li><a href="#data-analysis-land-surface-temperature" id="toc-data-analysis-land-surface-temperature" class="nav-link" data-scroll-target="#data-analysis-land-surface-temperature">Data Analysis (Land Surface Temperature)</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -174,7 +185,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">April 14, 2025</p>
+      <p class="date-modified">April 7, 2025</p>
     </div>
   </div>
     
@@ -185,23 +196,75 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="abstract" class="level1">
-<h1>Abstract</h1>
-<p>Beyond Singapore, other south-east asian countries have been undergoing rapid urbanisation and development in order to propel economic growth. Namely, Malaysia’s <strong>Kuala Lumpur (“KL”)</strong> has been on the rise in terms of urbanisation and consequently, this has led to a greater proclivity to natural disasters such as landslides and flash floods due to environmental degradation. Studies show that Malaysia has been extremely prone to landslide occurrences and is the 10th country with the highest frequency of landslides. Currently, KL has been the greatest contributor to this figure in Malaysia given its rapid urbanisation.&nbsp;</p>
-<p>Therefore, we are interested in analysing the effects of landslides and any accompanying phenomena such as flash floods on the changes in land cover that have occurred in KL over the span of 5 years (2020 to 2024).&nbsp;</p>
-<p>In this project, we have utilised Sentinel-2 satellite imagery data obtained from Copernicus to perform remote sensing by means of image processing and classification techniques. Additionally, we sourced our vector layers and baseline land cover information from OpenStreetMap (OSM) and delineated sub-regions within KL using Mukim boundary layers for further specific analysis.&nbsp;</p>
-<p>After creating any and all layers, we defined 8 different land classes (Natural Vegetation, Managed Vegetation, Water Body, Impervious Surfaces, Built-Up (low-rise buildings), Built-Up (high-rise buildings), Barren Land, Shadow). We then obtained the necessary training and testing samples from these land classes to perform classification using the Semi-Classification Plugin (SCP) and observe changes in specific land classes (Natural Vegetation, Managed Vegetation, Water Body, Impervious Surfaces, Built-Up (low-rise buildings), Barren Land).&nbsp;</p>
-<p>From our classification and subsequent observations, we were able to find the following:&nbsp;</p>
-<ol type="1">
-<li><p>There was an overall increasing trend in Managed Vegetation composition.</p></li>
-<li><p>There was an overall decreasing trend in Natural Vegetation as well as Impervious Surfaces composition.</p></li>
-<li><p>There was considerable variation in Barren Land and Water Bodies composition.</p></li>
-</ol>
-<p>Notably, we observed sharp increases and decreases in the different land classes from 2023 to 2024, which we believe can be attributed to a major landslide that occurred in Bukit Tunku, KL in April 2023. The overall results also allowed us to observe the varying levels of accuracies across the years, with 2024 having the greatest classification accuracy (Overall Accuracy = 81.3%, Kappa Hat = 0.759) and 2022 having the lowest classification accuracy (Overall Accuracy = 40.4%, Kappa Hat = 0.286). We will dive deeper into our observations and takeaways in the following sections of the report.&nbsp;</p>
-<p><br>
-</p>
+<section id="methodology" class="level1">
+<h1>Methodology</h1>
+<section id="land-cover-change-classification-training-testing-and-selection" class="level2">
+<h2 class="anchored" data-anchor-id="land-cover-change-classification-training-testing-and-selection">Land Cover Change Classification (Training, Testing and Selection)</h2>
+<p>Online</p>
+<section id="training" class="level3">
+<h3 class="anchored" data-anchor-id="training">Training</h3>
+<p>Copernicus</p>
+<section id="land-cover-types" class="level4">
+<h4 class="anchored" data-anchor-id="land-cover-types">1. Land Cover Types</h4>
+</section>
+<section id="fine-tuning-with-standard-deviation" class="level4">
+<h4 class="anchored" data-anchor-id="fine-tuning-with-standard-deviation">2. Fine Tuning with Standard Deviation</h4>
+</section>
+<section id="evaluation-of-algorithms-using-spectral-distance" class="level4">
+<h4 class="anchored" data-anchor-id="evaluation-of-algorithms-using-spectral-distance">3. Evaluation of Algorithms Using Spectral Distance</h4>
+</section>
+<section id="run-scp-classification-on-2-algorithm-minimum-distance-and-maximum-likelihood" class="level4">
+<h4 class="anchored" data-anchor-id="run-scp-classification-on-2-algorithm-minimum-distance-and-maximum-likelihood">4. Run SCP Classification on 2 Algorithm: Minimum Distance and Maximum Likelihood</h4>
+</section>
+</section>
+<section id="training-1" class="level3">
+<h3 class="anchored" data-anchor-id="training-1">Training</h3>
+<section id="add-testing-samples-for-each-land-cover-type" class="level4">
+<h4 class="anchored" data-anchor-id="add-testing-samples-for-each-land-cover-type">1. Add testing samples for each land cover type</h4>
+</section>
+<section id="calculate-accuracy-for-both-algorithm-using-the-same-test-samples-in-previous-step" class="level4">
+<h4 class="anchored" data-anchor-id="calculate-accuracy-for-both-algorithm-using-the-same-test-samples-in-previous-step">2. Calculate accuracy for both algorithm using the same test samples in previous step</h4>
+</section>
+<section id="selection-of-algorithm" class="level4">
+<h4 class="anchored" data-anchor-id="selection-of-algorithm">3. Selection of algorithm</h4>
+</section>
+<section id="retraining-for-pa-less-than-75" class="level4">
+<h4 class="anchored" data-anchor-id="retraining-for-pa-less-than-75">4. Retraining for PA less than 75%</h4>
+</section>
+</section>
+<section id="final-evaluation-of-classification-model" class="level3">
+<h3 class="anchored" data-anchor-id="final-evaluation-of-classification-model">Final evaluation of classification model</h3>
+</section>
+<section id="output-of-classification" class="level3">
+<h3 class="anchored" data-anchor-id="output-of-classification">Output of Classification</h3>
+<section id="section" class="level4">
+<h4 class="anchored" data-anchor-id="section">2020:</h4>
+</section>
+<section id="section-1" class="level4">
+<h4 class="anchored" data-anchor-id="section-1">2021:</h4>
+</section>
+<section id="section-2" class="level4">
+<h4 class="anchored" data-anchor-id="section-2">2022:</h4>
+</section>
+<section id="section-3" class="level4">
+<h4 class="anchored" data-anchor-id="section-3">2023:</h4>
+</section>
+<section id="section-4" class="level4">
+<h4 class="anchored" data-anchor-id="section-4">2024:</h4>
+</section>
+<section id="section-5" class="level4">
+<h4 class="anchored" data-anchor-id="section-5">2025:</h4>
+</section>
+</section>
+<section id="data-analysis-land-cover-change" class="level3">
+<h3 class="anchored" data-anchor-id="data-analysis-land-cover-change">Data Analysis (Land Cover Change)</h3>
+</section>
+<section id="data-analysis-land-surface-temperature" class="level3">
+<h3 class="anchored" data-anchor-id="data-analysis-land-surface-temperature">Data Analysis (Land Surface Temperature)</h3>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
