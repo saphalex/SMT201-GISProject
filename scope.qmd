@@ -7,31 +7,50 @@ date-modified: "last-modified"
 
 # Project Scope
 
-## Background
+## Background and Problem Statement
 
-The team employs remote sensing data, particularly from **satellite sources** and **OpenStreetMap**, to perform spatial classification and visualise transformations over time. Due to data accessibility challenges, various public and open-source platforms were evaluated, including data.gov.my and OpenStreetMap, while custom vector layers are considered as an alternative.
+Urbanisation has been a top priority for many countries given the economic growth and development it paves way for. Within the South-East Asian context, we understand that apart from Singapore, Malaysia has been undergoing rapid urbanisation, with its urbanisation rate being 77.1% in 2023 and a projected 81.8% in 2030 given an annual urban growth rate of 1.8%. In particular, we observe that KL is currently the largest urban area in the country, generating almost 51% of Malaysia’s Gross Domestic Product (GDP), and will continue to urbanise as the capital of the country.
 
-## Problem Statement
+Unfortunately, this overgrowing urbanisation has been a major contributor to the natural disasters that have been happening in the country and the state. The productivity and consequent economic contribution that has been happening as a result of greater urbanisation in KL over the past years has often come at the expense of existing natural and ecological resources, leading to flash floods and landslides.
 
-The project also explores different classification and accuracy assessment techniques to enhance analysis reliability. A Gantt chart was used to plan and manage the project timeline, and consultation with instructors was scheduled to clarify technical and reporting expectations.
+In order to understand why this may be the case, it is necessary to first understand what landslides and flash floods are. Landslides are environmental disasters that occur due to the mass movement of material, such as rock, earth or debris, down a slope, whereas flash floods refers to flooding caused by excessive rainfall in a short period of time (6 hours or less).
 
-## Project Objectives
+While urbanisation activities often contribute to various detrimental environmental phenomena, the Urban Heat Island (UHI) effect in particular contributes to higher occurrences of extreme rainfall. This rainfall is triggered by the rapid rise of moist air in the atmosphere (a result of the sun heating the Earth's surface) and often causes intense, localised short-duration rainfall that leads to flash floods.
+
+In the scenario where these flash floods occur, the soil and ground are exposed (often for a prolonged period of time) to rainfall, which saturates it. This reduces its strength and cohesion, leading to slope instability and consequent failure. Additionally, rapid infiltration of water into the soil rapidly increases the water pressure in the ground which the soil is unable to reduce, also resulting in slope instability.
+
+Even if flash floods are not present, actions such as deforestation and illegal logging that are carried out to make way for urban sprawl and development are often not coupled with sufficient compensatory practices, leading to slope, vegetation and drainage disruptions and instabilities. This eventually leads to landslides as the soil and ground erodes and falls.
+
+Given this information, we believe that there is an important topic of discussion to be tackled: how the urbanisation, environmental degradation and consequent selected natural disasters have contributed to land cover changes in the past 5 years. We hope that this analysis will better flesh out the cause-and-effect relationship of these disasters with overall urban development and planning, paving the way for a more sustainable approach to urbanisation and infrastructure/economic growth moving forward.
+
+##Project Objectives
+
+This project seeks to investigate and analyse land cover changes in KL by drawing links between landslides alongside accompanying natural phenomena such as floods and changes in various land classes. The specific objectives of the study are as follows:
 
 ### Objective 1
 
-The ultimate goal is to derive meaningful insights into urbanization patterns and land cover dynamics in Kuala Lumpur through structured geospatial analysis.
+To detect land cover changes in Kuala Lumpur across the selected time period (2020 to 2024) by using GIS tools to wrangle and analyse satellite imagery and geospatial data.
 
 ### Objective 2
 
-The ultimate goal is to derive meaningful insights into urbanization patterns and land cover dynamics in Kuala Lumpur through structured geospatial analysis.
+To visualise and classify major land cover categories and identify significant trends in these categories across the span of 5 years (2020 to 2024).
 
-## Data
+### Objective 3
+
+To explore, implement, and evaluate appropriate classification methods for land cover analysis within the selected KL boundary.
+
+
+### Objective 4
+
+To understand and excavate meaningful insights that aid in understanding the environmental implications of land use changes in relation to urbanisation.
 
 ## Scope of Work
+
+Since this project will be focusing on land cover changes in different land classes across a span of 5 years, we will be utilising open-source data platforms such as Copernicus and OSM to obtain our data files and layers to perform remote sensing. After selecting our preferred area of study and collecting necessary data, we will wrangle, prepare and split the data into training and testing samples to classify into the various land classes using SCP. Then, we will analyse the results obtained to identify key changes in land cover for each class. Furthermore, to obtain better knowledge on the subject and provide depth to our findings, we have also conducted research and literature reviews to supplement our analysis.  
+
 
 ## Project Schedule
 
 ### Gantt Chart
 
 ### Work Distribution
-
