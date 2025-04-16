@@ -141,10 +141,20 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#data-work" id="toc-data-work" class="nav-link active" data-scroll-target="#data-work">Data Work</a>
+  <li><a href="#data-analysis-discussion" id="toc-data-analysis-discussion" class="nav-link active" data-scroll-target="#data-analysis-discussion">5.0 Data Analysis &amp; Discussion</a>
   <ul class="collapse">
-  <li><a href="#data-collection" id="toc-data-collection" class="nav-link" data-scroll-target="#data-collection">Data Collection</a></li>
+  <li><a href="#change-in-land-cover-of-selected-land-classes" id="toc-change-in-land-cover-of-selected-land-classes" class="nav-link" data-scroll-target="#change-in-land-cover-of-selected-land-classes">5.1 Change in Land Cover of Selected Land Classes</a>
+  <ul class="collapse">
+  <li><a href="#vegetation" id="toc-vegetation" class="nav-link" data-scroll-target="#vegetation">5.1.1 Vegetation</a></li>
+  <li><a href="#water-bodies" id="toc-water-bodies" class="nav-link" data-scroll-target="#water-bodies">5.1.2 Water Bodies</a></li>
+  <li><a href="#impervious-surfaces" id="toc-impervious-surfaces" class="nav-link" data-scroll-target="#impervious-surfaces">5.1.3 Impervious Surfaces</a></li>
+  <li><a href="#low-rise-buildings" id="toc-low-rise-buildings" class="nav-link" data-scroll-target="#low-rise-buildings">5.1.4 <strong>Low-Rise Buildings</strong></a></li>
+  <li><a href="#barren-land" id="toc-barren-land" class="nav-link" data-scroll-target="#barren-land">5.1.<strong>5 Barren Land</strong></a></li>
+  </ul></li>
+  <li><a href="#overall-trend-in-land-cover-change" id="toc-overall-trend-in-land-cover-change" class="nav-link" data-scroll-target="#overall-trend-in-land-cover-change">5.2 <strong>Overall Trend in Land Cover Change</strong></a>
+  <ul class="collapse">
   <li><a href="#data-preparation" id="toc-data-preparation" class="nav-link" data-scroll-target="#data-preparation">Data Preparation</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -178,7 +188,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">April 15, 2025</p>
+      <p class="date-modified">April 16, 2025</p>
     </div>
   </div>
     
@@ -189,19 +199,92 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="data-work" class="level1">
-<h1>Data Work</h1>
-<p>How we collected and prepared our data.</p>
-<section id="data-collection" class="level3">
-<h3 class="anchored" data-anchor-id="data-collection">Data Collection</h3>
-<p>Online</p>
-<section id="kuala-lumpur-sentinel-2" class="level4">
-<h4 class="anchored" data-anchor-id="kuala-lumpur-sentinel-2">Kuala Lumpur: Sentinel-2</h4>
-<p>Copernicus</p>
+<section id="data-analysis-discussion" class="level1">
+<h1>5.0 Data Analysis &amp; Discussion</h1>
+<section id="change-in-land-cover-of-selected-land-classes" class="level2">
+<h2 class="anchored" data-anchor-id="change-in-land-cover-of-selected-land-classes">5.1 Change in Land Cover of Selected Land Classes</h2>
+<p>Given our classification and accuracy values, we have selected the following land classes to focus our analysis on as we believe that these show the most relevance to our problem statement and goal: Vegetation (Natural &amp; Managed), Impervious Surfaces, Water Bodies, Barren Land, Low-Rise Buildings.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-04-16 at 1.28.42 PM.png" class="img-fluid figure-img" width="1000"></p>
+<figcaption><em>Bar chart showing the selected land classes and their composition in the overall KL region over the 5 years</em></figcaption>
+</figure>
+</div>
+<section id="vegetation" class="level3">
+<h3 class="anchored" data-anchor-id="vegetation">5.1.1 Vegetation</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-04-16 at 1.31.01 PM.png" class="img-fluid figure-img" width="1000"></p>
+<figcaption><em>Bar chart excerpt showing the composition of the 2 types of vegetations over the 5 years</em></figcaption>
+</figure>
+</div>
+<p>For natural vegetation, the figures tend to fluctuate between 8.62% - 9.92% of the total land cover from 2020 to 2023. However, there is a stark decrease (3.52% ) from 2023 (8.62%) to 2024 (5.1%), signalling that there has been some type of an intervening event in 2023 that has affected the percentage of natural vegetation present in the state in 2024.&nbsp;</p>
+<p>On the other hand, the chart shows a relatively small percentage of land cover occupied by managed vegetation from 2020 to 2022, with 2021 having the highest value of yet only 6.09%. However, there are notable and consistent sharp increases from 2022 to 2024, with a jump from 4.08% in 2022 to 11.44% in 2023, and a jump from 11.44% in 2023 to 15.18% in 2024. This could reflect greater efforts taken to improve managed greenery and grounds.</p>
 </section>
+<section id="water-bodies" class="level3">
+<h3 class="anchored" data-anchor-id="water-bodies">5.1.2 Water Bodies</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-04-16 at 1.32.27 PM.png" class="img-fluid figure-img" width="600"></p>
+<figcaption><em>Bar chart excerpt showing the composition of water bodies over the 5 years</em></figcaption>
+</figure>
+</div>
+<p>The composition of water bodies has consistently remained relatively low across all 5 years, with the highest figure being 3.88% in 2020. After a 2.59% drop to 1.29% in 2021, it increased insignificantly to 1.31% in 2022 before decreasing to 0.88% in 2023. Notably, there is a significant 2.46% increase from 0.88% in 2023 to 3.34 in 2024, once again signalling to us that there may have been some type of an intervening event in 2023 that could have resulted in the increase in 2024.&nbsp;</p>
+</section>
+<section id="impervious-surfaces" class="level3">
+<h3 class="anchored" data-anchor-id="impervious-surfaces">5.1.3 Impervious Surfaces</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-04-16 at 1.34.43 PM.png" class="img-fluid figure-img" width="600"></p>
+<figcaption><em>Bar chart excerpt showing the composition of impervious surfaces over the 5 years</em></figcaption>
+</figure>
+</div>
+<p>Over the 5 year span, there has been a constant decrease in the percentage composition of impervious surfaces (roads) in the state, with 2 significant drops: a 4.08% decrease from 13.96% in 2020 to 9.88% in 2021, as well as a 3.35% decrease from 8.56% in 2023 to 5.21% in 2024. These decreases may be attributed to significant intervening events in 2020 and 2023 respectively. Otherwise, even though it decreased slightly every year (9.88% in 2021 to 9.49% in 2022, 9.49% in 2022 to 8.56% in 2023), the percentage composition did not fluctuate significantly from 2021 to 2023.</p>
+</section>
+<section id="low-rise-buildings" class="level3">
+<h3 class="anchored" data-anchor-id="low-rise-buildings">5.1.4 <strong>Low-Rise Buildings</strong></h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-04-16 at 1.36.31 PM.png" class="img-fluid figure-img" width="600"></p>
+<figcaption><em>Bar chart excerpt showing the composition of low-rise buildings over the 5 years</em></figcaption>
+</figure>
+</div>
+<p>The percentage composition of low-rise buildings in the state has consistently been quite high, consistent with the fact that KL is a highly urbanised city. There seems to be consistent increases from 2020 (17.51%) to 2021 (19.50%) as well as from 2021 (19.50%) to 2022 (24.32%), which could be a sign of greater urbanisation. From 2022 to 2023 however, there is a 3.75% decrease from 24.32% (2022) to 20.57% (2023) and no further major increase or decrease after 2023. This could signal efforts to scale back on urban development from 2022 onwards, but further research and information is required to conclusively state anything regarding these figures.&nbsp;&nbsp;</p>
+</section>
+<section id="barren-land" class="level3">
+<h3 class="anchored" data-anchor-id="barren-land">5.1.<strong>5 Barren Land</strong></h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-04-16 at 1.38.43 PM.png" class="img-fluid figure-img" width="600"></p>
+<figcaption><em>Bar chart excerpt showing the composition of barren land over the 5 years</em></figcaption>
+</figure>
+</div>
+<p>The percentage composition of barren land present in the state has undergone fluctuations from 2020 to 2024. Barring a somewhat insignificant 0.61% increase from 11.67% in 2020 to 12.28% in 2021, there were 2 more notable decreases: a 3.66% decrease from 12.28% in 2021 to 8.62% in 2022, as well as a 1.42% decrease from 8.62% in 2022 to 7.20% in 2023. These decreases could be because of the usage of barren land for urbanisation and development purposes. Most interestingly, the composition of barren land more than doubles from 2023 to 2024 – a whopping 7.21% increase from 7.20% in 2023 to 14.41% in 2024. This could be attributed to some type of intervening event that has led to some massive clearance of land.&nbsp;&nbsp;</p>
+</section>
+</section>
+<section id="overall-trend-in-land-cover-change" class="level2">
+<h2 class="anchored" data-anchor-id="overall-trend-in-land-cover-change">5.2 <strong>Overall Trend in Land Cover Change</strong></h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-04-16 at 1.40.08 PM.png" class="img-fluid figure-img" width="1008"></p>
+<figcaption><em>Line chart showing the overall trends of the selected land classes over the 5 years</em></figcaption>
+</figure>
+</div>
+<p>From the above chart, we are able to observe the following:&nbsp;</p>
+<ol type="1">
+<li><p><strong>Low-rise buildings occupy the greatest percentage of land cover, with a consistent upwards trend</strong>. This shows that there has been a steady increase in urbanisation efforts, with more and more development across the years.&nbsp;</p></li>
+<li><p><strong>Managed vegetation exhibits a consistent increasing trend, currently even exceeding the proportion of barren land available</strong>. This shows that residential and commercial areas, where managed vegetation is noted to be more commonly present, have remained relatively unscathed by the effects of landslides.&nbsp;</p></li>
+<li><p><strong>Barren land has not undergone any major increasing or decreasing trend, but does exhibit sharp increases/decreases between years</strong>. This could be due to the sudden nature of landslides and other intervening events that destroy anything present on the land, creating more barren land and this would explain the sharp increase(s). When this happens, rebuilding and rehabilitation efforts are often taken up immediately, once again reducing the barren land available, explaining the sharp decrease(s).&nbsp;</p></li>
+<li><p><strong>Both natural vegetation and impervious surfaces have shown a consistent decreasing trend</strong>. Both these land classes could have been affected by&nbsp;</p>
+<ul>
+<li><p>Urbanisation effects which call for deforestation (thereby reducing natural vegetation) and redevelopment (thereby requiring the demolition of roads [impervious surfaces]) as well as,&nbsp;</p></li>
+<li><p>Landslides, which have the ability to destroy everything on the ground as well as the ground itself, which means that both forested areas and naturally-vegetated areas, as well as roads and other infrastructure.&nbsp;</p></li>
+</ul></li>
+<li><p><strong>Water bodies occupy the lowest percentage of land cover, with no significant observable trend</strong>. As a landlocked city-state, it is not possible to have water bodies such as the sea. However, flash floods, excessive rainfall and other water-related intervening events could increase/decrease the volume of water present in reservoirs, rivers and lakes, which would explain the slight fluctuations observed in the line chart.</p></li>
+</ol>
+<p>Ultimately, these patterns reflect how urban sprawl into hilly, vegetated regions may have intensified environmental vulnerability while leaving core urban centres less directly affected.</p>
 <section id="kuala-lumpur-osm" class="level4">
 <h4 class="anchored" data-anchor-id="kuala-lumpur-osm">Kuala Lumpur: OSM</h4>
-</section>
 </section>
 <section id="data-preparation" class="level3">
 <h3 class="anchored" data-anchor-id="data-preparation">Data Preparation</h3>
@@ -209,6 +292,7 @@ ul.task-list li input[type="checkbox"] {
 <h4 class="anchored" data-anchor-id="basic-visualisation">Basic Visualisation</h4>
 
 
+</section>
 </section>
 </section>
 </section>

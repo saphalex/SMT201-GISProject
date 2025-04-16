@@ -121,7 +121,7 @@ After creating training and test data sets for the relevant subclasses, we use t
 
 ![*A side-by-side comparison of pre- and post-classification of the KL area in 2021*](images/Screenshot%202025-04-16%20at%2012.44.27%20PM.png){fig-align="center" width="1008"}
 
-![A side-by-side comparison of pre- and post-classification of the KL area in 2020](images/Screenshot%202025-04-16%20at%2012.44.45%20PM.png){fig-align="center" width="1008"}
+![*A side-by-side comparison of pre- and post-classification of the KL area in 2020*](images/Screenshot%202025-04-16%20at%2012.44.45%20PM.png){fig-align="center" width="1008"}
 
 After classifying the area based on the training and test data, the following accuracy results were obtained for each year: 
 
