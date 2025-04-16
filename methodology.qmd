@@ -75,15 +75,15 @@ Using the false and true colour composites obtained as well as the OpenStreetMap
 
 7.  Barren Land
 
-    -   Sub-class 1: Empty Lot (Reflective Surfaces) (represented on the following spectral plots by ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcccAISICwkfksdu3FsAn0pyUpj3K-9lUvGupHro-d9IPL5MNgMj2FAmd4B0wdg0nZoJ7HqyWDzc-wEh6dsTpAnTvKcw38XNNQEB_2rXF-J8olCoxIfaL_909_soauxFmE-IyNBhg?key=Facb7bqNrQGD-VKy_9mbWdVa){width="38"})
+    -   Sub-class 1: Empty Lot (Reflective Surfaces) (represented on the following spectral plots by ![](images/Screenshot 2025-04-16 at 11.37.46 AM.png){width="38"})
 
-    -   Sub-class 2: Empty Lot (Reddish-Brown Surfaces) (represented on the following spectral plots by ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXc7vloIpQOf2JAnSqssvq7OdwlqbKanunKH4qUvzpbKvVFUIe35AD3-jiG1EdbNE1g9wtqklZOVA-ptQ1SR_GUeSzN_U6rQ9h4wBwdbIV8EHYNtSO41waOL78kvkxvKn2sVaGbS?key=Facb7bqNrQGD-VKy_9mbWdVa){width="38"})
+    -   Sub-class 2: Empty Lot (Reddish-Brown Surfaces) (represented on the following spectral plots by ![](images/Screenshot 2025-04-16 at 11.38.19 AM.png){width="38"})
 
-    -   Sub-class 3: Open Soil (Cemeteries/Parks) (represented on the following spectral plots by ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXc2hkDUFmKT8Dm7f0_IVOPKFzI9VzGK3Alxv6quggfuSvc3kK642rfRu74-NhzSQx7FIGL8xBlfKvAe2dgnYTSV9ksRj7W0MQViY4XlaWoGFZ9h7LfcoBcPuKepruJr9QIWNhbmDg?key=Facb7bqNrQGD-VKy_9mbWdVa){width="38"})
+    -   Sub-class 3: Open Soil (Cemeteries/Parks) (represented on the following spectral plots by ![](images/Screenshot 2025-04-16 at 11.39.52 AM.png){width="38"})
 
 8.  Shadow
 
-    -   Sub-class 1: Shadows of Buildings (represented on the following spectral plots by![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeRJwLjk4-6hps8L1Adk1KTLa6C8RN3xtSNsmanrZ1FDWjJBU-0_3pMYY3mHzrDlAG04KF-hFsRJG1-XdHCSJaywntejSvI0Ic3E282zKNbZbrqoej6DMopqc0gtXtoNJhGBQDYlw?key=Facb7bqNrQGD-VKy_9mbWdVa){width="38"})
+    -   Sub-class 1: Shadows of Buildings (represented on the following spectral plots by ![](images/Screenshot 2025-04-16 at 11.40.43 AM.png){width="38"})
 
 Therefore, there are a total of 13 sub-classes that we have identified which require training and test data to be selected for. To create the training and test data sets, we utilised the ROI polygon creation feature present in the SCP plug-in, with each polygon representing a data point. For each subclass, we created approximately 80 data points for the training data set and 35 data points for the test data set. Ultimately, the ratio of training data to test data roughly mimicked a 70%-30% split and they must be saved in the correct format (ESRI Shapefiles). This process must be repeated for each year within the selected timeframe. 
 
