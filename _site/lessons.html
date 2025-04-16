@@ -90,7 +90,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./Home.html"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Abstract</span></a>
   </li>  
   <li class="nav-item">
@@ -99,15 +99,11 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./data.html"> 
-<span class="menu-text">Data Preparation</span></a>
+<span class="menu-text">Data Analysis</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="./methodology.html"> 
 <span class="menu-text">Methodology</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./results.html"> 
-<span class="menu-text">Results &amp; Discussion</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./webmaps.html"> 
@@ -115,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./lessons.html" aria-current="page"> 
-<span class="menu-text">Lesson Learnt</span></a>
+<span class="menu-text">Recommendations &amp; Lessons</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./poster.html"> 
@@ -141,7 +137,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lessons-learnt" id="toc-lessons-learnt" class="nav-link active" data-scroll-target="#lessons-learnt">Lessons Learnt</a></li>
+  <li><a href="#limitations" id="toc-limitations" class="nav-link active" data-scroll-target="#limitations">6.0 Limitations</a></li>
+  <li><a href="#recommendations" id="toc-recommendations" class="nav-link" data-scroll-target="#recommendations">7.0 <strong>Recommendations</strong></a></li>
+  <li><a href="#future-work" id="toc-future-work" class="nav-link" data-scroll-target="#future-work">8.0 <strong>Future Work</strong></a></li>
   </ul>
 </nav>
     </div>
@@ -174,7 +172,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">April 6, 2025</p>
+      <p class="date-modified">April 16, 2025</p>
     </div>
   </div>
     
@@ -185,8 +183,37 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="lessons-learnt" class="level1">
-<h1>Lessons Learnt</h1>
+<section id="limitations" class="level1">
+<h1>6.0 Limitations</h1>
+<p>Throughout this project, we faced many limitations:&nbsp;</p>
+<ol type="1">
+<li><p><strong>Lack of sufficient, accurate information:</strong> We struggled with finding vector layer data that represented the KL region accurately and the data that we could find was quite pixelated, blurry and did not fit the actual geographical boundaries of the state within Malaysia precisely enough. Beyond this, we also struggled to find sufficient information on the actual number of landslides that occurred in Malaysia/KL due to faults in reporting, inaccessible reports (paywalled/requires special access) as well as language barriers.</p></li>
+<li><p><strong>Classification troubles:</strong> Given the type of data we were working with, we struggled to obtain accurate classification values. Some of the vector layer imaging that we used were not sufficiently detailed and often had blurry, pixelated visualisation, which meant that the SCP plugin was more likely to classify ROI polygons belonging to certain land classes into the wrong land classes. For example, the SCP plugin struggled very much with distinguishing between ROI polygons originally selected from roads (Impervious Surfaces) and polygons selected from rivers (Water Bodies), which meant that our accuracy values specifically for those land classes were greatly affected across the years.</p></li>
+</ol>
+</section>
+<section id="recommendations" class="level1">
+<h1>7.0 <strong>Recommendations</strong></h1>
+<p>Given the data we have analysed, the trends we have observed and the conclusions we have drawn, we believe that the following would be apt recommendations to ensure that the likelihood of landslides are reduced and environmental risks are mitigated while balancing the need for urbanisation:&nbsp;</p>
+<ol type="1">
+<li><p>To stop landslides and degradation, stricter rules should be implemented for construction in high-risk slopes and sensitive hilly areas.</p></li>
+<li><p>In order to preserve slope stability and natural drainage, forest conservation initiatives should place a high priority on protecting and restoring forests, particularly those that are close to urbanising areas.</p></li>
+<li><p>To control excessive rainfall and lessen flooding, landslide-prone communities need to upgrade their infrastructure and urban drainage systems. Furthermore, integrating geospatial monitoring tools like GIS and remote sensing into urban planning will aid in the early detection of land deterioration.&nbsp;</p></li>
+<li><p>Since they will support both urban growth and environmental resilience, sustainable urban green initiatives like urban forests and green roofs should be encouraged.</p></li>
+</ol>
+</section>
+<section id="future-work" class="level1">
+<h1>8.0 <strong>Future Work</strong></h1>
+<p>We believe that our current project is quite limited for us to conclude anything concrete about the relationship between landslides and land cover change due to the restricted level of analysis that has been conducted. To expand on this issue and further the understanding on our chosen topic, we believe the following changes can be implemented in future works:&nbsp;&nbsp;&nbsp;</p>
+<ol type="1">
+<li><p><strong>Wider Study Area:</strong> In order to evaluate the wider impacts of urbanisation, floods, and landslides on land cover, include nearby areas of Kuala Lumpur such as Selangor (e.g., Putrajaya, Petaling Jaya).</p></li>
+<li><p><strong>Use Multi-source Data:</strong>Combine information such as infrastructure development or population density to have a better understanding of the factors influencing change, or use terrain analysis (slope) to pinpoint regions at risk of landslides.</p></li>
+<li><p><strong>Extend Temporal Analysis:</strong> To enhance environmental effect forecasts, extend the study period to examine long-term trends (during significant infrastructure construction stages) or carry out seasonal monitoring by tracking monsoon-driven changes using quarterly composites.</p></li>
+</ol>
+<p>To enhance environmental effect forecasts, extend the study period to examine long-term trends (during significant infrastructure construction stages) or carry out seasonal monitoring by tracking monsoon-driven changes using quarterly composites.</p>
+<p><br>
+</p>
+<p><br>
+</p>
 
 
 </section>
