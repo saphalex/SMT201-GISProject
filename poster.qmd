@@ -4,4 +4,7 @@ authors: "Anne Saphrin Alex Sathyan, Harshitha Balaji, Lau Liang Jun"
 date: "April 6, 2025"
 date-modified: "last-modified"
 ---
+
 # Poster
+
+![Pavement VS Peat Poster](images/Pavement vs Peat-01.jpg){width="2000"}
