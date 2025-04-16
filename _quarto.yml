@@ -11,15 +11,13 @@ website:
       - href: scope.qmd
         text: Project Scope
       - href: data.qmd
-        text: Data Preparation
+        text: Data Analysis
       - href: methodology.qmd
         text: Methodology
-      - href: results.qmd
-        text: Results & Discussion
       - href: webmaps.qmd
         text: Web Maps
       - href: lessons.qmd
-        text: Lesson Learnt
+        text: Recommendations & Lessons
       - href: poster.qmd
         text: Poster
       - href: about.qmd

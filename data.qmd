@@ -67,6 +67,18 @@ From the above chart, we are able to observe the following: 
 
 Ultimately, these patterns reflect how urban sprawl into hilly, vegetated regions may have intensified environmental vulnerability while leaving core urban centres less directly affected.
 
+## 5.**3 An Example of our Observations: Bukit Tunku**
+
+Our above data analysis provides us with a broad snapshot of the type of land cover changes that have happened over the span of 5 years. Given the size of the area we have chosen to analyse, we wish to focus this section of our analysis on a major landslide that could grant us greater insight into the overall trends we have observed. We also lack sufficient information and time to replicate this analysis for all landslides that happened. Therefore, we focused on specifically the 2023 Bukit Tunku landslide given its scale and the damage it created to illustrate the devastating effects landslides can have on land cover.
+
+![*A side-by-side comparison of the land cover at Bukit Tunku before and after the 2023 landslide*](images/Screenshot 2025-04-16 at 1.43.47 PM.png){fig-align="center" width="1000"}
+
+From the indicated parts on the maps, we are able to observe that there has been a loss of low-rise building(s) and an increase in barren land. This is consistent with what was observed in the aftermath of the landslide, which occurred near the Malaysian Anti-Corruption Academy at Persiaran Tuanku Syed Sirajuddin in Bukit Tunku. Interestingly, we are also able to observe from the above line graph that barren land has increased sharply from 2023 to 2024 and that natural vegetation has decreased in that same time frame. 
+
+![*A side-by-side comparison of MACA at Bukit Tunku before and after the 2023 landslide*](images/Screenshot 2025-04-16 at 1.44.51 PM.png){fig-align="center" width="1000"}
+
+While it would be myopic to conclude that this one landslide alone would have caused such drastic changes in land cover, especially for the natural vegetation and barren land classes, such events are consistent with the trends observed as a whole.
+
 #### Kuala Lumpur: OSM
 
 ### Data Preparation
