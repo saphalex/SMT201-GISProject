@@ -98,11 +98,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Project Scope</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./data.html" aria-current="page"> 
+    <a class="nav-link" href="./data.html"> 
 <span class="menu-text">Data Preparation</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./methodology.html"> 
+    <a class="nav-link active" href="./methodology.html" aria-current="page"> 
 <span class="menu-text">Methodology</span></a>
   </li>  
   <li class="nav-item">
@@ -141,10 +141,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#data-work" id="toc-data-work" class="nav-link active" data-scroll-target="#data-work">Data Work</a>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link active" data-scroll-target="#methodology">4.0 Methodology</a>
   <ul class="collapse">
-  <li><a href="#data-collection" id="toc-data-collection" class="nav-link" data-scroll-target="#data-collection">Data Collection</a></li>
-  <li><a href="#data-preparation" id="toc-data-preparation" class="nav-link" data-scroll-target="#data-preparation">Data Preparation</a></li>
+  <li><a href="#data-collection" id="toc-data-collection" class="nav-link" data-scroll-target="#data-collection">4.1 Data Collection</a>
+  <ul class="collapse">
+  <li><a href="#area-and-image-selection" id="toc-area-and-image-selection" class="nav-link" data-scroll-target="#area-and-image-selection">4.1.1 Area and Image Selection</a></li>
+  <li><a href="#image-pre-processing" id="toc-image-pre-processing" class="nav-link" data-scroll-target="#image-pre-processing">4.2 Image Pre-processing</a></li>
+  </ul></li>
+  <li><a href="#identification-categorisation-of-land-classes" id="toc-identification-categorisation-of-land-classes" class="nav-link" data-scroll-target="#identification-categorisation-of-land-classes">4.3 Identification &amp; Categorisation of Land Classes</a>
+  <ul class="collapse">
+  <li><a href="#training" id="toc-training" class="nav-link" data-scroll-target="#training">Training</a></li>
+  <li><a href="#final-evaluation-of-classification-model" id="toc-final-evaluation-of-classification-model" class="nav-link" data-scroll-target="#final-evaluation-of-classification-model">Final evaluation of classification model</a></li>
+  <li><a href="#output-of-classification" id="toc-output-of-classification" class="nav-link" data-scroll-target="#output-of-classification">Output of Classification</a></li>
+  <li><a href="#data-analysis-land-cover-change" id="toc-data-analysis-land-cover-change" class="nav-link" data-scroll-target="#data-analysis-land-cover-change">Data Analysis (Land Cover Change)</a></li>
+  <li><a href="#data-analysis-land-surface-temperature" id="toc-data-analysis-land-surface-temperature" class="nav-link" data-scroll-target="#data-analysis-land-surface-temperature">Data Analysis (Land Surface Temperature)</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -189,24 +200,168 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="data-work" class="level1">
-<h1>Data Work</h1>
-<p>How we collected and prepared our data.</p>
-<section id="data-collection" class="level3">
-<h3 class="anchored" data-anchor-id="data-collection">Data Collection</h3>
-<p>Online</p>
-<section id="kuala-lumpur-sentinel-2" class="level4">
-<h4 class="anchored" data-anchor-id="kuala-lumpur-sentinel-2">Kuala Lumpur: Sentinel-2</h4>
-<p>Copernicus</p>
+<section id="methodology" class="level1">
+<h1>4.0 Methodology</h1>
+<p>The following diagram details the flow of the methodology adopted to perform land cover change analysis in KL for all years applicable:</p>
+<section id="data-collection" class="level2">
+<h2 class="anchored" data-anchor-id="data-collection">4.1 Data Collection</h2>
+<section id="area-and-image-selection" class="level3">
+<h3 class="anchored" data-anchor-id="area-and-image-selection">4.1.1 Area and Image Selection</h3>
+<p>After deciding that we would focus on KL for this project, we selected the relevant satellite imagery of the area from Copernicus. Importantly, we did not rely on a single image to scope out the area of interest for each year – instead, we ensured that the area was covered by 2 images: right coverage (“right tile”) and middle coverage (“middle tile”). The following table comprises of the image files downloaded from Copernicus for the sake of this project:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-04-14 at 11.46.05 AM.png" class="img-fluid figure-img"></p>
+<figcaption>Image files downloaded from Copernicus</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-04-14 at 6.42.29 PM.png" class="img-fluid figure-img"></p>
+<figcaption>The above image shows the 2 tiles selected for the analysis of the KL region in 2024</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-04-14 at 6.45.54 PM.png" class="img-fluid figure-img"></p>
+<figcaption>The above image shows the 2 tiles selected for the analysis of the KL region in 2023</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-04-14 at 6.49.00 PM.png" class="img-fluid figure-img"></p>
+<figcaption>The above image shows the 2 tiles selected for the analysis of the KL region in 2022</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-04-14 at 8.49.38 PM.png" class="img-fluid figure-img"></p>
+<figcaption>The above image shows the 2 tiles selected for the analysis of the KL region in 2021</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-04-14 at 11.16.11 PM.png" class="img-fluid figure-img"></p>
+<figcaption>The above image shows the 2 tiles selected for the analysis of the KL region in 2020</figcaption>
+</figure>
+</div>
+<p>To ensure temporal consistency, we tried our best to ensure that the images had a minimum of a 12-month gap between the years (e.g.&nbsp;if we selected images in February for the year 2024, we would ensure that the preceding year’s images would be in either February or January). If this was not possible due to poor imaging or excessive cloud cover, we selected the most suitable image(s) that had the furthest time gap between itself and the following year’s image(s).&nbsp;</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-04-14 at 11.17.55 PM.png" class="img-fluid figure-img"></p>
+<figcaption>The above image shows the right tiles selected for 2024 and 2023. An image in March was selected for 2023 due to the lack of good imaging in January/February.</figcaption>
+</figure>
+</div>
+<p>We also made sure that for the 2 images selected in each year, they were captured within 1 month of each other and that the quality of the middle tile was prioritised over that of the right tile for any given year’s sample to ensure consistency and quality. Additionally, for any and all images selected, we kept the cloud cover to a minimum. By balancing all these factors, we were able to select the most suitable images for our analysis.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-04-14 at 11.19.13 PM.png" class="img-fluid figure-img"></p>
+<figcaption>The above image shows a side-by-side comparison of the middle tiles selected for 2023 and 2022 that have a time gap of 14 months. This is one of a few outliers from the criteria we had defined for selecting the images.</figcaption>
+</figure>
+</div>
+<section id="vector-raster-layer-selections" class="level4">
+<h4 class="anchored" data-anchor-id="vector-raster-layer-selections">4.1.2 Vector &amp; Raster Layer Selections</h4>
 </section>
-<section id="kuala-lumpur-osm" class="level4">
-<h4 class="anchored" data-anchor-id="kuala-lumpur-osm">Kuala Lumpur: OSM</h4>
+</section>
+<section id="image-pre-processing" class="level3">
+<h3 class="anchored" data-anchor-id="image-pre-processing">4.2 Image Pre-processing</h3>
 </section>
 </section>
-<section id="data-preparation" class="level3">
-<h3 class="anchored" data-anchor-id="data-preparation">Data Preparation</h3>
-<section id="basic-visualisation" class="level4">
-<h4 class="anchored" data-anchor-id="basic-visualisation">Basic Visualisation</h4>
+<section id="identification-categorisation-of-land-classes" class="level2">
+<h2 class="anchored" data-anchor-id="identification-categorisation-of-land-classes">4.3 Identification &amp; Categorisation of Land Classes</h2>
+<p>Using the false and true colour composites obtained as well as the OpenStreetMap trimmed to overlap with the KL subzone boundary, we identified the following land classes and subclasses:</p>
+<ol type="1">
+<li><p>Natural Vegetation</p>
+<ul>
+<li>Sub-class 1: Forests (represented on the following spectral plots by <img src="images/Screenshot 2025-04-14 at 11.27.23 PM.png" class="img-fluid" width="38">)</li>
+</ul></li>
+<li><p>Managed Vegetation</p>
+<ul>
+<li><p>Sub-class 1: Golf Course grass (represented on the following spectral plots by <img src="images/Screenshot 2025-04-15 at 12.27.45 AM.png" class="img-fluid" width="38">)</p></li>
+<li><p>Sub-class 2: Sports Field (represented on the following spectral plots by <img src="images/Screenshot 2025-04-15 at 12.29.03 AM.png" class="img-fluid" width="38">)</p></li>
+</ul></li>
+<li><p>Water Body</p>
+<ul>
+<li><p>Sub-class 1: Flood Reservoir (represented on the following spectral plots by <img src="images/Screenshot 2025-04-15 at 12.30.47 AM.png" class="img-fluid" width="38">)</p></li>
+<li><p>Sub-class 2: Lakes (represented on the following spectral plots by <img src="images/Screenshot 2025-04-15 at 12.31.45 AM.png" class="img-fluid" width="38">)</p></li>
+<li><p>Sub-class 3: Rivers (represented on the following spectral plots by <img src="images/Screenshot 2025-04-15 at 12.32.39 AM.png" width="38" height="38">)</p></li>
+</ul></li>
+<li><p>Impervious Surfaces</p>
+<ul>
+<li>Sub-class 1: Roads (represented on the following spectral plots by <img src="images/Screenshot 2025-04-15 at 12.34.41 AM.png" class="img-fluid" width="38">)</li>
+</ul></li>
+<li><p>Built-up 1 (low-rise buildings)</p>
+<ul>
+<li>Sub-class 1: Houses (represented on the following spectral plots by <img src="images/Screenshot 2025-04-15 at 12.36.10 AM.png" class="img-fluid" width="38">)</li>
+</ul></li>
+<li><p>Built-up 2 (high-rise buildings)&nbsp;</p>
+<ul>
+<li>Sub-class 1: Buildings (represented on the following spectral plots by <img src="images/Screenshot 2025-04-15 at 12.37.35 AM.png" class="img-fluid" width="38">)</li>
+</ul></li>
+<li><p>Barren Land</p>
+<ul>
+<li><p>Sub-class 1: Empty Lot (Reflective Surfaces) (represented on the following spectral plots by <img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcccAISICwkfksdu3FsAn0pyUpj3K-9lUvGupHro-d9IPL5MNgMj2FAmd4B0wdg0nZoJ7HqyWDzc-wEh6dsTpAnTvKcw38XNNQEB_2rXF-J8olCoxIfaL_909_soauxFmE-IyNBhg?key=Facb7bqNrQGD-VKy_9mbWdVa.png" class="img-fluid" width="38">)</p></li>
+<li><p>Sub-class 2: Empty Lot (Reddish-Brown Surfaces) (represented on the following spectral plots by <img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc7vloIpQOf2JAnSqssvq7OdwlqbKanunKH4qUvzpbKvVFUIe35AD3-jiG1EdbNE1g9wtqklZOVA-ptQ1SR_GUeSzN_U6rQ9h4wBwdbIV8EHYNtSO41waOL78kvkxvKn2sVaGbS?key=Facb7bqNrQGD-VKy_9mbWdVa.png" class="img-fluid" width="38">)</p></li>
+<li><p>Sub-class 3: Open Soil (Cemeteries/Parks) (represented on the following spectral plots by <img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc2hkDUFmKT8Dm7f0_IVOPKFzI9VzGK3Alxv6quggfuSvc3kK642rfRu74-NhzSQx7FIGL8xBlfKvAe2dgnYTSV9ksRj7W0MQViY4XlaWoGFZ9h7LfcoBcPuKepruJr9QIWNhbmDg?key=Facb7bqNrQGD-VKy_9mbWdVa.png" class="img-fluid" width="38">)</p></li>
+</ul></li>
+<li><p>Shadow</p>
+<ul>
+<li>Sub-class 1: Shadows of Buildings (represented on the following spectral plots by<img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeRJwLjk4-6hps8L1Adk1KTLa6C8RN3xtSNsmanrZ1FDWjJBU-0_3pMYY3mHzrDlAG04KF-hFsRJG1-XdHCSJaywntejSvI0Ic3E282zKNbZbrqoej6DMopqc0gtXtoNJhGBQDYlw?key=Facb7bqNrQGD-VKy_9mbWdVa.png" class="img-fluid" width="38">)</li>
+</ul></li>
+</ol>
+<p>Therefore, there are a total of 13 sub-classes that we have identified which require training and test data to be selected for. To create the training and test data sets, we utilised the ROI polygon creation feature present in the SCP plug-in, with each polygon representing a data point. For each subclass, we created approximately 80 data points for the training data set and 35 data points for the test data set. Ultimately, the ratio of training data to test data roughly mimicked a 70%-30% split and they must be saved in the correct format (ESRI Shapefiles). This process must be repeated for each year within the selected timeframe.&nbsp;</p>
+<p><br>
+</p>
+<p><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcsd2GOkFunVEWqUuJs6PurblH4EAK2gmJSp7LZn3RQ_LPpVQm1LWjq948e7mphYJcQlEH6uiHsssRousL7rf_6VojWTCvFprLG8FbSTJNQGnv5-aEqmjVrKOO1WqxFcSLYpmayow?key=Facb7bqNrQGD-VKy_9mbWdVa.png" class="img-fluid" width="300" alt="Spectral plot of the 2020 training data set"> <img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdZQo3SZrRl3VODASqqeL4_qi55Kwr3QnzqDJSDHi9lyd5GTK2DFXz75b8gtPWouVms8izPtwZyKPHkhJnNee7F2TGy6bxnxO0FY2-NUmeP0WLU51oviYqs_8LXsyxCPTUuFG5joA?key=Facb7bqNrQGD-VKy_9mbWdVa.png" class="img-fluid" width="300"></p>
+<section id="evaluation-of-algorithms-using-spectral-distance" class="level4">
+<h4 class="anchored" data-anchor-id="evaluation-of-algorithms-using-spectral-distance">3. Evaluation of Algorithms Using Spectral Distance</h4>
+</section>
+<section id="run-scp-classification-on-2-algorithm-minimum-distance-and-maximum-likelihood" class="level4">
+<h4 class="anchored" data-anchor-id="run-scp-classification-on-2-algorithm-minimum-distance-and-maximum-likelihood">4. Run SCP Classification on 2 Algorithm: Minimum Distance and Maximum Likelihood</h4>
+</section>
+<section id="training" class="level3">
+<h3 class="anchored" data-anchor-id="training">Training</h3>
+<section id="add-testing-samples-for-each-land-cover-type" class="level4">
+<h4 class="anchored" data-anchor-id="add-testing-samples-for-each-land-cover-type">1. Add testing samples for each land cover type</h4>
+</section>
+<section id="calculate-accuracy-for-both-algorithm-using-the-same-test-samples-in-previous-step" class="level4">
+<h4 class="anchored" data-anchor-id="calculate-accuracy-for-both-algorithm-using-the-same-test-samples-in-previous-step">2. Calculate accuracy for both algorithm using the same test samples in previous step</h4>
+</section>
+<section id="selection-of-algorithm" class="level4">
+<h4 class="anchored" data-anchor-id="selection-of-algorithm">3. Selection of algorithm</h4>
+</section>
+<section id="retraining-for-pa-less-than-75" class="level4">
+<h4 class="anchored" data-anchor-id="retraining-for-pa-less-than-75">4. Retraining for PA less than 75%</h4>
+</section>
+</section>
+<section id="final-evaluation-of-classification-model" class="level3">
+<h3 class="anchored" data-anchor-id="final-evaluation-of-classification-model">Final evaluation of classification model</h3>
+</section>
+<section id="output-of-classification" class="level3">
+<h3 class="anchored" data-anchor-id="output-of-classification">Output of Classification</h3>
+<section id="section" class="level4">
+<h4 class="anchored" data-anchor-id="section">2020:</h4>
+</section>
+<section id="section-1" class="level4">
+<h4 class="anchored" data-anchor-id="section-1">2021:</h4>
+</section>
+<section id="section-2" class="level4">
+<h4 class="anchored" data-anchor-id="section-2">2022:</h4>
+</section>
+<section id="section-3" class="level4">
+<h4 class="anchored" data-anchor-id="section-3">2023:</h4>
+</section>
+<section id="section-4" class="level4">
+<h4 class="anchored" data-anchor-id="section-4">2024:</h4>
+</section>
+<section id="section-5" class="level4">
+<h4 class="anchored" data-anchor-id="section-5">2025:</h4>
+</section>
+</section>
+<section id="data-analysis-land-cover-change" class="level3">
+<h3 class="anchored" data-anchor-id="data-analysis-land-cover-change">Data Analysis (Land Cover Change)</h3>
+</section>
+<section id="data-analysis-land-surface-temperature" class="level3">
+<h3 class="anchored" data-anchor-id="data-analysis-land-surface-temperature">Data Analysis (Land Surface Temperature)</h3>
 
 
 </section>
