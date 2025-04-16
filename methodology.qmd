@@ -95,38 +95,81 @@ Therefore, there are a total of 13 sub-classes that we have identified which req
 
 ![*Spectral plot of the 2021 training data set*](images/Screenshot%202025-04-16%20at%2012.15.17%20PM.png){fig-align="center" width="400"}
 
-![*Spectral plot of the 2021 test data set*](images/Screenshot 2025-04-16 at 12.23.10 PM.png){fig-align="center" width="400"}
+![*Spectral plot of the 2021 test data set*](images/Screenshot%202025-04-16%20at%2012.23.10%20PM.png){fig-align="center" width="400"}
 
-#### 3. Evaluation of Algorithms Using Spectral Distance
+![*Spectral plot of the 2022 training data set*](images/Screenshot%202025-04-16%20at%2012.27.06%20PM.png){fig-align="center" width="400"}
 
-#### 4. Run SCP Classification on 2 Algorithm: Minimum Distance and Maximum Likelihood
+![*Spectral plot of the 2022 test data set*](images/Screenshot%202025-04-16%20at%2012.28.24%20PM.png){fig-align="center" width="400"}
 
-### Training
+![*Spectral plot of the 2023 training data set*](images/Screenshot%202025-04-16%20at%2012.29.41%20PM.png){fig-align="center" width="400"}
 
-#### 1. Add testing samples for each land cover type
+![*Spectral plot of the 2023 test data set*](images/Screenshot%202025-04-16%20at%2012.30.33%20PM.png){fig-align="center" width="400"}
 
-#### 2. Calculate accuracy for both algorithm using the same test samples in previous step
+![*Spectral plot of the 2024 training data set*](images/Screenshot%202025-04-16%20at%2012.32.31%20PM.png){fig-align="center" width="400"}
 
-#### 3. Selection of algorithm
+![*Spectral plot of the 2024 test data set*](images/Screenshot%202025-04-16%20at%2012.33.42%20PM.png){fig-align="center" width="400"}
 
-#### 4. Retraining for PA less than 75%
+## 4.4 Classification & Accuracy Assessment using SCP Plugin
 
-### Final evaluation of classification model
+After creating training and test data sets for the relevant subclasses, we use the SCP plugin to perform classification using the “post-processing” feature on the selected area:
 
-### Output of Classification
+![*A side-by-side comparison of pre- and post-classification of the KL area in 2024*](images/Screenshot%202025-04-16%20at%2012.42.46%20PM.png){fig-align="center"}
 
-#### 2020:
+![*A side-by-side comparison of pre- and post-classification of the KL area in 2023*](images/Screenshot%202025-04-16%20at%2012.43.45%20PM.png){fig-align="center" width="1008"}
 
-#### 2021:
+![*A side-by-side comparison of pre- and post-classification of the KL area in 2022*](images/Screenshot%202025-04-16%20at%2012.44.07%20PM.png){fig-align="center" width="1008"}
 
-#### 2022:
+![*A side-by-side comparison of pre- and post-classification of the KL area in 2021*](images/Screenshot%202025-04-16%20at%2012.44.27%20PM.png){fig-align="center" width="1008"}
 
-#### 2023:
+![A side-by-side comparison of pre- and post-classification of the KL area in 2020](images/Screenshot%202025-04-16%20at%2012.44.45%20PM.png){fig-align="center" width="1008"}
 
-#### 2024:
+After classifying the area based on the training and test data, the following accuracy results were obtained for each year: 
 
-#### 2025:
+[**2024**]{.underline}
 
-### Data Analysis (Land Cover Change)
+![](images/Screenshot%202025-04-16%20at%201.14.59%20PM.png){fig-align="center" width="1008"}
 
-### Data Analysis (Land Surface Temperature)
+**Overall Accuracy: 81.3%**
+
+**Kappa Hat classification: 0.759**
+
+\
+
+[**2023**]{.underline}
+
+![](images/Screenshot%202025-04-16%20at%201.17.02%20PM.png){fig-align="center" width="1008"}
+
+**Overall Accuracy: 61.4%**
+
+**Kappa Hat classification: 0.522**
+
+\
+
+[**2022**]{.underline}
+
+![](images/Screenshot%202025-04-16%20at%201.18.16%20PM.png){fig-align="center" width="1008"}
+
+**Overall Accuracy: 40.4%**
+
+**Kappa Hat classification: 0.286**
+
+\
+
+[**2021**]{.underline}
+
+![](images/Screenshot%202025-04-16%20at%201.19.13%20PM.png){fig-align="center" width="1008"}
+
+**Overall Accuracy: 72.3%**
+
+**Kappa Hat classification: 0.650**
+
+[**2020**]{.underline}
+
+![](images/Screenshot%202025-04-16%20at%201.20.52%20PM.png){fig-align="center" width="1008"}
+
+**Overall Accuracy: 53.1%**
+
+**Kappa Hat classification: 0.452**
+
+\
+It is advisable for the overall accuracy value of the classification to be 70% or greater and for the Kappa Hat classification value to be 0.65 or greater to ensure that the classification output provides us with the best analysis possible. However, we were unable to obtain these values for many of the years despite taking multiple training/test samples that were distributed across the selected region, which could therefore mean that the accuracy defect was due to poor image quality for selected years. Such shortcomings will be further elaborated in the Limitations section.
