@@ -39,18 +39,14 @@ To visualise and classify major land cover categories and identify significant t
 
 To explore, implement, and evaluate appropriate classification methods for land cover analysis within the selected KL boundary.
 
-
 ### Objective 4
 
 To understand and excavate meaningful insights that aid in understanding the environmental implications of land use changes in relation to urbanisation.
 
 ## Scope of Work
 
-Since this project will be focusing on land cover changes in different land classes across a span of 5 years, we will be utilising open-source data platforms such as Copernicus and OSM to obtain our data files and layers to perform remote sensing. After selecting our preferred area of study and collecting necessary data, we will wrangle, prepare and split the data into training and testing samples to classify into the various land classes using SCP. Then, we will analyse the results obtained to identify key changes in land cover for each class. Furthermore, to obtain better knowledge on the subject and provide depth to our findings, we have also conducted research and literature reviews to supplement our analysis.  
-
+Since this project will be focusing on land cover changes in different land classes across a span of 5 years, we will be utilising open-source data platforms such as Copernicus and OSM to obtain our data files and layers to perform remote sensing. After selecting our preferred area of study and collecting necessary data, we will wrangle, prepare and split the data into training and testing samples to classify into the various land classes using SCP. Then, we will analyse the results obtained to identify key changes in land cover for each class. Furthermore, to obtain better knowledge on the subject and provide depth to our findings, we have also conducted research and literature reviews to supplement our analysis.
 
 ## Project Schedule
 
-### Gantt Chart
-
-### Work Distribution
+![*Gantt Chart with the work distribution*](images/Screenshot 2025-04-17 at 5.07.33 AM.png){fig-align="center"}
