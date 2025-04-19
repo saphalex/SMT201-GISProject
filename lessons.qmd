@@ -7,7 +7,7 @@ date-modified: "last-modified"
 
 # 6.0 Limitations
 
-Throughout this project, we faced many limitations: 
+Throughout this project, we faced many limitations:
 
 1.  **Lack of sufficient, accurate information:** We struggled with finding vector layer data that represented the KL region accurately and the data that we could find was quite pixelated, blurry and did not fit the actual geographical boundaries of the state within Malaysia precisely enough. Beyond this, we also struggled to find sufficient information on the actual number of landslides that occurred in Malaysia/KL due to faults in reporting, inaccessible reports (paywalled/requires special access) as well as language barriers.
 
@@ -25,7 +25,7 @@ Given the data we have analysed, the trends we have observed and the conclusions
 
 4.  Since they will support both urban growth and environmental resilience, sustainable urban green initiatives like urban forests and green roofs should be encouraged.
 
-# 8.0 **Future Work**
+# 8.0 Future Work
 
 We believe that our current project is quite limited for us to conclude anything concrete about the relationship between landslides and land cover change due to the restricted level of analysis that has been conducted. To expand on this issue and further the understanding on our chosen topic, we believe the following changes can be implemented in future works:   
 
