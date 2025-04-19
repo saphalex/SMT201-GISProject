@@ -14,7 +14,7 @@ website:
         text: Data Analysis
       - href: methodology.qmd
         text: Methodology
-      - href: webmaps.qmd
+      - href: _site/qgis2web/index.html
         text: Web Maps
       - href: lessons.qmd
         text: Recommendations & Lessons
