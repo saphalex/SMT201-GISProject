@@ -140,9 +140,18 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#step-by-step" id="toc-step-by-step" class="nav-link active" data-scroll-target="#step-by-step">Step-by-Step</a>
   <ul class="collapse">
   <li><a href="#viewing-all-sentinel-2-satellite-data-for-kl-for-2020-2024" id="toc-viewing-all-sentinel-2-satellite-data-for-kl-for-2020-2024" class="nav-link" data-scroll-target="#viewing-all-sentinel-2-satellite-data-for-kl-for-2020-2024">1.1 Viewing all Sentinel-2 satellite data for KL for 2020-2024</a></li>
-  <li><a href="#downloading-datasets" id="toc-downloading-datasets" class="nav-link" data-scroll-target="#downloading-datasets">1.2 Downloading datasets</a>
+  <li><a href="#downloading-datasets" id="toc-downloading-datasets" class="nav-link" data-scroll-target="#downloading-datasets">1.2 Downloading datasets</a></li>
+  <li><a href="#data-extraction-and-preprocessing" id="toc-data-extraction-and-preprocessing" class="nav-link" data-scroll-target="#data-extraction-and-preprocessing">2 Data Extraction and Preprocessing</a>
   <ul class="collapse">
-  <li><a href="#select-and-download-satellite-data-with-lowest-cloud-cover-and-temporal-consistency" id="toc-select-and-download-satellite-data-with-lowest-cloud-cover-and-temporal-consistency" class="nav-link" data-scroll-target="#select-and-download-satellite-data-with-lowest-cloud-cover-and-temporal-consistency">1.2.1 Select and download satellite data with lowest cloud cover and temporal consistency</a></li>
+  <li><a href="#creating-project" id="toc-creating-project" class="nav-link" data-scroll-target="#creating-project">2.1 Creating Project</a></li>
+  <li><a href="#extracting-kl-shapefile" id="toc-extracting-kl-shapefile" class="nav-link" data-scroll-target="#extracting-kl-shapefile">2.2 Extracting KL shapefile</a></li>
+  <li><a href="#extracting-kl-map-from-sentinel-2-data" id="toc-extracting-kl-map-from-sentinel-2-data" class="nav-link" data-scroll-target="#extracting-kl-map-from-sentinel-2-data">2.3 Extracting KL map from Sentinel-2 data</a></li>
+  </ul></li>
+  <li><a href="#processing-remote-sensing-images" id="toc-processing-remote-sensing-images" class="nav-link" data-scroll-target="#processing-remote-sensing-images">3 Processing Remote Sensing Images</a>
+  <ul class="collapse">
+  <li><a href="#creating-true-composite-images-and-false-composite-images-from-extracted-images" id="toc-creating-true-composite-images-and-false-composite-images-from-extracted-images" class="nav-link" data-scroll-target="#creating-true-composite-images-and-false-composite-images-from-extracted-images">3.1 Creating True Composite Images and False Composite Images from extracted images</a></li>
+  <li><a href="#using-scp-plugin-to-do-supervised-classification-for-the-map-categorising-by-various-land-cover-types" id="toc-using-scp-plugin-to-do-supervised-classification-for-the-map-categorising-by-various-land-cover-types" class="nav-link" data-scroll-target="#using-scp-plugin-to-do-supervised-classification-for-the-map-categorising-by-various-land-cover-types">3.2 Using SCP plugin to do supervised classification for the map, categorising by various land cover types</a></li>
+  <li><a href="#conducting-accuracy-assessment-for-trained-model" id="toc-conducting-accuracy-assessment-for-trained-model" class="nav-link" data-scroll-target="#conducting-accuracy-assessment-for-trained-model">3.3 Conducting Accuracy Assessment for trained model</a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -190,8 +199,8 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="step-by-step" class="level1">
 <h1>Step-by-Step</h1>
-<section id="viewing-all-sentinel-2-satellite-data-for-kl-for-2020-2024" class="level2">
-<h2 class="anchored" data-anchor-id="viewing-all-sentinel-2-satellite-data-for-kl-for-2020-2024">1.1 Viewing all Sentinel-2 satellite data for KL for 2020-2024</h2>
+<section id="viewing-all-sentinel-2-satellite-data-for-kl-for-2020-2024" class="level3">
+<h3 class="anchored" data-anchor-id="viewing-all-sentinel-2-satellite-data-for-kl-for-2020-2024">1.1 Viewing all Sentinel-2 satellite data for KL for 2020-2024</h3>
 <p>Why Sentinel-2 over Landsat8 for Land Cover Change Analysis?</p>
 <p>Both Sentinel-2 and Landsat 8 data are excellent, but Sentinel-2 is preferred for land cover mapping, especially for dynamic urban areas like Kuala Lumpur and its 10m resolution better captures smaller urban features like roads and buildings, as well as fine-scale deforestation. Landsat 8’s 30m resolution often mixes land covers like trees and roads together, causing misclassification.</p>
 <p>However, since Sentinel-2 is a relatively newer system, for long-term studies, Landsat has a much larger archive, and 30m resolution would be sufficient if the study was on a continental/much larger scale, requiring large area mapping.</p>
@@ -230,11 +239,233 @@ ul.task-list li input[type="checkbox"] {
 <li>Click on the <img src="images/Screenshot 2025-04-19 at 4.55.06 PM.png" class="img-fluid" width="43">icon to have a clearer view of the image.</li>
 </ul>
 </section>
-<section id="downloading-datasets" class="level2">
-<h2 class="anchored" data-anchor-id="downloading-datasets">1.2 Downloading datasets</h2>
-<section id="select-and-download-satellite-data-with-lowest-cloud-cover-and-temporal-consistency" class="level3">
-<h3 class="anchored" data-anchor-id="select-and-download-satellite-data-with-lowest-cloud-cover-and-temporal-consistency">1.2.1 Select and download satellite data with lowest cloud cover and temporal consistency</h3>
+<section id="downloading-datasets" class="level3">
+<h3 class="anchored" data-anchor-id="downloading-datasets">1.2 Downloading datasets</h3>
+<section id="select-and-download-satellite-data-with-lowest-cloud-cover-and-temporal-consistency" class="level4">
+<h4 class="anchored" data-anchor-id="select-and-download-satellite-data-with-lowest-cloud-cover-and-temporal-consistency">1.2.1 Select and download satellite data with lowest cloud cover and temporal consistency</h4>
 <p>To choose suitable images for temporal analysis in this study, we should be prioritising similar acquisition dates and low cloud cover. Having similar acquisition dates (images from around the same month per year, e.g.&nbsp;March) allows us to compare same-season images to minimise seasonal effects like monsoon season and ensure there is sufficient time between years for land cover change to happen (e.g.&nbsp;images from November 2020 and January 2021 would be relatively similar as only 3 months has passed, and no meaningful information can be extracted). Prioritise low to no cloud cover to ensure that the ground area is visible and are not covered by clouds and their shadows. Also, both images that piece to form Kuala Lumpur should be as close to the same date as possible, to ensure consistent image.</p>
+<ul>
+<li><p>Take note of usable images, then compare them across the years, before selecting images of similar months to be used for analysis.</p></li>
+<li><p>For this study, we have chosen the following images:</p></li>
+<li><p>2020: 28 Feb 500 (M) 28 Feb 500 (R)</p>
+<ul>
+<li><p>S2A_MSIL2A_20200228T032701_N0500_R018_T47NQD_20230627T090641.SAFE</p></li>
+<li><p>S2A_MSIL2A_20200228T032701_N0500_R018_T47NRD_20230627T090641.SAFE</p></li>
+</ul></li>
+<li><p>2021: 07 Feb 500 (M) 07 Feb 500 (R)</p>
+<ul>
+<li><p>S2B_MSIL2A_20210207T032919_N0500_R018_T47NQD_20230519T060502.SAFE</p></li>
+<li><p>S2B_MSIL2A_20210207T032919_N0500_R018_T47NRD_20230519T060502.SAFE</p></li>
+</ul></li>
+<li><p>2022: 13 Jan 510 (M) 13 Jan 510 (R)</p>
+<ul>
+<li><p>S2B_MSIL2A_20220113T033109_N0510_R018_T47NQD_20240428T204639.SAFE</p></li>
+<li><p>S2B_MSIL2A_20220113T033109_N0510_R018_T47NRD_20240428T204639.SAFE</p></li>
+</ul></li>
+<li><p>2023: 9 March 510 (M) 14 March 510 (R)</p>
+<ul>
+<li><p>S2B_MSIL2A_20230309T032559_N0510_R018_T47NQD_20240823T055939.SAFE</p></li>
+<li><p>S2A_MSIL2A_20230314T032511_N0510_R018_T47NRD_20240820T175125.SAFE</p></li>
+</ul></li>
+<li><p>2024 27 Feb 510 (M) 27 Feb 510 (R)</p>
+<ul>
+<li><p>S2A_MSIL2A_20240227T032711_N0510_R018_T47NQD_20240227T074952.SAFE</p></li>
+<li><p>S2A_MSIL2A_20240227T032711_N0510_R018_T47NRD_20240227T074952.SAFE</p></li>
+</ul></li>
+<li><p>To download, click on the <img src="images/Screenshot 2025-04-19 at 5.27.47 PM.png" class="img-fluid" width="43">&nbsp;icon. The file size is relatively big, so it may take some time.</p></li>
+</ul>
+</section>
+<section id="downloading-kl-dataset" class="level4">
+<h4 class="anchored" data-anchor-id="downloading-kl-dataset">1.2.2 Downloading KL dataset</h4>
+<ul>
+<li><p>Visit <a href="https://www.geoboundaries.org" class="uri">https://www.geoboundaries.org</a></p></li>
+<li><p>Go to ’Individual Country Files –&gt; Single Country –&gt; Files Type in Malaysia</p></li>
+<li><p>Download the last 2 datasets from 2020 and 2021</p></li>
+<li><p><img src="images/Screenshot 2025-04-19 at 5.35.20 PM 1.png" class="img-fluid" width="1000"></p></li>
+</ul>
+</section>
+</section>
+<section id="data-extraction-and-preprocessing" class="level2">
+<h2 class="anchored" data-anchor-id="data-extraction-and-preprocessing">2 Data Extraction and Preprocessing</h2>
+<section id="creating-project" class="level3">
+<h3 class="anchored" data-anchor-id="creating-project">2.1 Creating Project</h3>
+<ul>
+<li><p>From Window Desktop, launch QGIS</p>
+<ul>
+<li>You will start a new QGIS project.</li>
+</ul></li>
+<li><p>From the menu bar, select ‘Project –&gt; New’</p></li>
+<li><p>Select ‘Project –&gt; Save As..’ ,&nbsp; create a project name and ensure it is saved in QGIS XML Project format (*.QGIS)</p></li>
+</ul>
+</section>
+<section id="extracting-kl-shapefile" class="level3">
+<h3 class="anchored" data-anchor-id="extracting-kl-shapefile">2.2 Extracting KL shapefile</h3>
+<ul>
+<li><p>To add the shapefiles to QGIS, from the menu bar, select ‘Layer’ → ‘Add Layer’ → ‘Add Vector Layer…’</p></li>
+<li><p>From the dataset downloaded for 2020, choose the file ‘geoBoundaries-MYS-ADM2_simplified.shp’ and click ‘Add’</p></li>
+<li><p>From the dataset downloaded for 2021, choose the file ‘geoBoundaries-MYS-ADM3_simplified.shp’ and click ‘Add’</p></li>
+<li><p>Select and view the 2020 layer, then click on the dropdown beside found on the overlay panels, click ‘Select Feature(s)’ and select the KL polygon</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-04-19 at 5.49.17 PM.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="1000"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-04-19 at 5.49.53 PM.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="1000"></p>
+</figure>
+</div>
+<ul>
+<li><p>Next, right-click the layer  ExportSave selected features as…</p></li>
+<li><p>Save it as a Shapefile format named ‘KL’ and change CRS to EPSG:4751, click ‘OK’</p></li>
+<li><p><img src="images/Screenshot 2025-04-19 at 6.26.21 PM.png" class="img-fluid" width="1000"></p></li>
+<li><p>From the menu bar, select ‘Vector’ → ‘Geoprocessing Tools’ → ‘Clip…’</p></li>
+<li><p>Select the 2021 layer as input layer and ‘KL’ as overlay and click OK,&nbsp; you should see the image below. Save it as shapefile called ‘KLMap (with subzone)’. Remove all other layers</p></li>
+<li><p><img src="images/Screenshot 2025-04-19 at 6.28.11 PM.png" class="img-fluid" width="1000"></p></li>
+</ul>
+</section>
+<section id="extracting-kl-map-from-sentinel-2-data" class="level3">
+<h3 class="anchored" data-anchor-id="extracting-kl-map-from-sentinel-2-data">2.3 Extracting KL map from Sentinel-2 data</h3>
+<ul>
+<li><p>To add the Sentinel-2 files to QGIS, from the menu bar, select ‘Layer’ → ‘Add Layer’ → ‘Add Raster Layer…’</p></li>
+<li><p>Click the ‘…’ button and browse for 2020, the sentinel folder containing&nbsp; the ‘Left’ image of KL, for bands 2, 3, 4 and 8 under the ‘10m’ folder. Click ‘Open’, then click ‘Add’ and ‘Close’. Do so for the ‘Right’ image for KL also. You should be seeing something like that in your screen.</p></li>
+<li><p><img src="images/Screenshot 2025-04-19 at 6.46.40 PM.png" class="img-fluid" width="1000"></p></li>
+<li><p>We want to combine these two images, so from the menu bar, select ‘Raster’ → ‘Miscellaneous → ‘Build Virtual Raster…’</p></li>
+<li><p>Under input layer, click “…”&nbsp;and select two images of the same bands, then click ‘Run’</p></li>
+<li><p><img src="images/Screenshot 2025-04-19 at 6.48.02 PM.png" class="img-fluid" width="1000"></p></li>
+<li><p>A virtual layer will appear as shown below</p></li>
+<li><p><img src="images/Screenshot 2025-04-19 at 6.49.26 PM.png" class="img-fluid" width="1000"></p></li>
+<li><p>Next, we will clip out only the area we are interested in, which is the KL area</p></li>
+<li><p>From the menu bar, select ‘Raster’ → ‘Extraction’→ ‘Clip Raster by Mask Layer…’</p></li>
+<li><p>Put the ‘Virtual’ layer as Input layer and the ‘KLMap (with subzone)’ as Mask layer and click ‘Run’</p></li>
+<li><p><img src="images/Screenshot 2025-04-19 at 6.51.40 PM.png" class="img-fluid" width="1000"></p></li>
+<li><p>You will then see this</p></li>
+<li><p><img src="images/Screenshot 2025-04-19 at 6.53.07 PM.png" class="img-fluid" width="1000"></p></li>
+<li><p>Right click the layer → Export → Save As…. Save it in GeoTIFF format called ‘2020-0228-B02’ and remove the clipped and virtual layers</p></li>
+<li><p>Do so for all 4 bands for the year</p></li>
+</ul>
+</section>
+</section>
+<section id="processing-remote-sensing-images" class="level2">
+<h2 class="anchored" data-anchor-id="processing-remote-sensing-images">3 Processing Remote Sensing Images</h2>
+<section id="creating-true-composite-images-and-false-composite-images-from-extracted-images" class="level3">
+<h3 class="anchored" data-anchor-id="creating-true-composite-images-and-false-composite-images-from-extracted-images">3.1 Creating True Composite Images and False Composite Images from extracted images</h3>
+<p>Next, we want to create True and False Composite Images to distinguish urban areas from bare soil and highlighting vegetation:</p>
+<ul>
+<li><p>From the menu bar, select ‘Plugins’ → ‘Managed and Install Plugins…’, search and install ‘Semi-Automatic Classification Plugin’</p></li>
+<li><p><img src="images/Screenshot 2025-04-19 at 6.58.10 PM.png" class="img-fluid"></p></li>
+<li><p>Once installed, click on <img src="images/Screenshot 2025-04-19 at 6.59.09 PM.png" class="img-fluid" width="43">, and a panel called ‘SCP Dock’ will pop up below the ‘Browser’ panel</p></li>
+<li><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Click on <img src="images/Screenshot 2025-04-19 at 6.59.56 PM.png" class="img-fluid" width="43">&nbsp;and a window will pop up. Click on it again and click <img src="images/Screenshot 2025-04-19 at 7.00.33 PM.png" class="img-fluid" width="43">&nbsp;to create a band set. Name the set as ‘2020’ and click <img src="images/Screenshot 2025-04-19 at 7.01.26 PM.png" class="img-fluid" width="43">&nbsp;on the right side and add layers 2,3,4 and 8 into the set. Finally, click <img src="images/Screenshot 2025-04-19 at 7.02.03 PM.png" class="img-fluid" width="43">.</p></li>
+<li><p>Going back to the project view, &nbsp;under the same panel, type in ‘3-2-1’ and ‘Enter’ <img src="images/Screenshot 2025-04-19 at 7.03.21 PM.png" width="43" height="8">.</p></li>
+<li><p>A Virtual Band Set will pop up, showing the True Composite Image for the band set</p></li>
+<li><p><img src="images/Screenshot 2025-04-19 at 7.04.30 PM.png" class="img-fluid" width="1000"></p></li>
+<li><p>Export the band set as a GeoTIFF image, but change the output mode as a Rendered Image. Save it as ‘2020-TCI’<img src="images/Screenshot 2025-04-19 at 7.08.33 PM.png" class="img-fluid" width="1000"></p></li>
+<li><p>Now change the virtual band set to ‘4-3-2’ and you will get a False Colour Composite of the map like this. Save it accordingly too as ‘2020-FCC’</p></li>
+<li><p><img src="images/Screenshot 2025-04-19 at 7.09.19 PM.png" class="img-fluid" width="1000"><br>
+</p></li>
+</ul>
+</section>
+<section id="using-scp-plugin-to-do-supervised-classification-for-the-map-categorising-by-various-land-cover-types" class="level3">
+<h3 class="anchored" data-anchor-id="using-scp-plugin-to-do-supervised-classification-for-the-map-categorising-by-various-land-cover-types">3.2 Using SCP plugin to do supervised classification for the map, categorising by various land cover types</h3>
+<p>Next, instead of classifying each land cover type manually, we will be training the model to classify it for us. Upon preliminary analysis of both TCI and FCC, we can determine a few land cover types: Natural Vegetation, Managed Vegetation, Water Body, Impervious Surfaces, Built-up 1 (low-rise), Built-up 2 (high-rise), Barren Land, and Shadow</p>
+<ul>
+<li><p>Under the SCP Dock, go to the ‘Training Input’ tab <img src="images/Screenshot 2025-04-19 at 7.11.20 PM.png" class="img-fluid" width="43"> .&nbsp; Click <img src="images/Screenshot 2025-04-19 at 7.11.52 PM.png" class="img-fluid" width="43">&nbsp;to create a new training input. Name it ‘2020-Train’</p></li>
+<li><p>Select&nbsp; <img src="images/Screenshot 2025-04-19 at 7.12.54 PM.png" class="img-fluid" width="43">&nbsp;on the panel near the top of the project to start creating polygons for training. Left click to create points and right click at the end to close off the polygon. At the bottom of the SCP Dock, once you have created the polygon,&nbsp; you should edit the MCID (Macro class index) and the CID (Class index) to classify the area you have selected properly. For example, I have selected an area of forest, I will classify it as follows:</p></li>
+<li><p><img src="images/Screenshot 2025-04-19 at 7.13.42 PM.png" class="img-fluid"></p></li>
+<li><p>Here are the MCID and CID we have used to group our areas:</p></li>
+<li><p>Try to use these as guidelines:</p>
+<ul>
+<li><p>Number of points should be proportional to the area in the location covered by said MCID (If forest covers 20%, forest should have around 20% the number of points compared to total)</p></li>
+<li><p>Try to select far away points even if macro-classes are the same to ensure fair distribution of points and different reflectance values, and left and right of the map (since it is pieced using two separate satellite images (70% L 30% R image)and reflectance might differ slightly)</p></li>
+<li><p>Number of points for Training data to test data should be about 70% to 30%</p></li>
+<li><p>Try to select a bigger area and not just a few pixels, as it would be hard for the model to distinguish</p></li>
+<li><p>After classifying them, to add each polygon into your training input, click <img src="images/Screenshot 2025-04-19 at 7.15.45 PM.png" class="img-fluid" width="43"> and a black area will show in its place, indicating that the area has been cut out.</p></li>
+</ul></li>
+<li><p>Our Macro classes and Classes identified (with examples):</p>
+<ul>
+<li><p>Train data</p></li>
+<li><p>MCID,CID</p></li>
+<li><p>1 Natural Vegetation</p></li>
+<li><p>1.1 Forest :</p>
+<p><img src="images/Screenshot 2025-04-19 at 7.17.46 PM.png" class="img-fluid" width="1000"></p></li>
+<li><p>2 Managed Vegetation</p>
+<ul>
+<li><p>2.1 Golf course grass</p>
+<p><img src="images/Screenshot 2025-04-19 at 7.19.00 PM.png" class="img-fluid" width="1000"></p></li>
+<li><p>2.2 Sports field</p>
+<p><img src="images/Screenshot 2025-04-19 at 7.19.52 PM.png" class="img-fluid" width="1000"></p></li>
+</ul></li>
+<li><p>3 Water Body</p>
+<ul>
+<li><p>3.1 Flood Reservoir</p>
+<p><img src="images/Screenshot 2025-04-19 at 7.21.27 PM.png" class="img-fluid" width="1000"></p></li>
+<li><p>3.2 Lakes</p>
+<p><img src="images/Screenshot 2025-04-19 at 7.22.21 PM.png" class="img-fluid" width="1000"></p></li>
+<li><p>3.3 Rivers</p>
+<p><img src="images/Screenshot 2025-04-19 at 7.23.06 PM.png" class="img-fluid" width="1000"></p></li>
+</ul></li>
+<li><p>4 Impervious Surfaces</p>
+<ul>
+<li><p>4.1 Roads:</p>
+<p><img src="images/Screenshot 2025-04-19 at 7.24.34 PM.png" class="img-fluid" width="1000"></p></li>
+</ul></li>
+<li><p>5 Built-up 1 (low-rise)</p>
+<ul>
+<li><p>5.1 Houses</p>
+<p><img src="images/Screenshot 2025-04-19 at 7.26.12 PM.png" class="img-fluid" width="1000"></p></li>
+</ul></li>
+<li><p>6 Built-up 2 (high-rise)</p>
+<ul>
+<li><p>6.1 Buildings (High-rise buildings are typically accompanied by shadows)</p>
+<p><img src="images/Screenshot 2025-04-19 at 7.27.49 PM.png" class="img-fluid" width="1000"></p></li>
+</ul></li>
+<li><p>7 Barren Land:</p>
+<ul>
+<li><p>7.1 Empty Lot —&gt; Super bright reflective surface</p>
+<p><img src="images/Screenshot 2025-04-19 at 7.27.49 PM-01.png" class="img-fluid" width="1000"></p></li>
+<li><p>7.2 Empty Lot —&gt; Reddish brown empty lots</p>
+<p><img src="images/Screenshot 2025-04-19 at 7.30.25 PM.png" class="img-fluid" width="1000"></p></li>
+<li><p>7.3 Open soil —&gt; Cemetery/Parks brown land</p>
+<p><img src="images/Screenshot 2025-04-19 at 7.31.29 PM.png" class="img-fluid" width="1000"></p></li>
+</ul></li>
+<li><p>8 Shadow</p>
+<ul>
+<li><p>8.1 Shadow —&gt; Select shadow of buildings, trace them to their exact shape</p>
+<p><img src="images/Screenshot 2025-04-19 at 7.32.43 PM.png" class="img-fluid" width="1000"></p></li>
+</ul></li>
+</ul></li>
+<li><p>After classifying, try to change the colours for each CID into their own colours and group them, to allow for easier visualisation.</p>
+<p><img src="images/Screenshot 2025-04-19 at 7.33.36 PM.png" class="img-fluid" width="1000"></p></li>
+<li><p>This is the colour palette used by our group, in order of macro classes, stopping at Black for Shadow.</p>
+<p><img src="images/Screenshot 2025-04-19 at 7.34.16 PM.png" class="img-fluid"></p></li>
+<li><p>Next, select all the points, and click on <img src="images/Screenshot 2025-04-19 at 7.34.53 PM.png" class="img-fluid" width="43">&nbsp;to see the spectral signature plot for the points</p>
+<p><img src="images/Screenshot 2025-04-19 at 7.35.28 PM.png" class="img-fluid" width="1000"></p></li>
+<li><p>It will look something like this:</p>
+<p><img src="images/Screenshot 2025-04-19 at 7.36.19 PM.png" class="img-fluid" width="1000"></p></li>
+<li><p>We can see that for most classes, they are grouped together. However, the red lines(Built-up 1 low-rise Houses) have a wide range of values, which is not what we want, and maybe creating an extra macro class to further classify them or hinting to reselect the polygons. Also, grey(roads), black(shadow) and light blue(water body) have similar values, hinting that they could be misclassified by the model.</p></li>
+<li><p>Reminder that whenever you are attempting to add new points to the spectral plot, you should be deleting old ones first, or they may interfere with the data.</p></li>
+<li><p>Next, when all the points are chosen and you are satisfied with them,&nbsp; click <img src="images/Screenshot 2025-04-19 at 7.37.18 PM.png" class="img-fluid" width="43">&nbsp;and go back to the SCP dialogue window</p></li>
+<li><p>Go to ‘Band ProcessingClassification’ this time and choose the correct band set that you are currently using. Select ‘Linear scaling’ and ‘Macroclass ID’ for training. Click ‘Run’ and save it as ‘2020-Train-data-1’.</p>
+<p><img src="images/Screenshot 2025-04-19 at 7.37.55 PM.png" class="img-fluid" width="1000"></p></li>
+<li><p>When it is done, a new layer will be added to your project window, showing you the classification of the different land cover types</p>
+<p><img src="images/Screenshot 2025-04-19 at 7.39.03 PM.png" class="img-fluid" width="1000"></p></li>
+<li><p>Repeat this step until you are satisfied with the classification</p></li>
+<li><p>Then, right click ‘SCP training layer’ and export it as shapefile and save it</p></li>
+<li><p>Save, then click on <img src="images/Screenshot 2025-04-19 at 7.40.15 PM.png" class="img-fluid" width="43">&nbsp;to create a new set for the Test data called ‘2020-Test’</p></li>
+<li><p>Ensure that the training shapefile layer is shown and visible, to ensure that you do not select the same area for both Training and Test</p>
+<p><img src="images/Screenshot 2025-04-19 at 7.40.55 PM.png" class="img-fluid"></p></li>
+<li><p>Once done, export this layer into a shapefile too, called ‘2020-Test’</p></li>
+</ul>
+</section>
+<section id="conducting-accuracy-assessment-for-trained-model" class="level3">
+<h3 class="anchored" data-anchor-id="conducting-accuracy-assessment-for-trained-model">3.3 Conducting Accuracy Assessment for trained model</h3>
+<ul>
+<li><p>Next, we return to SCP dialogue window after clicking on <img src="images/Screenshot 2025-04-19 at 7.42.55 PM.png" class="img-fluid" width="43"></p></li>
+<li><p>Go to ‘Postprocessing —&gt; Accuracy’</p></li>
+<li><p>Select the train data file for&nbsp; ‘Select the classification to assess’ and put the shapefile test layer into ‘Select the reference vector or raster’. Click the <img src="images/Screenshot 2025-04-19 at 7.43.55 PM.png" class="img-fluid" width="43">&nbsp;button if the layers are not showing up, and change the ‘Vector field’ to ‘macroclass’. Click ‘Run’ and save it as ‘MLAccuracy2020’. After running, the Accuracy Assessment Report appears, showing 1. Long pair-wise error list 2. Confusion Matrix (Error Matrix) and 3. Kappa Hat Matrix. There will be an overall accuracy and an accuracy for each class.</p>
+<p><img src="images/Screenshot 2025-04-19 at 7.45.00 PM.png" class="img-fluid" width="1000"></p></li>
+</ul>
 
 
 </section>
