@@ -64,3 +64,21 @@ Click on SEARCH
 ### 1.2.1 Select and download satellite data with lowest cloud cover and temporal consistency
 
 To choose suitable images for temporal analysis in this study, we should be prioritising similar acquisition dates and low cloud cover. Having similar acquisition dates (images from around the same month per year, e.g. March) allows us to compare same-season images to minimise seasonal effects like monsoon season and ensure there is sufficient time between years for land cover change to happen (e.g. images from November 2020 and January 2021 would be relatively similar as only 3 months has passed, and no meaningful information can be extracted). Prioritise low to no cloud cover to ensure that the ground area is visible and are not covered by clouds and their shadows. Also, both images that piece to form Kuala Lumpur should be as close to the same date as possible, to ensure consistent image.
+
+-   Take note of usable images, then compare them across the years, before selecting images of similar months to be used for analysis.
+
+-   For this study, we have chosen the following images:
+
+-   2020: 28 Feb 500 (M) 28 Feb 500 (R)
+
+    -   S2A_MSIL2A_20200228T032701_N0500_R018_T47NQD_20230627T090641.SAFE
+
+    -   S2A_MSIL2A_20200228T032701_N0500_R018_T47NRD_20230627T090641.SAFE
+
+-   2021: 07 Feb 500 (M) 07 Feb 500 (R)
+
+    -   S2B_MSIL2A_20210207T032919_N0500_R018_T47NQD_20230519T060502.SAFE
+
+    -   S2B_MSIL2A_20210207T032919_N0500_R018_T47NRD_20230519T060502.SAFE
+
+-   2022: 13 Jan 510 (M) 13 Jan 510 (R)
