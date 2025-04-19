@@ -254,10 +254,40 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="vector-raster-layer-selections" class="level4">
 <h4 class="anchored" data-anchor-id="vector-raster-layer-selections">4.1.2 Vector &amp; Raster Layer Selections</h4>
+<p>We obtained shapefiles for Malaysia through <a href="http://geoboundaries.org">geoBoundaries.org</a>. We first selected the KL boundary from the entire Malaysia map and exported the selected feature to obtain the vector layer.&nbsp;</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-04-19 at 8.30.35 PM.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="800"></p>
+</figure>
+</div>
+<p>Although there were many subzone areas connected to areas outside of KL when overlaying both layers, we still decided to Clip them to preserve the shape of the boundary so that it matches with the boundaries from OpenStreetMap, and also since it was the only open-sourced dataset that contained the sub boundaries for KL.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-04-19 at 8.31.54 PM.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="800"></p>
+</figure>
+</div>
 </section>
 </section>
 <section id="image-pre-processing" class="level3">
 <h3 class="anchored" data-anchor-id="image-pre-processing">4.2 Image Pre-processing</h3>
+<p>Next, for the raster layers, we wanted to combine both the middle and right raster layers with each other. Due to some possible overlapping of images, we did not use the ‘Merge’ function as it gave significantly larger pixel values (reflectance values up to 19000) and used ‘Build Virtual Raster’ instead. We combined the Middle and Right images for each band (bands 2,3,4,8).</p>
+<p><img src="images/Screenshot 2025-04-19 at 8.33.08 PM.png" class="img-fluid" width="800"></p>
+<p>We then clipped them by Mask Extent to the KL Map to obtain the relevant image needed for KL</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-04-19 at 8.34.05 PM.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="800"></p>
+</figure>
+</div>
+<p><img src=".png" class="img-fluid">After obtaining the layers for all 4 10m resolution bands, we then used the Semi-Automatic Classification Plugin (SCP Plugin) to put them together as a band set. By changing the RGB to 3-2-1 (using bands 4,3, then 2), we are able to obtain the True Composite Image (TCI) for the band set. The&nbsp;</p>
+<p>TCI allows a quick visual inspection of the land cover types, and allows identification of roads from vegetation, water bodies like reservoirs and rivers, as well as forested areas and bare land</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-04-19 at 8.35.29 PM.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="800"></p>
+</figure>
+</div>
+<p><img src=".png" class="img-fluid">Then by changing the RGB to 4-3-2 (using bands 8,4, then 3), we are able to obtain the False Composite (FCC) for the band set. The FCC shows vegetation as bright red/pink, urban areas as blue/grey and water bodies as black/dark blue. It can show vegetation clearly and allows impervious surfaces mapping.</p>
+<p><img src=".png" class="img-fluid"></p>
+<p><img src="images/Screenshot 2025-04-19 at 8.36.39 PM.png" class="img-fluid" width="800"><img src=".png" class="img-fluid"></p>
 </section>
 </section>
 <section id="identification-categorisation-of-land-classes" class="level2">

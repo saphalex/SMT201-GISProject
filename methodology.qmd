@@ -37,7 +37,35 @@ We also made sure that for the 2 images selected in each year, they were capture
 
 #### 4.1.2 Vector & Raster Layer Selections
 
-### 4.2 Image Pre-processing
+We obtained shapefiles for Malaysia through [geoBoundaries.org](http://geoboundaries.org). We first selected the KL boundary from the entire Malaysia map and exported the selected feature to obtain the vector layer. 
+
+![](images/Screenshot 2025-04-19 at 8.30.35 PM.png){fig-align="center" width="800"}
+
+Although there were many subzone areas connected to areas outside of KL when overlaying both layers, we still decided to Clip them to preserve the shape of the boundary so that it matches with the boundaries from OpenStreetMap, and also since it was the only open-sourced dataset that contained the sub boundaries for KL.
+
+![](images/Screenshot 2025-04-19 at 8.31.54 PM.png){fig-align="center" width="800"}
+
+### 4.2 Image Pre-processing 
+
+Next, for the raster layers, we wanted to combine both the middle and right raster layers with each other. Due to some possible overlapping of images, we did not use the ‘Merge’ function as it gave significantly larger pixel values (reflectance values up to 19000) and used ‘Build Virtual Raster’ instead. We combined the Middle and Right images for each band (bands 2,3,4,8).
+
+![](images/Screenshot 2025-04-19 at 8.33.08 PM.png){width="800"}
+
+We then clipped them by Mask Extent to the KL Map to obtain the relevant image needed for KL
+
+![](images/Screenshot 2025-04-19 at 8.34.05 PM.png){fig-align="center" width="800"}
+
+![]()After obtaining the layers for all 4 10m resolution bands, we then used the Semi-Automatic Classification Plugin (SCP Plugin) to put them together as a band set. By changing the RGB to 3-2-1 (using bands 4,3, then 2), we are able to obtain the True Composite Image (TCI) for the band set. The 
+
+TCI allows a quick visual inspection of the land cover types, and allows identification of roads from vegetation, water bodies like reservoirs and rivers, as well as forested areas and bare land
+
+![](images/Screenshot 2025-04-19 at 8.35.29 PM.png){fig-align="center" width="800"}
+
+![]()Then by changing the RGB to 4-3-2 (using bands 8,4, then 3), we are able to obtain the False Composite (FCC) for the band set. The FCC shows vegetation as bright red/pink, urban areas as blue/grey and water bodies as black/dark blue. It can show vegetation clearly and allows impervious surfaces mapping.
+
+![]()
+
+![](images/Screenshot 2025-04-19 at 8.36.39 PM.png){width="800"}![]()
 
 ## 4.3 Identification & Categorisation of Land Classes
 
