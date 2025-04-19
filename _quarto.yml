@@ -14,7 +14,7 @@ website:
         text: Data Analysis
       - href: methodology.qmd
         text: Methodology
-      - href: _site/qgis2web/index.html
+      - href: file:///Users/annesaphrin/Desktop/GISProject/SMT201-GISProject/_site/qgis2web/index.html
         text: Web Maps
       - href: lessons.qmd
         text: Recommendations & Lessons
