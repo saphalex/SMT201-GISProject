@@ -23,31 +23,31 @@ On the other hand, the chart shows a relatively small percentage of land cover o
 
 ### 5.1.2 Water Bodies
 
-![*Bar chart excerpt showing the composition of water bodies over the 5 years*](images/Screenshot 2025-04-16 at 1.32.27 PM.png){fig-align="center" width="400"}
+![*Bar chart excerpt showing the composition of water bodies over the 5 years*](images/Screenshot%202025-04-16%20at%201.32.27%20PM.png){fig-align="center" width="400"}
 
 The composition of water bodies has consistently remained relatively low across all 5 years, with the highest figure being 3.88% in 2020. After a 2.59% drop to 1.29% in 2021, it increased insignificantly to 1.31% in 2022 before decreasing to 0.88% in 2023. Notably, there is a significant 2.46% increase from 0.88% in 2023 to 3.34 in 2024, once again signalling to us that there may have been some type of an intervening event in 2023 that could have resulted in the increase in 2024. 
 
 ### 5.1.3 Impervious Surfaces
 
-![*Bar chart excerpt showing the composition of impervious surfaces over the 5 years*](images/Screenshot 2025-04-16 at 1.34.43 PM.png){fig-align="center" width="400"}
+![*Bar chart excerpt showing the composition of impervious surfaces over the 5 years*](images/Screenshot%202025-04-16%20at%201.34.43%20PM.png){fig-align="center" width="400"}
 
 Over the 5 year span, there has been a constant decrease in the percentage composition of impervious surfaces (roads) in the state, with 2 significant drops: a 4.08% decrease from 13.96% in 2020 to 9.88% in 2021, as well as a 3.35% decrease from 8.56% in 2023 to 5.21% in 2024. These decreases may be attributed to significant intervening events in 2020 and 2023 respectively. Otherwise, even though it decreased slightly every year (9.88% in 2021 to 9.49% in 2022, 9.49% in 2022 to 8.56% in 2023), the percentage composition did not fluctuate significantly from 2021 to 2023.
 
 ### 5.1.4 Low-Rise Buildings
 
-![*Bar chart excerpt showing the composition of low-rise buildings over the 5 years*](images/Screenshot 2025-04-16 at 1.36.31 PM.png){fig-align="center" width="400"}
+![*Bar chart excerpt showing the composition of low-rise buildings over the 5 years*](images/Screenshot%202025-04-16%20at%201.36.31%20PM.png){fig-align="center" width="400"}
 
 The percentage composition of low-rise buildings in the state has consistently been quite high, consistent with the fact that KL is a highly urbanised city. There seems to be consistent increases from 2020 (17.51%) to 2021 (19.50%) as well as from 2021 (19.50%) to 2022 (24.32%), which could be a sign of greater urbanisation. From 2022 to 2023 however, there is a 3.75% decrease from 24.32% (2022) to 20.57% (2023) and no further major increase or decrease after 2023. This could signal efforts to scale back on urban development from 2022 onwards, but further research and information is required to conclusively state anything regarding these figures.  
 
 ### 5.1.5 Barren Land
 
-![*Bar chart excerpt showing the composition of barren land over the 5 years*](images/Screenshot 2025-04-16 at 1.38.43 PM.png){fig-align="center" width="400"}
+![*Bar chart excerpt showing the composition of barren land over the 5 years*](images/Screenshot%202025-04-16%20at%201.38.43%20PM.png){fig-align="center" width="400"}
 
 The percentage composition of barren land present in the state has undergone fluctuations from 2020 to 2024. Barring a somewhat insignificant 0.61% increase from 11.67% in 2020 to 12.28% in 2021, there were 2 more notable decreases: a 3.66% decrease from 12.28% in 2021 to 8.62% in 2022, as well as a 1.42% decrease from 8.62% in 2022 to 7.20% in 2023. These decreases could be because of the usage of barren land for urbanisation and development purposes. Most interestingly, the composition of barren land more than doubles from 2023 to 2024 – a whopping 7.21% increase from 7.20% in 2023 to 14.41% in 2024. This could be attributed to some type of intervening event that has led to some massive clearance of land.  
 
-## 5.2 **Overall Trend in Land Cover Change**
+## 5.2 Overall Trend in Land Cover Change
 
-![*Line chart showing the overall trends of the selected land classes over the 5 years*](images/Screenshot 2025-04-16 at 1.40.08 PM.png){fig-align="center" width="1008"}
+![*Line chart showing the overall trends of the selected land classes over the 5 years*](images/Screenshot%202025-04-16%20at%201.40.08%20PM.png){fig-align="center" width="1008"}
 
 From the above chart, we are able to observe the following: 
 
@@ -71,11 +71,10 @@ Ultimately, these patterns reflect how urban sprawl into hilly, vegetated region
 
 Our above data analysis provides us with a broad snapshot of the type of land cover changes that have happened over the span of 5 years. Given the size of the area we have chosen to analyse, we wish to focus this section of our analysis on a major landslide that could grant us greater insight into the overall trends we have observed. We also lack sufficient information and time to replicate this analysis for all landslides that happened. Therefore, we focused on specifically the 2023 Bukit Tunku landslide given its scale and the damage it created to illustrate the devastating effects landslides can have on land cover.
 
-![*A side-by-side comparison of the land cover at Bukit Tunku before and after the 2023 landslide*](images/Screenshot 2025-04-16 at 1.43.47 PM.png){fig-align="center" width="1000"}
+![*A side-by-side comparison of the land cover at Bukit Tunku before and after the 2023 landslide*](images/Screenshot%202025-04-16%20at%201.43.47%20PM.png){fig-align="center" width="1000"}
 
 From the indicated parts on the maps, we are able to observe that there has been a loss of low-rise building(s) and an increase in barren land. This is consistent with what was observed in the aftermath of the landslide, which occurred near the Malaysian Anti-Corruption Academy at Persiaran Tuanku Syed Sirajuddin in Bukit Tunku. Interestingly, we are also able to observe from the above line graph that barren land has increased sharply from 2023 to 2024 and that natural vegetation has decreased in that same time frame. 
 
-![*A side-by-side comparison of MACA at Bukit Tunku before and after the 2023 landslide*](images/Screenshot 2025-04-16 at 1.44.51 PM.png){fig-align="center" width="1000"}
+![*A side-by-side comparison of MACA at Bukit Tunku before and after the 2023 landslide*](images/Screenshot%202025-04-16%20at%201.44.51%20PM.png){fig-align="center" width="1000"}
 
 While it would be myopic to conclude that this one landslide alone would have caused such drastic changes in land cover, especially for the natural vegetation and barren land classes, such events are consistent with the trends observed as a whole.
-
