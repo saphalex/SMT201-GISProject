@@ -30,7 +30,7 @@ website:
 format:
   html:
     theme:
-      - cerulean
+      - minty
       - brand
     css: styles.css
     toc: true
