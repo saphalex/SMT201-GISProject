@@ -13,7 +13,7 @@ Throughout this project, we faced many limitations: 
 
 2.  **Classification troubles:** Given the type of data we were working with, we struggled to obtain accurate classification values. Some of the vector layer imaging that we used were not sufficiently detailed and often had blurry, pixelated visualisation, which meant that the SCP plugin was more likely to classify ROI polygons belonging to certain land classes into the wrong land classes. For example, the SCP plugin struggled very much with distinguishing between ROI polygons originally selected from roads (Impervious Surfaces) and polygons selected from rivers (Water Bodies), which meant that our accuracy values specifically for those land classes were greatly affected across the years.
 
-# 7.0 **Recommendations**
+# 7.0 Recommendations
 
 Given the data we have analysed, the trends we have observed and the conclusions we have drawn, we believe that the following would be apt recommendations to ensure that the likelihood of landslides are reduced and environmental risks are mitigated while balancing the need for urbanisation: 
 
