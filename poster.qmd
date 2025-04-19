@@ -7,4 +7,4 @@ date-modified: "last-modified"
 
 # Poster
 
-![Pavement VS Peat Poster](images/Pavement vs Peat-01.jpg){width="2000"}
+![Pavement VS Peat Poster](images/Pavement%20vs%20Peat-01.jpg){width="2000"}
