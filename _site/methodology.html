@@ -106,7 +106,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Methodology</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./_site/qgis2web/index.html"> 
+    <a class="nav-link" href="./qgis2web/index.html"> 
 <span class="menu-text">Web Maps</span></a>
   </li>  
   <li class="nav-item">
@@ -238,7 +238,7 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>The above image shows the 2 tiles selected for the analysis of the KL region in 2020</figcaption>
 </figure>
 </div>
-<p>To ensure temporal consistency, we tried our best to ensure that the images had a minimum of a 12-month gap between the years (e.g.&nbsp;if we selected images in February for the year 2024, we would ensure that the preceding year’s images would be in either February or January). If this was not possible due to poor imaging or excessive cloud cover, we selected the most suitable image(s) that had the furthest time gap between itself and the following year’s image(s).&nbsp;</p>
+<p>To ensure temporal consistency, we tried our best to ensure that the images had a minimum of a 12-month gap between the years (e.g.&nbsp;if we selected images in February for the year 2024, we would ensure that the preceding year’s images would be in either February or January). If this was not possible due to poor imaging or excessive cloud cover, we selected the most suitable image(s) that had the furthest time gap between itself and the following year’s image(s).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Screenshot 2025-04-14 at 11.17.55 PM.png" class="img-fluid figure-img"></p>
@@ -254,7 +254,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="vector-raster-layer-selections" class="level4">
 <h4 class="anchored" data-anchor-id="vector-raster-layer-selections">4.1.2 Vector &amp; Raster Layer Selections</h4>
-<p>We obtained shapefiles for Malaysia through <a href="http://geoboundaries.org">geoBoundaries.org</a>. We first selected the KL boundary from the entire Malaysia map and exported the selected feature to obtain the vector layer.&nbsp;</p>
+<p>We obtained shapefiles for Malaysia through <a href="http://geoboundaries.org">geoBoundaries.org</a>. We first selected the KL boundary from the entire Malaysia map and exported the selected feature to obtain the vector layer.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Screenshot 2025-04-19 at 8.30.35 PM.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="800"></p>
@@ -286,7 +286,6 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <p><img src=".png" class="img-fluid">Then by changing the RGB to 4-3-2 (using bands 8,4, then 3), we are able to obtain the False Composite (FCC) for the band set. The FCC shows vegetation as bright red/pink, urban areas as blue/grey and water bodies as black/dark blue. It can show vegetation clearly and allows impervious surfaces mapping.</p>
-<p><img src=".png" class="img-fluid"></p>
 <p><img src="images/Screenshot 2025-04-19 at 8.36.39 PM.png" class="img-fluid" width="800"><img src=".png" class="img-fluid"></p>
 </section>
 </section>
@@ -332,7 +331,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Sub-class 1: Shadows of Buildings (represented on the following spectral plots by <img src="images/Screenshot 2025-04-16 at 11.40.43 AM.png" class="img-fluid" width="38">)</li>
 </ul></li>
 </ol>
-<p>Therefore, there are a total of 13 sub-classes that we have identified which require training and test data to be selected for. To create the training and test data sets, we utilised the ROI polygon creation feature present in the SCP plug-in, with each polygon representing a data point. For each subclass, we created approximately 80 data points for the training data set and 35 data points for the test data set. Ultimately, the ratio of training data to test data roughly mimicked a 70%-30% split and they must be saved in the correct format (ESRI Shapefiles). This process must be repeated for each year within the selected timeframe.&nbsp;</p>
+<p>Therefore, there are a total of 13 sub-classes that we have identified which require training and test data to be selected for. To create the training and test data sets, we utilised the ROI polygon creation feature present in the SCP plug-in, with each polygon representing a data point. For each subclass, we created approximately 80 data points for the training data set and 35 data points for the test data set. Ultimately, the ratio of training data to test data roughly mimicked a 70%-30% split and they must be saved in the correct format (ESRI Shapefiles). This process must be repeated for each year within the selected time frame.&nbsp;</p>
 <p><br>
 </p>
 <div class="quarto-figure quarto-figure-center">

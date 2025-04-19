@@ -27,7 +27,7 @@ After deciding that we would focus on KL for this project, we selected the relev
 
 ![The above image shows the 2 tiles selected for the analysis of the KL region in 2020](images/Screenshot%202025-04-14%20at%2011.16.11%20PM.png){fig-align="center"}
 
-To ensure temporal consistency, we tried our best to ensure that the images had a minimum of a 12-month gap between the years (e.g. if we selected images in February for the year 2024, we would ensure that the preceding year’s images would be in either February or January). If this was not possible due to poor imaging or excessive cloud cover, we selected the most suitable image(s) that had the furthest time gap between itself and the following year’s image(s). 
+To ensure temporal consistency, we tried our best to ensure that the images had a minimum of a 12-month gap between the years (e.g. if we selected images in February for the year 2024, we would ensure that the preceding year’s images would be in either February or January). If this was not possible due to poor imaging or excessive cloud cover, we selected the most suitable image(s) that had the furthest time gap between itself and the following year’s image(s).
 
 ![The above image shows the right tiles selected for 2024 and 2023. An image in March was selected for 2023 due to the lack of good imaging in January/February.](images/Screenshot%202025-04-14%20at%2011.17.55%20PM.png){fig-align="center"}
 
@@ -37,35 +37,33 @@ We also made sure that for the 2 images selected in each year, they were capture
 
 #### 4.1.2 Vector & Raster Layer Selections
 
-We obtained shapefiles for Malaysia through [geoBoundaries.org](http://geoboundaries.org). We first selected the KL boundary from the entire Malaysia map and exported the selected feature to obtain the vector layer. 
+We obtained shapefiles for Malaysia through [geoBoundaries.org](http://geoboundaries.org). We first selected the KL boundary from the entire Malaysia map and exported the selected feature to obtain the vector layer.
 
-![](images/Screenshot 2025-04-19 at 8.30.35 PM.png){fig-align="center" width="800"}
+![](images/Screenshot%202025-04-19%20at%208.30.35%20PM.png){fig-align="center" width="800"}
 
 Although there were many subzone areas connected to areas outside of KL when overlaying both layers, we still decided to Clip them to preserve the shape of the boundary so that it matches with the boundaries from OpenStreetMap, and also since it was the only open-sourced dataset that contained the sub boundaries for KL.
 
-![](images/Screenshot 2025-04-19 at 8.31.54 PM.png){fig-align="center" width="800"}
+![](images/Screenshot%202025-04-19%20at%208.31.54%20PM.png){fig-align="center" width="800"}
 
-### 4.2 Image Pre-processing 
+### 4.2 Image Pre-processing
 
 Next, for the raster layers, we wanted to combine both the middle and right raster layers with each other. Due to some possible overlapping of images, we did not use the ‘Merge’ function as it gave significantly larger pixel values (reflectance values up to 19000) and used ‘Build Virtual Raster’ instead. We combined the Middle and Right images for each band (bands 2,3,4,8).
 
-![](images/Screenshot 2025-04-19 at 8.33.08 PM.png){width="800"}
+![](images/Screenshot%202025-04-19%20at%208.33.08%20PM.png){width="800"}
 
 We then clipped them by Mask Extent to the KL Map to obtain the relevant image needed for KL
 
-![](images/Screenshot 2025-04-19 at 8.34.05 PM.png){fig-align="center" width="800"}
+![](images/Screenshot%202025-04-19%20at%208.34.05%20PM.png){fig-align="center" width="800"}
 
 ![]()After obtaining the layers for all 4 10m resolution bands, we then used the Semi-Automatic Classification Plugin (SCP Plugin) to put them together as a band set. By changing the RGB to 3-2-1 (using bands 4,3, then 2), we are able to obtain the True Composite Image (TCI) for the band set. The 
 
 TCI allows a quick visual inspection of the land cover types, and allows identification of roads from vegetation, water bodies like reservoirs and rivers, as well as forested areas and bare land
 
-![](images/Screenshot 2025-04-19 at 8.35.29 PM.png){fig-align="center" width="800"}
+![](images/Screenshot%202025-04-19%20at%208.35.29%20PM.png){fig-align="center" width="800"}
 
 ![]()Then by changing the RGB to 4-3-2 (using bands 8,4, then 3), we are able to obtain the False Composite (FCC) for the band set. The FCC shows vegetation as bright red/pink, urban areas as blue/grey and water bodies as black/dark blue. It can show vegetation clearly and allows impervious surfaces mapping.
 
-![]()
-
-![](images/Screenshot 2025-04-19 at 8.36.39 PM.png){width="800"}![]()
+![](images/Screenshot%202025-04-19%20at%208.36.39%20PM.png){width="800"}![]()
 
 ## 4.3 Identification & Categorisation of Land Classes
 
@@ -113,7 +111,7 @@ Using the false and true colour composites obtained as well as the OpenStreetMap
 
     -   Sub-class 1: Shadows of Buildings (represented on the following spectral plots by ![](images/Screenshot%202025-04-16%20at%2011.40.43%20AM.png){width="38"})
 
-Therefore, there are a total of 13 sub-classes that we have identified which require training and test data to be selected for. To create the training and test data sets, we utilised the ROI polygon creation feature present in the SCP plug-in, with each polygon representing a data point. For each subclass, we created approximately 80 data points for the training data set and 35 data points for the test data set. Ultimately, the ratio of training data to test data roughly mimicked a 70%-30% split and they must be saved in the correct format (ESRI Shapefiles). This process must be repeated for each year within the selected timeframe. 
+Therefore, there are a total of 13 sub-classes that we have identified which require training and test data to be selected for. To create the training and test data sets, we utilised the ROI polygon creation feature present in the SCP plug-in, with each polygon representing a data point. For each subclass, we created approximately 80 data points for the training data set and 35 data points for the test data set. Ultimately, the ratio of training data to test data roughly mimicked a 70%-30% split and they must be saved in the correct format (ESRI Shapefiles). This process must be repeated for each year within the selected time frame. 
 
 \
 
