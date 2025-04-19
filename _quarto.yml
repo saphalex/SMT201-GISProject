@@ -18,6 +18,8 @@ website:
         text: Web Maps
       - href: lessons.qmd
         text: Recommendations & Lessons
+      - href: stepbystep.qmd
+        text: Step-by-Step
       - href: poster.qmd
         text: Poster
       - href: about.qmd
