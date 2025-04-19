@@ -33,13 +33,13 @@ The composition of water bodies has consistently remained relatively low across 
 
 Over the 5 year span, there has been a constant decrease in the percentage composition of impervious surfaces (roads) in the state, with 2 significant drops: a 4.08% decrease from 13.96% in 2020 to 9.88% in 2021, as well as a 3.35% decrease from 8.56% in 2023 to 5.21% in 2024. These decreases may be attributed to significant intervening events in 2020 and 2023 respectively. Otherwise, even though it decreased slightly every year (9.88% in 2021 to 9.49% in 2022, 9.49% in 2022 to 8.56% in 2023), the percentage composition did not fluctuate significantly from 2021 to 2023.
 
-### 5.1.4 **Low-Rise Buildings**
+### 5.1.4 Low-Rise Buildings
 
 ![*Bar chart excerpt showing the composition of low-rise buildings over the 5 years*](images/Screenshot 2025-04-16 at 1.36.31 PM.png){fig-align="center" width="400"}
 
 The percentage composition of low-rise buildings in the state has consistently been quite high, consistent with the fact that KL is a highly urbanised city. There seems to be consistent increases from 2020 (17.51%) to 2021 (19.50%) as well as from 2021 (19.50%) to 2022 (24.32%), which could be a sign of greater urbanisation. From 2022 to 2023 however, there is a 3.75% decrease from 24.32% (2022) to 20.57% (2023) and no further major increase or decrease after 2023. This could signal efforts to scale back on urban development from 2022 onwards, but further research and information is required to conclusively state anything regarding these figures.  
 
-### 5.1.**5 Barren Land**
+### 5.1.5 Barren Land
 
 ![*Bar chart excerpt showing the composition of barren land over the 5 years*](images/Screenshot 2025-04-16 at 1.38.43 PM.png){fig-align="center" width="400"}
 
@@ -67,7 +67,7 @@ From the above chart, we are able to observe the following: 
 
 Ultimately, these patterns reflect how urban sprawl into hilly, vegetated regions may have intensified environmental vulnerability while leaving core urban centres less directly affected.
 
-## 5.**3 An Example of our Observations: Bukit Tunku**
+## 5.3 An Example of our Observations: Bukit Tunku
 
 Our above data analysis provides us with a broad snapshot of the type of land cover changes that have happened over the span of 5 years. Given the size of the area we have chosen to analyse, we wish to focus this section of our analysis on a major landslide that could grant us greater insight into the overall trends we have observed. We also lack sufficient information and time to replicate this analysis for all landslides that happened. Therefore, we focused on specifically the 2023 Bukit Tunku landslide given its scale and the damage it created to illustrate the devastating effects landslides can have on land cover.
 

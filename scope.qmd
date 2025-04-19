@@ -49,4 +49,4 @@ Since this project will be focusing on land cover changes in different land clas
 
 ## Project Schedule
 
-![*Gantt Chart with the work distribution*](images/Screenshot 2025-04-17 at 5.07.33 AM.png){fig-align="center"}
+![*Gantt Chart with the work distribution*](images/Screenshot%202025-04-17%20at%205.07.33%20AM.png){fig-align="center"}
