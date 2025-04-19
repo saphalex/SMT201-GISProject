@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-04-06">
 
-<title>about – GIS Group 6: Pavement vs Peat</title>
+<title>Pavement vs Peat – GIS Group 6: Pavement vs Peat</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -117,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Poster</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">Team</span></a>
   </li>  
 </ul>
@@ -136,41 +137,107 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-team" id="toc-the-team" class="nav-link active" data-scroll-target="#the-team">The Team</a>
+  <li><a href="#step-by-step" id="toc-step-by-step" class="nav-link active" data-scroll-target="#step-by-step">Step-by-Step</a>
   <ul class="collapse">
-  <li><a href="#anne-saphrin-alex-sathyan" id="toc-anne-saphrin-alex-sathyan" class="nav-link" data-scroll-target="#anne-saphrin-alex-sathyan">Anne Saphrin Alex Sathyan</a></li>
-  <li><a href="#harshitha-balaji" id="toc-harshitha-balaji" class="nav-link" data-scroll-target="#harshitha-balaji">Harshitha Balaji</a></li>
-  <li><a href="#lau-liang-jun" id="toc-lau-liang-jun" class="nav-link" data-scroll-target="#lau-liang-jun">Lau Liang Jun</a></li>
+  <li><a href="#viewing-all-sentinel-2-satellite-data-for-kl-for-2020-2024" id="toc-viewing-all-sentinel-2-satellite-data-for-kl-for-2020-2024" class="nav-link" data-scroll-target="#viewing-all-sentinel-2-satellite-data-for-kl-for-2020-2024">1.1 Viewing all Sentinel-2 satellite data for KL for 2020-2024</a></li>
+  <li><a href="#downloading-datasets" id="toc-downloading-datasets" class="nav-link" data-scroll-target="#downloading-datasets">1.2 Downloading datasets</a>
+  <ul class="collapse">
+  <li><a href="#select-and-download-satellite-data-with-lowest-cloud-cover-and-temporal-consistency" id="toc-select-and-download-satellite-data-with-lowest-cloud-cover-and-temporal-consistency" class="nav-link" data-scroll-target="#select-and-download-satellite-data-with-lowest-cloud-cover-and-temporal-consistency">1.2.1 Select and download satellite data with lowest cloud cover and temporal consistency</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
 
-
-
-
-<section id="the-team" class="level2">
-<h2 class="anchored" data-anchor-id="the-team">The Team</h2>
-<section id="anne-saphrin-alex-sathyan" class="level3">
-<h3 class="anchored" data-anchor-id="anne-saphrin-alex-sathyan">Anne Saphrin Alex Sathyan</h3>
-<p>Year 3, SCIS</p>
-</section>
-<section id="harshitha-balaji" class="level3">
-<h3 class="anchored" data-anchor-id="harshitha-balaji">Harshitha Balaji</h3>
-<p>Year 3, SCIS</p>
-</section>
-<section id="lau-liang-jun" class="level3">
-<h3 class="anchored" data-anchor-id="lau-liang-jun">Lau Liang Jun</h3>
-<p>Year 3, SCIS</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/Screenshot 2025-04-19 at 3.37.51 PM.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="459"></p>
-</figure>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Pavement vs Peat</h1>
 </div>
 
 
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Anne Saphrin Alex Sathyan, Harshitha Balaji, Lau Liang Jun </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 6, 2025</p>
+    </div>
+  </div>
+  
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">April 19, 2025</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="step-by-step" class="level1">
+<h1>Step-by-Step</h1>
+<section id="viewing-all-sentinel-2-satellite-data-for-kl-for-2020-2024" class="level2">
+<h2 class="anchored" data-anchor-id="viewing-all-sentinel-2-satellite-data-for-kl-for-2020-2024">1.1 Viewing all Sentinel-2 satellite data for KL for 2020-2024</h2>
+<p>Why Sentinel-2 over Landsat8 for Land Cover Change Analysis?</p>
+<p>Both Sentinel-2 and Landsat 8 data are excellent, but Sentinel-2 is preferred for land cover mapping, especially for dynamic urban areas like Kuala Lumpur and its 10m resolution better captures smaller urban features like roads and buildings, as well as fine-scale deforestation. Landsat 8’s 30m resolution often mixes land covers like trees and roads together, causing misclassification.</p>
+<p>However, since Sentinel-2 is a relatively newer system, for long-term studies, Landsat has a much larger archive, and 30m resolution would be sufficient if the study was on a continental/much larger scale, requiring large area mapping.</p>
+<ul>
+<li><p>Visit Copernicus website at <a href="https://dataspace.copernicus.eu/" class="uri">https://dataspace.copernicus.eu/</a></p></li>
+<li><p>Register for an account if you do not have one</p></li>
+<li><p>Go to the Copernicus Browser and log in</p></li>
+<li><p>You will be brought to this page</p></li>
+<li><p><img src="images/Screenshot 2025-04-19 at 4.29.38 PM.png" class="img-fluid" width="1000"></p></li>
+<li><p>Hover over <img src="images/Screenshot 2025-04-19 at 4.31.29 PM.png" class="img-fluid" width="81">at the top right and change Basemaps to OSM Background</p></li>
+<li><p>Drag and zoom in to your location of interest, Kuala Lumpur</p></li>
+<li><p>Hover&nbsp;over <img src="images/Screenshot 2025-04-19 at 4.33.36 PM.png" width="43" height="38"> and click <img src="images/Screenshot 2025-04-19 at 4.34.35 PM.png" width="43" height="37">.</p></li>
+<li><p>Select and draw a rectangle, covering the area of Kuala Lumpur completely</p></li>
+<li><p><img src="images/Screenshot 2025-04-19 at 4.37.16 PM.png" class="img-fluid" width="1000"></p></li>
+<li><p>On the left of the screen, select the SEARCH tab</p></li>
+<li><p>Check SENTINEL-2, MSI, L2A, and drag the cloud cover to 50% (this is to only show images that have less than 50% of the image covered by clouds)</p>
+<p>The reason only L2A is check is because it is atmospherically corrected and a cloud mask layer is added, with improved accuracy for ground features as compared to class L1C.</p>
+<p><img src="images/Screenshot 2025-04-19 at 4.39.35 PM.png" class="img-fluid"></p></li>
+<li><p>Scroll down and select the TIME RANGE</p>
+<ul>
+<li><p>From: 01-01-2020</p></li>
+<li><p>To: 31-12-2020</p></li>
+</ul></li>
+</ul>
+<p>Click on SEARCH</p>
+<p><img src="images/Screenshot 2025-04-19 at 4.50.18 PM.png" class="img-fluid" width="1000"></p>
+<ul>
+<li>You will see that Kuala Lumpur is covered by two rectangles, indicating that the location is covered by two different satellite images. By clicking each of the rectangle, you will see the relevant images that are covering that specific area.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-04-19 at 4.52.45 PM.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="1000"></p>
+</figure>
+</div>
+<ul>
+<li>Click on the <img src="images/Screenshot 2025-04-19 at 4.55.06 PM.png" class="img-fluid" width="43">icon to have a clearer view of the image.</li>
+</ul>
+</section>
+<section id="downloading-datasets" class="level2">
+<h2 class="anchored" data-anchor-id="downloading-datasets">1.2 Downloading datasets</h2>
+<section id="select-and-download-satellite-data-with-lowest-cloud-cover-and-temporal-consistency" class="level3">
+<h3 class="anchored" data-anchor-id="select-and-download-satellite-data-with-lowest-cloud-cover-and-temporal-consistency">1.2.1 Select and download satellite data with lowest cloud cover and temporal consistency</h3>
+<p>To choose suitable images for temporal analysis in this study, we should be prioritising similar acquisition dates and low cloud cover. Having similar acquisition dates (images from around the same month per year, e.g.&nbsp;March) allows us to compare same-season images to minimise seasonal effects like monsoon season and ensure there is sufficient time between years for land cover change to happen (e.g.&nbsp;images from November 2020 and January 2021 would be relatively similar as only 3 months has passed, and no meaningful information can be extracted). Prioritise low to no cloud cover to ensure that the ground area is visible and are not covered by clouds and their shadows. Also, both images that piece to form Kuala Lumpur should be as close to the same date as possible, to ensure consistent image.</p>
+
+
+</section>
 </section>
 </section>
 
