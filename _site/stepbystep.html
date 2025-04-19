@@ -214,7 +214,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Go to the Copernicus Browser and log in</p></li>
 <li><p>You will be brought to this page</p></li>
 <li><p><img src="images/Screenshot 2025-04-19 at 4.29.38 PM.png" class="img-fluid" width="1000"></p></li>
-<li><p>Hover over <img src="images/Screenshot 2025-04-19 at 4.31.29 PM.png" class="img-fluid" width="81">at the top right and change Basemaps to OSM Background</p></li>
+<li><p>Hover over <img src="images/Screenshot 2025-04-19 at 4.31.29 PM.png" class="img-fluid" width="43">at the top right and change Basemaps to OSM Background</p></li>
 <li><p>Drag and zoom in to your location of interest, Kuala Lumpur</p></li>
 <li><p>Hover&nbsp;over <img src="images/Screenshot 2025-04-19 at 4.33.36 PM.png" width="43" height="38"> and click <img src="images/Screenshot 2025-04-19 at 4.34.35 PM.png" width="43" height="37">.</p></li>
 <li><p>Select and draw a rectangle, covering the area of Kuala Lumpur completely</p></li>
@@ -222,7 +222,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p>On the left of the screen, select the SEARCH tab</p></li>
 <li><p>Check SENTINEL-2, MSI, L2A, and drag the cloud cover to 50% (this is to only show images that have less than 50% of the image covered by clouds)</p>
 <p>The reason only L2A is check is because it is atmospherically corrected and a cloud mask layer is added, with improved accuracy for ground features as compared to class L1C.</p>
-<p><img src="images/Screenshot 2025-04-19 at 4.39.35 PM.png" class="img-fluid"></p></li>
+<p><img src="images/Screenshot 2025-04-19 at 4.39.35 PM.png" class="img-fluid" width="800"></p></li>
 <li><p>Scroll down and select the TIME RANGE</p>
 <ul>
 <li><p>From: 01-01-2020</p></li>
@@ -230,7 +230,7 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul>
 <p>Click on SEARCH</p>
-<p><img src="images/Screenshot 2025-04-19 at 4.50.18 PM.png" class="img-fluid" width="1000"></p>
+<p><img src="images/Screenshot 2025-04-19 at 4.50.18 PM.png" class="img-fluid" width="800"></p>
 <ul>
 <li>You will see that Kuala Lumpur is covered by two rectangles, indicating that the location is covered by two different satellite images. By clicking each of the rectangle, you will see the relevant images that are covering that specific area.</li>
 </ul>
@@ -312,21 +312,21 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Screenshot 2025-04-19 at 5.49.17 PM.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="1000"></p>
+<p><img src="images/Screenshot 2025-04-19 at 5.49.17 PM.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="800"></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/Screenshot 2025-04-19 at 5.49.53 PM.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="1000"></p>
+<p><img src="images/Screenshot 2025-04-19 at 5.49.53 PM.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="800"></p>
 </figure>
 </div>
 <ul>
-<li><p>Next, right-click the layer  ExportSave selected features as…</p></li>
+<li><p>Next, right-click the layer —&gt; Export —&gt; Save selected features as…</p></li>
 <li><p>Save it as a Shapefile format named ‘KL’ and change CRS to EPSG:4751, click ‘OK’</p></li>
-<li><p><img src="images/Screenshot 2025-04-19 at 6.26.21 PM.png" class="img-fluid" width="1000"></p></li>
+<li><p><img src="images/Screenshot 2025-04-19 at 6.26.21 PM.png" class="img-fluid" width="800"></p></li>
 <li><p>From the menu bar, select ‘Vector’ → ‘Geoprocessing Tools’ → ‘Clip…’</p></li>
 <li><p>Select the 2021 layer as input layer and ‘KL’ as overlay and click OK,&nbsp; you should see the image below. Save it as shapefile called ‘KLMap (with subzone)’. Remove all other layers</p></li>
-<li><p><img src="images/Screenshot 2025-04-19 at 6.28.11 PM.png" class="img-fluid" width="1000"></p></li>
+<li><p><img src="images/Screenshot 2025-04-19 at 6.28.11 PM.png" class="img-fluid" width="800"></p></li>
 </ul>
 </section>
 <section id="extracting-kl-map-from-sentinel-2-data" class="level3">
@@ -334,18 +334,18 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><p>To add the Sentinel-2 files to QGIS, from the menu bar, select ‘Layer’ → ‘Add Layer’ → ‘Add Raster Layer…’</p></li>
 <li><p>Click the ‘…’ button and browse for 2020, the sentinel folder containing&nbsp; the ‘Left’ image of KL, for bands 2, 3, 4 and 8 under the ‘10m’ folder. Click ‘Open’, then click ‘Add’ and ‘Close’. Do so for the ‘Right’ image for KL also. You should be seeing something like that in your screen.</p></li>
-<li><p><img src="images/Screenshot 2025-04-19 at 6.46.40 PM.png" class="img-fluid" width="1000"></p></li>
+<li><p><img src="images/Screenshot 2025-04-19 at 6.46.40 PM.png" class="img-fluid" width="800"></p></li>
 <li><p>We want to combine these two images, so from the menu bar, select ‘Raster’ → ‘Miscellaneous → ‘Build Virtual Raster…’</p></li>
 <li><p>Under input layer, click “…”&nbsp;and select two images of the same bands, then click ‘Run’</p></li>
-<li><p><img src="images/Screenshot 2025-04-19 at 6.48.02 PM.png" class="img-fluid" width="1000"></p></li>
+<li><p><img src="images/Screenshot 2025-04-19 at 6.48.02 PM.png" class="img-fluid" width="800"></p></li>
 <li><p>A virtual layer will appear as shown below</p></li>
-<li><p><img src="images/Screenshot 2025-04-19 at 6.49.26 PM.png" class="img-fluid" width="1000"></p></li>
+<li><p><img src="images/Screenshot 2025-04-19 at 6.49.26 PM.png" class="img-fluid" width="800"></p></li>
 <li><p>Next, we will clip out only the area we are interested in, which is the KL area</p></li>
 <li><p>From the menu bar, select ‘Raster’ → ‘Extraction’→ ‘Clip Raster by Mask Layer…’</p></li>
 <li><p>Put the ‘Virtual’ layer as Input layer and the ‘KLMap (with subzone)’ as Mask layer and click ‘Run’</p></li>
-<li><p><img src="images/Screenshot 2025-04-19 at 6.51.40 PM.png" class="img-fluid" width="1000"></p></li>
+<li><p><img src="images/Screenshot 2025-04-19 at 6.51.40 PM.png" class="img-fluid" width="800"></p></li>
 <li><p>You will then see this</p></li>
-<li><p><img src="images/Screenshot 2025-04-19 at 6.53.07 PM.png" class="img-fluid" width="1000"></p></li>
+<li><p><img src="images/Screenshot 2025-04-19 at 6.53.07 PM.png" class="img-fluid" width="800"></p></li>
 <li><p>Right click the layer → Export → Save As…. Save it in GeoTIFF format called ‘2020-0228-B02’ and remove the clipped and virtual layers</p></li>
 <li><p>Do so for all 4 bands for the year</p></li>
 </ul>
@@ -363,10 +363,10 @@ ul.task-list li input[type="checkbox"] {
 <li><p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Click on <img src="images/Screenshot 2025-04-19 at 6.59.56 PM.png" class="img-fluid" width="43">&nbsp;and a window will pop up. Click on it again and click <img src="images/Screenshot 2025-04-19 at 7.00.33 PM.png" class="img-fluid" width="43">&nbsp;to create a band set. Name the set as ‘2020’ and click <img src="images/Screenshot 2025-04-19 at 7.01.26 PM.png" class="img-fluid" width="43">&nbsp;on the right side and add layers 2,3,4 and 8 into the set. Finally, click <img src="images/Screenshot 2025-04-19 at 7.02.03 PM.png" class="img-fluid" width="43">.</p></li>
 <li><p>Going back to the project view, &nbsp;under the same panel, type in ‘3-2-1’ and ‘Enter’ <img src="images/Screenshot 2025-04-19 at 7.03.21 PM.png" width="43" height="8">.</p></li>
 <li><p>A Virtual Band Set will pop up, showing the True Composite Image for the band set</p></li>
-<li><p><img src="images/Screenshot 2025-04-19 at 7.04.30 PM.png" class="img-fluid" width="1000"></p></li>
+<li><p><img src="images/Screenshot 2025-04-19 at 7.04.30 PM.png" class="img-fluid" width="800"></p></li>
 <li><p>Export the band set as a GeoTIFF image, but change the output mode as a Rendered Image. Save it as ‘2020-TCI’<img src="images/Screenshot 2025-04-19 at 7.08.33 PM.png" class="img-fluid" width="1000"></p></li>
 <li><p>Now change the virtual band set to ‘4-3-2’ and you will get a False Colour Composite of the map like this. Save it accordingly too as ‘2020-FCC’</p></li>
-<li><p><img src="images/Screenshot 2025-04-19 at 7.09.19 PM.png" class="img-fluid" width="1000"><br>
+<li><p><img src="images/Screenshot 2025-04-19 at 7.09.19 PM.png" class="img-fluid" width="800"><br>
 </p></li>
 </ul>
 </section>
@@ -392,55 +392,55 @@ ul.task-list li input[type="checkbox"] {
 <li><p>MCID,CID</p></li>
 <li><p>1 Natural Vegetation</p></li>
 <li><p>1.1 Forest :</p>
-<p><img src="images/Screenshot 2025-04-19 at 7.17.46 PM.png" class="img-fluid" width="1000"></p></li>
+<p><img src="images/Screenshot 2025-04-19 at 7.17.46 PM.png" class="img-fluid" width="800"></p></li>
 <li><p>2 Managed Vegetation</p>
 <ul>
 <li><p>2.1 Golf course grass</p>
-<p><img src="images/Screenshot 2025-04-19 at 7.19.00 PM.png" class="img-fluid" width="1000"></p></li>
+<p><img src="images/Screenshot 2025-04-19 at 7.19.00 PM.png" class="img-fluid" width="800"></p></li>
 <li><p>2.2 Sports field</p>
-<p><img src="images/Screenshot 2025-04-19 at 7.19.52 PM.png" class="img-fluid" width="1000"></p></li>
+<p><img src="images/Screenshot 2025-04-19 at 7.19.52 PM.png" class="img-fluid" width="800"></p></li>
 </ul></li>
 <li><p>3 Water Body</p>
 <ul>
 <li><p>3.1 Flood Reservoir</p>
-<p><img src="images/Screenshot 2025-04-19 at 7.21.27 PM.png" class="img-fluid" width="1000"></p></li>
+<p><img src="images/Screenshot 2025-04-19 at 7.21.27 PM.png" class="img-fluid" width="800"></p></li>
 <li><p>3.2 Lakes</p>
-<p><img src="images/Screenshot 2025-04-19 at 7.22.21 PM.png" class="img-fluid" width="1000"></p></li>
+<p><img src="images/Screenshot 2025-04-19 at 7.22.21 PM.png" class="img-fluid" width="800"></p></li>
 <li><p>3.3 Rivers</p>
-<p><img src="images/Screenshot 2025-04-19 at 7.23.06 PM.png" class="img-fluid" width="1000"></p></li>
+<p><img src="images/Screenshot 2025-04-19 at 7.23.06 PM.png" class="img-fluid" width="800"></p></li>
 </ul></li>
 <li><p>4 Impervious Surfaces</p>
 <ul>
 <li><p>4.1 Roads:</p>
-<p><img src="images/Screenshot 2025-04-19 at 7.24.34 PM.png" class="img-fluid" width="1000"></p></li>
+<p><img src="images/Screenshot 2025-04-19 at 7.24.34 PM.png" class="img-fluid" width="800"></p></li>
 </ul></li>
 <li><p>5 Built-up 1 (low-rise)</p>
 <ul>
 <li><p>5.1 Houses</p>
-<p><img src="images/Screenshot 2025-04-19 at 7.26.12 PM.png" class="img-fluid" width="1000"></p></li>
+<p><img src="images/Screenshot 2025-04-19 at 7.26.12 PM.png" class="img-fluid" width="800"></p></li>
 </ul></li>
 <li><p>6 Built-up 2 (high-rise)</p>
 <ul>
 <li><p>6.1 Buildings (High-rise buildings are typically accompanied by shadows)</p>
-<p><img src="images/Screenshot 2025-04-19 at 7.27.49 PM.png" class="img-fluid" width="1000"></p></li>
+<p><img src="images/Screenshot 2025-04-19 at 7.27.49 PM.png" class="img-fluid" width="800"></p></li>
 </ul></li>
 <li><p>7 Barren Land:</p>
 <ul>
 <li><p>7.1 Empty Lot —&gt; Super bright reflective surface</p>
-<p><img src="images/Screenshot 2025-04-19 at 7.27.49 PM-01.png" class="img-fluid" width="1000"></p></li>
+<p><img src="images/Screenshot 2025-04-19 at 7.27.49 PM-01.png" class="img-fluid" width="800"></p></li>
 <li><p>7.2 Empty Lot —&gt; Reddish brown empty lots</p>
-<p><img src="images/Screenshot 2025-04-19 at 7.30.25 PM.png" class="img-fluid" width="1000"></p></li>
+<p><img src="images/Screenshot 2025-04-19 at 7.30.25 PM.png" class="img-fluid" width="800"></p></li>
 <li><p>7.3 Open soil —&gt; Cemetery/Parks brown land</p>
-<p><img src="images/Screenshot 2025-04-19 at 7.31.29 PM.png" class="img-fluid" width="1000"></p></li>
+<p><img src="images/Screenshot 2025-04-19 at 7.31.29 PM.png" class="img-fluid" width="800"></p></li>
 </ul></li>
 <li><p>8 Shadow</p>
 <ul>
 <li><p>8.1 Shadow —&gt; Select shadow of buildings, trace them to their exact shape</p>
-<p><img src="images/Screenshot 2025-04-19 at 7.32.43 PM.png" class="img-fluid" width="1000"></p></li>
+<p><img src="images/Screenshot 2025-04-19 at 7.32.43 PM.png" class="img-fluid" width="800"></p></li>
 </ul></li>
 </ul></li>
 <li><p>After classifying, try to change the colours for each CID into their own colours and group them, to allow for easier visualisation.</p>
-<p><img src="images/Screenshot 2025-04-19 at 7.33.36 PM.png" class="img-fluid" width="1000"></p></li>
+<p><img src="images/Screenshot 2025-04-19 at 7.33.36 PM.png" class="img-fluid" width="800"></p></li>
 <li><p>This is the colour palette used by our group, in order of macro classes, stopping at Black for Shadow.</p>
 <p><img src="images/Screenshot 2025-04-19 at 7.34.16 PM.png" class="img-fluid"></p></li>
 <li><p>Next, select all the points, and click on <img src="images/Screenshot 2025-04-19 at 7.34.53 PM.png" class="img-fluid" width="43">&nbsp;to see the spectral signature plot for the points</p>
@@ -453,7 +453,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Go to ‘Band ProcessingClassification’ this time and choose the correct band set that you are currently using. Select ‘Linear scaling’ and ‘Macroclass ID’ for training. Click ‘Run’ and save it as ‘2020-Train-data-1’.</p>
 <p><img src="images/Screenshot 2025-04-19 at 7.37.55 PM.png" class="img-fluid" width="1000"></p></li>
 <li><p>When it is done, a new layer will be added to your project window, showing you the classification of the different land cover types</p>
-<p><img src="images/Screenshot 2025-04-19 at 7.39.03 PM.png" class="img-fluid" width="1000"></p></li>
+<p><img src="images/Screenshot 2025-04-19 at 7.39.03 PM.png" class="img-fluid" width="800"></p></li>
 <li><p>Repeat this step until you are satisfied with the classification</p></li>
 <li><p>Then, right click ‘SCP training layer’ and export it as shapefile and save it</p></li>
 <li><p>Save, then click on <img src="images/Screenshot 2025-04-19 at 7.40.15 PM.png" class="img-fluid" width="43">&nbsp;to create a new set for the Test data called ‘2020-Test’</p></li>

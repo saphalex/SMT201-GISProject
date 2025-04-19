@@ -25,7 +25,7 @@ However, since Sentinel-2 is a relatively newer system, for long-term studies, L
 
 -   ![](images/Screenshot%202025-04-19%20at%204.29.38%20PM.png){width="1000"}
 
--   Hover over ![](images/Screenshot%202025-04-19%20at%204.31.29%20PM.png){width="81"}at the top right and change Basemaps to OSM Background
+-   Hover over ![](images/Screenshot%202025-04-19%20at%204.31.29%20PM.png){width="43"}at the top right and change Basemaps to OSM Background
 
 -   Drag and zoom in to your location of interest, Kuala Lumpur
 
@@ -41,7 +41,7 @@ However, since Sentinel-2 is a relatively newer system, for long-term studies, L
 
     The reason only L2A is check is because it is atmospherically corrected and a cloud mask layer is added, with improved accuracy for ground features as compared to class L1C.
 
-    ![](images/Screenshot%202025-04-19%20at%204.39.35%20PM.png)
+    ![](images/Screenshot%202025-04-19%20at%204.39.35%20PM.png){width="800"}
 
 -   Scroll down and select the TIME RANGE
 
@@ -51,7 +51,7 @@ However, since Sentinel-2 is a relatively newer system, for long-term studies, L
 
 Click on SEARCH
 
-![](images/Screenshot%202025-04-19%20at%204.50.18%20PM.png){width="1000"}
+![](images/Screenshot%202025-04-19%20at%204.50.18%20PM.png){width="800"}
 
 -   You will see that Kuala Lumpur is covered by two rectangles, indicating that the location is covered by two different satellite images. By clicking each of the rectangle, you will see the relevant images that are covering that specific area.
 
@@ -133,21 +133,21 @@ To choose suitable images for temporal analysis in this study, we should be prio
 
 -   Select and view the 2020 layer, then click on the dropdown beside found on the overlay panels, click ‘Select Feature(s)’ and select the KL polygon
 
-![](images/Screenshot%202025-04-19%20at%205.49.17%20PM.png){fig-align="center" width="1000"}
+![](images/Screenshot%202025-04-19%20at%205.49.17%20PM.png){fig-align="center" width="800"}
 
-![](images/Screenshot%202025-04-19%20at%205.49.53%20PM.png){fig-align="center" width="1000"}
+![](images/Screenshot%202025-04-19%20at%205.49.53%20PM.png){fig-align="center" width="800"}
 
--   Next, right-click the layer  ExportSave selected features as…
+-   Next, right-click the layer —\> Export —\> Save selected features as…
 
 -   Save it as a Shapefile format named ‘KL’ and change CRS to EPSG:4751, click ‘OK’
 
--   ![](images/Screenshot%202025-04-19%20at%206.26.21%20PM.png){width="1000"}
+-   ![](images/Screenshot%202025-04-19%20at%206.26.21%20PM.png){width="800"}
 
 -   From the menu bar, select ‘Vector’ → ‘Geoprocessing Tools’ → ‘Clip…’
 
 -   Select the 2021 layer as input layer and ‘KL’ as overlay and click OK,  you should see the image below. Save it as shapefile called ‘KLMap (with subzone)’. Remove all other layers
 
--   ![](images/Screenshot%202025-04-19%20at%206.28.11%20PM.png){width="1000"}
+-   ![](images/Screenshot%202025-04-19%20at%206.28.11%20PM.png){width="800"}
 
 ### 2.3 Extracting KL map from Sentinel-2 data
 
@@ -155,17 +155,17 @@ To choose suitable images for temporal analysis in this study, we should be prio
 
 -   Click the ‘…’ button and browse for 2020, the sentinel folder containing  the ‘Left’ image of KL, for bands 2, 3, 4 and 8 under the ‘10m’ folder. Click ‘Open’, then click ‘Add’ and ‘Close’. Do so for the ‘Right’ image for KL also. You should be seeing something like that in your screen.
 
--   ![](images/Screenshot%202025-04-19%20at%206.46.40%20PM.png){width="1000"}
+-   ![](images/Screenshot%202025-04-19%20at%206.46.40%20PM.png){width="800"}
 
 -   We want to combine these two images, so from the menu bar, select ‘Raster’ → ‘Miscellaneous → ‘Build Virtual Raster…’
 
 -   Under input layer, click "..." and select two images of the same bands, then click ‘Run’
 
--   ![](images/Screenshot%202025-04-19%20at%206.48.02%20PM.png){width="1000"}
+-   ![](images/Screenshot%202025-04-19%20at%206.48.02%20PM.png){width="800"}
 
 -   A virtual layer will appear as shown below
 
--   ![](images/Screenshot%202025-04-19%20at%206.49.26%20PM.png){width="1000"}
+-   ![](images/Screenshot%202025-04-19%20at%206.49.26%20PM.png){width="800"}
 
 -   Next, we will clip out only the area we are interested in, which is the KL area
 
@@ -173,11 +173,11 @@ To choose suitable images for temporal analysis in this study, we should be prio
 
 -   Put the ‘Virtual’ layer as Input layer and the ‘KLMap (with subzone)’ as Mask layer and click ‘Run’
 
--   ![](images/Screenshot%202025-04-19%20at%206.51.40%20PM.png){width="1000"}
+-   ![](images/Screenshot%202025-04-19%20at%206.51.40%20PM.png){width="800"}
 
 -   You will then see this
 
--   ![](images/Screenshot%202025-04-19%20at%206.53.07%20PM.png){width="1000"}
+-   ![](images/Screenshot%202025-04-19%20at%206.53.07%20PM.png){width="800"}
 
 -   Right click the layer → Export → Save As…. Save it in GeoTIFF format called ‘2020-0228-B02’ and remove the clipped and virtual layers
 
@@ -201,13 +201,13 @@ Next, we want to create True and False Composite Images to distinguish urban are
 
 -   A Virtual Band Set will pop up, showing the True Composite Image for the band set
 
--   ![](images/Screenshot%202025-04-19%20at%207.04.30%20PM.png){width="1000"}
+-   ![](images/Screenshot%202025-04-19%20at%207.04.30%20PM.png){width="800"}
 
 -   Export the band set as a GeoTIFF image, but change the output mode as a Rendered Image. Save it as ‘2020-TCI’![](images/Screenshot%202025-04-19%20at%207.08.33%20PM.png){width="1000"}
 
 -   Now change the virtual band set to ‘4-3-2’ and you will get a False Colour Composite of the map like this. Save it accordingly too as ‘2020-FCC’
 
--   ![](images/Screenshot%202025-04-19%20at%207.09.19%20PM.png){width="1000"}\
+-   ![](images/Screenshot%202025-04-19%20at%207.09.19%20PM.png){width="800"}\
 
 ### 3.2 Using SCP plugin to do supervised classification for the map, categorising by various land cover types
 
@@ -243,73 +243,73 @@ Next, instead of classifying each land cover type manually, we will be training 
 
     -   1.1 Forest :
 
-        ![](images/Screenshot%202025-04-19%20at%207.17.46%20PM.png){width="1000"}
+        ![](images/Screenshot%202025-04-19%20at%207.17.46%20PM.png){width="800"}
 
     -   2 Managed Vegetation
 
         -   2.1 Golf course grass
 
-            ![](images/Screenshot%202025-04-19%20at%207.19.00%20PM.png){width="1000"}
+            ![](images/Screenshot%202025-04-19%20at%207.19.00%20PM.png){width="800"}
 
         -   2.2 Sports field
 
-            ![](images/Screenshot%202025-04-19%20at%207.19.52%20PM.png){width="1000"}
+            ![](images/Screenshot%202025-04-19%20at%207.19.52%20PM.png){width="800"}
 
     -   3 Water Body
 
         -   3.1 Flood Reservoir
 
-            ![](images/Screenshot%202025-04-19%20at%207.21.27%20PM.png){width="1000"}
+            ![](images/Screenshot%202025-04-19%20at%207.21.27%20PM.png){width="800"}
 
         -   3.2 Lakes
 
-            ![](images/Screenshot%202025-04-19%20at%207.22.21%20PM.png){width="1000"}
+            ![](images/Screenshot%202025-04-19%20at%207.22.21%20PM.png){width="800"}
 
         -   3.3 Rivers
 
-            ![](images/Screenshot%202025-04-19%20at%207.23.06%20PM.png){width="1000"}
+            ![](images/Screenshot%202025-04-19%20at%207.23.06%20PM.png){width="800"}
 
     -   4 Impervious Surfaces
 
         -   4.1 Roads:
 
-            ![](images/Screenshot%202025-04-19%20at%207.24.34%20PM.png){width="1000"}
+            ![](images/Screenshot%202025-04-19%20at%207.24.34%20PM.png){width="800"}
 
     -   5 Built-up 1 (low-rise)
 
         -   5.1 Houses
 
-            ![](images/Screenshot%202025-04-19%20at%207.26.12%20PM.png){width="1000"}
+            ![](images/Screenshot%202025-04-19%20at%207.26.12%20PM.png){width="800"}
 
     -   6 Built-up 2 (high-rise)
 
         -   6.1 Buildings (High-rise buildings are typically accompanied by shadows)
 
-            ![](images/Screenshot%202025-04-19%20at%207.27.49%20PM.png){width="1000"}
+            ![](images/Screenshot%202025-04-19%20at%207.27.49%20PM.png){width="800"}
 
     -   7 Barren Land:
 
         -   7.1 Empty Lot —\> Super bright reflective surface
 
-            ![](images/Screenshot%202025-04-19%20at%207.27.49%20PM-01.png){width="1000"}
+            ![](images/Screenshot%202025-04-19%20at%207.27.49%20PM-01.png){width="800"}
 
         -   7.2 Empty Lot —\> Reddish brown empty lots
 
-            ![](images/Screenshot%202025-04-19%20at%207.30.25%20PM.png){width="1000"}
+            ![](images/Screenshot%202025-04-19%20at%207.30.25%20PM.png){width="800"}
 
         -   7.3 Open soil —\> Cemetery/Parks brown land
 
-            ![](images/Screenshot%202025-04-19%20at%207.31.29%20PM.png){width="1000"}
+            ![](images/Screenshot%202025-04-19%20at%207.31.29%20PM.png){width="800"}
 
     -   8 Shadow
 
         -   8.1 Shadow —\> Select shadow of buildings, trace them to their exact shape
 
-            ![](images/Screenshot%202025-04-19%20at%207.32.43%20PM.png){width="1000"}
+            ![](images/Screenshot%202025-04-19%20at%207.32.43%20PM.png){width="800"}
 
 -   After classifying, try to change the colours for each CID into their own colours and group them, to allow for easier visualisation.
 
-    ![](images/Screenshot%202025-04-19%20at%207.33.36%20PM.png){width="1000"}
+    ![](images/Screenshot%202025-04-19%20at%207.33.36%20PM.png){width="800"}
 
 -   This is the colour palette used by our group, in order of macro classes, stopping at Black for Shadow.
 
@@ -335,7 +335,7 @@ Next, instead of classifying each land cover type manually, we will be training 
 
 -   When it is done, a new layer will be added to your project window, showing you the classification of the different land cover types
 
-    ![](images/Screenshot%202025-04-19%20at%207.39.03%20PM.png){width="1000"}
+    ![](images/Screenshot%202025-04-19%20at%207.39.03%20PM.png){width="800"}
 
 -   Repeat this step until you are satisfied with the classification
 
@@ -351,10 +351,10 @@ Next, instead of classifying each land cover type manually, we will be training 
 
 ### 3.3 Conducting Accuracy Assessment for trained model
 
--   Next, we return to SCP dialogue window after clicking on ![](images/Screenshot 2025-04-19 at 7.42.55 PM.png){width="43"}
+-   Next, we return to SCP dialogue window after clicking on ![](images/Screenshot%202025-04-19%20at%207.42.55%20PM.png){width="43"}
 
 -   Go to ‘Postprocessing —\> Accuracy’
 
--   Select the train data file for  ‘Select the classification to assess’ and put the shapefile test layer into 'Select the reference vector or raster’. Click the ![](images/Screenshot 2025-04-19 at 7.43.55 PM.png){width="43"} button if the layers are not showing up, and change the ‘Vector field’ to ‘macroclass’. Click ‘Run’ and save it as ‘MLAccuracy2020’. After running, the Accuracy Assessment Report appears, showing 1. Long pair-wise error list 2. Confusion Matrix (Error Matrix) and 3. Kappa Hat Matrix. There will be an overall accuracy and an accuracy for each class.
+-   Select the train data file for  ‘Select the classification to assess’ and put the shapefile test layer into 'Select the reference vector or raster’. Click the ![](images/Screenshot%202025-04-19%20at%207.43.55%20PM.png){width="43"} button if the layers are not showing up, and change the ‘Vector field’ to ‘macroclass’. Click ‘Run’ and save it as ‘MLAccuracy2020’. After running, the Accuracy Assessment Report appears, showing 1. Long pair-wise error list 2. Confusion Matrix (Error Matrix) and 3. Kappa Hat Matrix. There will be an overall accuracy and an accuracy for each class.
 
-    ![](images/Screenshot 2025-04-19 at 7.45.00 PM.png){width="1000"}
+    ![](images/Screenshot%202025-04-19%20at%207.45.00%20PM.png){width="1000"}
