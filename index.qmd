@@ -23,6 +23,8 @@ From our classification and subsequent observations, we were able to find the fo
 
 3.  There was considerable variation in Barren Land and Water Bodies composition.
 
-Notably, we observed sharp increases and decreases in the different land classes from 2023 to 2024, which we believe can be attributed to a major landslide that occurred in Bukit Tunku, KL in April 2023. The overall results also allowed us to observe the varying levels of accuracies across the years, with 2024 having the greatest classification accuracy (Overall Accuracy = 81.3%, Kappa Hat = 0.759) and 2022 having the lowest classification accuracy (Overall Accuracy = 40.4%, Kappa Hat = 0.286). We will dive deeper into our observations and takeaways in the following sections of the report. 
-
+Notably, we observed sharp increases and decreases in the different land classes from 2023 to 2024, which we believe can be attributed to a major landslide that occurred in Bukit Tunku, KL in April 2023. The overall results also allowed us to observe the varying levels of accuracies across the years, with 2024 having the greatest classification accuracy (Overall Accuracy = 81.3%, Kappa Hat = 0.759) and 2022 having the lowest classification accuracy (Overall Accuracy = 40.4%, Kappa Hat = 0.286). We will dive deeper into our observations and takeaways in the following sections of the report. \
 \
+You can find our report here: [docs/GISReport.pdf](docs/GISReport.pdf)
+
+You can find our Git Repository here: <https://github.com/saphalex/SMT201-GISProject>
